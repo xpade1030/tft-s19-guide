@@ -74,6 +74,18 @@ kbd,.mono{font-family:var(--f-mono);font-size:.9em}
 .comp .why{color:var(--muted);font-size:13.5px}
 .comp .items{font-size:13px}
 /* filters */
+.fpanel{display:grid;gap:8px;margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.frow{display:grid;grid-template-columns:5.5em 1fr;gap:10px;align-items:start;min-width:0}
+.flabel{font-size:13px;font-weight:700;padding-top:4px;line-height:1.3}
+.flabel small{display:block;font-weight:400;font-size:11px;color:var(--muted)}
+.seg button .n{font-size:11px;color:var(--muted);margin-left:4px}
+.seg button[aria-pressed="true"] .n{color:inherit;opacity:.7}
+.seg button:disabled{opacity:.35;cursor:default}
+.seg button{display:inline-flex;align-items:center}
+#bandSeg button,#classSeg button{font-family:var(--f-body)}
+.clearbtn{font:inherit;font-size:13px;border:none;background:none;color:var(--accent);cursor:pointer;padding:4px 6px}
+.fhint{margin:2px 0 0;font-size:12px;color:var(--muted)}
+@media (max-width:520px){.frow{grid-template-columns:1fr;gap:4px}.flabel small{display:inline;margin-left:6px}}
 .filters{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:18px}
 .seg{display:flex;flex-wrap:wrap;gap:4px}
 .seg button{font:inherit;font-size:13px;font-family:var(--f-mono);border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:8px;padding:4px 10px;cursor:pointer}
@@ -210,19 +222,24 @@ html{scroll-behavior:smooth}
 <section id="units"><div class="wrap">
   <h2>棋子圖鑑</h2>
   <p class="lead">魔力格式是「起始／上限」。沒有魔力條的是純被動技能。</p>
-  <div class="filters">
-    <div class="seg" id="costSeg" role="group" aria-label="費用篩選"></div>
-    <select id="roleSel" aria-label="定位篩選"></select>
-    <select id="traitSel" aria-label="羈絆篩選"></select>
-    <input type="search" id="q" placeholder="搜尋名字、技能字…" aria-label="搜尋">
-    <span class="count" id="count"></span>
+  <div class="fpanel">
+    <div class="frow"><span class="flabel">費用</span><div class="seg" id="costSeg" role="group" aria-label="費用（可複選）"></div></div>
+    <div class="frow"><span class="flabel">傷害</span><div class="seg" id="dmgSeg" role="group" aria-label="傷害類型（可複選）"></div></div>
+    <div class="frow"><span class="flabel">職能</span><div class="seg" id="jobSeg" role="group" aria-label="職能（可複選）"></div></div>
+    <div class="frow"><span class="flabel">樂團<small>這隻是誰</small></span><div class="seg" id="bandSeg" role="group" aria-label="樂團羈絆（可複選，取交集）"></div></div>
+    <div class="frow"><span class="flabel">職業<small>戰鬥做什麼</small></span><div class="seg" id="classSeg" role="group" aria-label="職業羈絆（可複選，取交集）"></div></div>
+    <div class="frow"><span class="flabel"></span><div class="filters" style="margin:0;flex:1">
+      <input type="search" id="q" placeholder="搜尋名字、技能字、單人羈絆…" aria-label="搜尋">
+      <span class="count" id="count"></span><button class="clearbtn" id="clearF" type="button">清除篩選</button></div></div>
+    <p class="fhint">同一排內：費用、傷害、職能是「任一符合」；樂團、職業是「全部都要有」。羈絆旁的數字是加選後還剩幾隻。</p>
   </div>
   <div class="grid" id="grid"></div>
 </div></section>
 
 <section id="traits"><div class="wrap">
   <h2>羈絆</h2>
-  <p class="lead">門檻與效果原文來自 tft.ninja（多數只寫效果方向，沒寫數字）。職業羈絆另附 senseos 公布的 PBE 數值。</p>
+  <p class="lead">羈絆分三種。<b>樂團</b>是這隻角色「屬於哪個樂團或曲風」（K/DA、Pentakill、Jazz…），像身分；<b>職業</b>是他「在戰鬥裡負責什麼」（Bodyguard 擋傷害、Slayer 收頭、Arcanist 加法強…），像工作。典型角色是一個樂團＋一個職業，所以組陣容常是「選一個樂團當主軸，再用職業補前排或輸出」。<b>單人</b>羈絆只屬於一隻角色。</p>
+  <p class="lead" style="margin-top:6px">門檻與效果原文來自 tft.ninja（多數只寫效果方向，沒寫數字）。職業羈絆另附 senseos 公布的 PBE 數值。</p>
   <div class="tgroups" id="traitGroups"></div>
 </div></section>
 
@@ -343,19 +360,24 @@ document.getElementById("compList").innerHTML=COMPS.map(c=>`<article class="comp
  <p class="items">${esc(c.items)}</p>
  <p class="why">${esc(c.why)}</p></article>`).join("");
 
-// unit filters
-let fCost="all",fRole="",fTrait="",fQ="";
-const seg=document.getElementById("costSeg");
-seg.innerHTML=["all",1,2,3,4,5,7].map(c=>`<button data-c="${c}" aria-pressed="${c==="all"}">${c==="all"?"全部":c+" 費"}</button>`).join("");
-seg.onclick=e=>{const b=e.target.closest("button");if(!b)return;fCost=b.dataset.c;seg.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));render()};
-const roleSel=document.getElementById("roleSel");
-roleSel.innerHTML=`<option value="">所有定位</option>`+Object.keys(ROLE).map(r=>`<option value="${r}">${ROLE[r]}</option>`).join("");
-roleSel.onchange=()=>{fRole=roleSel.value;render()};
-const traitSel=document.getElementById("traitSel");
+// unit filters：費用／傷害／職能 同排取聯集；樂團＋職業 所選羈絆取交集
 const allTraits=Object.keys(T).sort((a,b)=>solo(a)-solo(b)||a.localeCompare(b));
-traitSel.innerHTML=`<option value="">所有羈絆</option>`+allTraits.map(t=>`<option value="${esc(t)}">${esc(t)}${ZH[t]&&ZH[t]!==t?"｜"+ZH[t]:""}</option>`).join("");
-traitSel.onchange=()=>{fTrait=traitSel.value;render()};
+const BANDS=allTraits.filter(t=>!solo(t)&&!CLASSES.includes(t)), CLS=CLASSES.filter(t=>T[t]);
+const DMG={Attack:"物理",Magic:"魔法"}, JOB={Tank:"坦克",Fighter:"戰士",Caster:"施法者",Marksman:"射手",Assassin:"刺客",Specialist:"特化"};
+const F={cost:new Set(),dmg:new Set(),job:new Set(),traits:new Set()}; let fQ="";
+const roleParts=u=>u.role.split(" ");
+const match=(u,extraTrait)=>(!F.cost.size||F.cost.has(String(u.cost)))&&(!F.dmg.size||F.dmg.has(roleParts(u)[0]))&&(!F.job.size||F.job.has(roleParts(u)[1]))&&
+  [...F.traits,...(extraTrait?[extraTrait]:[])].every(t=>u.traits.includes(t))&&
+  (!fQ||[u.name,u.name_zh,u.ability,u.ability_zh,...u.desc,...u.desc_zh,...u.traits].join(" ").toLowerCase().includes(fQ));
+const segs=[["costSeg","cost",[1,2,3,4,5,7].map(c=>[String(c),c+" 費"])],["dmgSeg","dmg",Object.entries(DMG)],["jobSeg","job",Object.entries(JOB)],
+  ["bandSeg","traits",BANDS.map(t=>[t,ti(t)+esc(t)])],["classSeg","traits",CLS.map(t=>[t,ti(t)+esc(t)])]];
+for(const [id,k,opts] of segs){
+ const el=document.getElementById(id);
+ el.innerHTML=opts.map(([v,l])=>`<button type="button" data-v="${esc(v)}" aria-pressed="false">${l}${k==="traits"?'<span class="n"></span>':""}</button>`).join("");
+ el.onclick=e=>{const b=e.target.closest("button");if(!b||b.disabled)return;const v=b.dataset.v;F[k].has(v)?F[k].delete(v):F[k].add(v);render()};
+}
 document.getElementById("q").oninput=e=>{fQ=e.target.value.trim().toLowerCase();render()};
+document.getElementById("clearF").onclick=()=>{Object.values(F).forEach(x=>x.clear());fQ="";document.getElementById("q").value="";render()};
 
 function manaBar(m){
  if(!m) return `<div class="mana"><span>魔力</span><div class="bar"></div><span>純被動</span></div>`;
@@ -376,8 +398,11 @@ function card(u){
   </div></article>`;
 }
 function render(){
- const list=U.filter(u=>(fCost==="all"||u.cost==fCost)&&(!fRole||u.role===fRole)&&(!fTrait||u.traits.includes(fTrait))&&
-  (!fQ||[u.name,u.name_zh,u.ability,u.ability_zh,...u.desc,...u.desc_zh,...u.traits].join(" ").toLowerCase().includes(fQ)));
+ const list=U.filter(u=>match(u));
+ for(const [id,k] of segs) document.getElementById(id).querySelectorAll("button").forEach(b=>{
+  const on=F[k].has(b.dataset.v); b.setAttribute("aria-pressed",on);
+  if(k==="traits"){const n=on?list.length:U.filter(u=>match(u,b.dataset.v)).length; b.querySelector(".n").textContent=n; b.disabled=!on&&n===0;}
+ });
  document.getElementById("grid").innerHTML=list.map(card).join("")||`<p class="lead">沒有符合條件的棋子。</p>`;
  document.getElementById("count").textContent=`${list.length} / ${U.length} 隻`;
 }
@@ -430,8 +455,7 @@ document.getElementById("changeList").innerHTML=days.length?days.map(d=>`<div cl
 // jump helpers
 function flash(el){el.scrollIntoView({block:"center"});el.classList.add("flash");setTimeout(()=>el.classList.remove("flash"),1600)}
 document.addEventListener("click",e=>{
- const g=e.target.closest("[data-go]"); if(g){fCost="all";fRole="";fTrait="";fQ="";roleSel.value="";traitSel.value="";document.getElementById("q").value="";
-  seg.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x.dataset.c==="all"));render();
+ const g=e.target.closest("[data-go]"); if(g){Object.values(F).forEach(x=>x.clear());fQ="";document.getElementById("q").value="";render();
   const el=document.getElementById("u-"+slug(g.dataset.go)); if(el) flash(el); return;}
  const t=e.target.closest("[data-t]"); if(t){const el=document.getElementById("t-"+slug(t.dataset.t)); if(el) flash(el);}
 });
