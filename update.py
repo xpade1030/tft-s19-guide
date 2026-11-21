@@ -6,6 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 RAW, ZH, CHANGES = ROOT / "data/raw.json", ROOT / "data/zh.json", ROOT / "data/changes.json"
+GLOSSARY = ROOT / "data/glossary.json"  # 官方繁中譯名：champions（Data Dragon／TFT 官方資料）、items（TFT 官方資料）
 BASE = "https://tft.ninja/sets/19"
 UA = {"User-Agent": "Mozilla/5.0 (personal TFT guide; daily)"}
 
@@ -72,6 +73,7 @@ def scrape():
     units, traits = [], {}
     for s in slugs:
         u, tr = parse_unit(lines(f"{BASE}/units/{s}"))
+        u["slug"] = s
         units.append(u); traits.update({k: v for k, v in tr.items() if k not in traits})
         time.sleep(0.4)
     augs = parse_augments(lines(f"{BASE}/augments"))
@@ -80,6 +82,31 @@ def scrape():
     assert len(augs) >= 300 and all(a["desc"] for a in augs), f"augments 不完整：{len(augs)}"
     units.sort(key=lambda u: (u["cost"], u["name"]))
     return dict(units=units, traits=dict(sorted(traits.items())), augments=augs)
+
+
+def fetch_assets(raw):
+    """S19 戰棋圖（tft.ninja 轉存的 Riot 素材）：立繪、頭像、技能圖示、羈絆圖示。已下載的不重抓。"""
+    jobs = [(k, u["slug"], "webp") for u in raw["units"] for k in ("splash", "champions", "abilities")]
+    jobs += [("traits", tslug(t), "svg") for t in raw["traits"]]
+    missing = []
+    for kind, slug, ext in jobs:
+        f = ROOT / f"docs/img/{kind}/{slug}.{ext}"
+        if f.exists():
+            continue
+        try:
+            d = urllib.request.urlopen(urllib.request.Request(f"https://tft.ninja/img/sets/19/{kind}/{slug}.{ext}", headers=UA), timeout=30).read()
+        except Exception:
+            d = b""
+        if (ext == "webp" and d[8:12] == b"WEBP") or (ext == "svg" and b"<svg" in d[:200]):
+            f.parent.mkdir(parents=True, exist_ok=True); f.write_bytes(d)
+        else:
+            missing.append(f"{kind}/{slug}")
+        time.sleep(0.2)
+    if missing:
+        print(f"圖片缺 {len(missing)} 張：{missing[:10]}", file=sys.stderr)
+
+
+tslug = lambda t: re.sub(r"[^a-z0-9]+", "-", t.lower().replace("&", " and ")).strip("-")
 
 
 def diff(old, new):
@@ -124,8 +151,8 @@ key = lambda s: hashlib.sha1(s.encode()).hexdigest()[:16]
 
 PROMPT = """你是聯盟戰棋（TFT）台灣玩家社群的譯者。把下面 JSON 陣列裡每個英文字串翻成台灣繁體中文，輸出一個同樣長度、同樣順序的 JSON 字串陣列，只輸出 JSON。
 規則：
-- 英雄名用台灣伺服器官方譯名（例：Ahri→阿璃、Kai'Sa→凱莎），不確定的新英雄保留英文原名。
-- 羈絆名、裝備名、增幅裝置名以外的專有歌名保留英文原文；增幅裝置名請意譯成簡短中文。
+- 英雄名、裝備名一律照下方「官方譯名對照」翻；對照沒列的英雄名保留英文原名。
+- 羈絆名與專有歌名保留英文原文；增幅裝置名請意譯成簡短中文。
 - 遊戲術語：Mana 魔力、Shield 護盾、Damage Amp 增傷、Durability 耐久、Omnivamp 全能吸血、Attack Speed 攻速、Ability Power 法術強度、Attack Damage 攻擊力、Armor 護甲、Magic Resist 魔抗、Stun 暈眩、Knock up 擊飛、Wound 重傷、Burn 灼燒、Shred 破魔、Sunder 破甲、Vulnerable 易傷、Precision 精準、reroll 刷新、Tactician／Player Health 玩家血量、Emblem 紋章、component 散件、completed item 成裝、Tank 坦克、Fighter 戰士、Caster 施法者、Marksman 射手、Assassin 刺客、Specialist 特化。
 - 開頭的 Passive:／Active:／A-Side:／B-Side: 保留原樣再接譯文。
 - 句子簡潔、照原意，不增減資訊。
@@ -133,13 +160,45 @@ PROMPT = """你是聯盟戰棋（TFT）台灣玩家社群的譯者。把下面 J
 """
 
 
+def glossary_for(batch, glos):
+    text = "\n".join(batch)
+    hits = {en: zh for en, zh in glos.items() if re.search(r"(?<![A-Za-z])" + re.escape(en) + r"(?![A-Za-z])", text)}
+    return "官方譯名對照：\n" + "\n".join(f"{en} → {zh}" for en, zh in sorted(hits.items())) + "\n\n" if hits else ""
+
+
+def flat_glossary():
+    g = json.loads(GLOSSARY.read_text())
+    return {**{n.split(" (")[0]: z.split("（")[0] for n, z in g["champions"].items()}, **g["items"]}
+
+
+def ensure_champion_names(raw):
+    """新棋子沒有官方譯名時，到 Data Dragon 補；還是找不到就留給 AI 翻並提醒。"""
+    g = json.loads(GLOSSARY.read_text())
+    missing = [u["name"] for u in raw["units"] if u["name"] not in g["champions"]]
+    if not missing:
+        return
+    get = lambda u: json.loads(urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=30).read())
+    v = get("https://ddragon.leagueoflegends.com/api/versions.json")[0]
+    en, zh = (get(f"https://ddragon.leagueoflegends.com/cdn/{v}/data/{l}/champion.json")["data"] for l in ("en_US", "zh_TW"))
+    dd = {en[k]["name"]: zh[k]["name"] for k in en}
+    for n in missing:
+        base, _, tag = n.partition(" (")
+        if base in dd:
+            g["champions"][n] = dd[base] + (f"（{tag.rstrip(')')}）" if tag else "")
+    GLOSSARY.write_text(json.dumps(g, ensure_ascii=False, indent=1))
+    still = [n for n in missing if n not in g["champions"]]
+    if still:
+        print(f"找不到官方譯名（改由 AI 翻）：{still}", file=sys.stderr)
+
+
 def translate(todo):
     out = {}
+    glos = flat_glossary()
     with tempfile.TemporaryDirectory() as cwd:  # 空資料夾跑 claude -p，避免載入專案 CLAUDE.md
         for i in range(0, len(todo), 60):
             batch = todo[i:i + 60]
             for attempt in range(2):
-                r = subprocess.run(["claude", "-p", "--model", "sonnet", "--tools", ""], input=PROMPT + json.dumps(batch, ensure_ascii=False),
+                r = subprocess.run(["claude", "-p", "--model", "sonnet", "--tools", ""], input=PROMPT + glossary_for(batch, glos) + json.dumps(batch, ensure_ascii=False),
                                    cwd=cwd, capture_output=True, text=True, timeout=600)
                 m = re.search(r"\[.*\]", r.stdout, re.S)
                 try:
@@ -155,7 +214,8 @@ def translate(todo):
 
 
 def build(raw, zh, changes):
-    t = lambda s: zh.get(key(s), "")
+    names = json.loads(GLOSSARY.read_text())["champions"]
+    t = lambda s: names.get(s) or zh.get(key(s), "")
     tv = lambda v: t(v) if isinstance(v, str) else [t(x) if isinstance(x, str) and not x.isdigit() else x for x in v] if isinstance(v, list) else v
     changes = [dict(d, items=[dict(c, old_zh=tv(c.get("old")), new_zh=tv(c.get("new")), name_zh=t(c["name"])) for c in d["items"]]) for d in changes]
     data = dict(
@@ -163,6 +223,7 @@ def build(raw, zh, changes):
         traits={k: [[x, "" if x.isdigit() else t(x)] for x in L] for k, L in raw["traits"].items()},
         augments=[dict(a, name_zh=t(a["name"]), desc_zh=t(a["desc"])) for a in raw["augments"]],
         changes=changes[-30:], updated=raw["fetched"],
+        glossary=flat_glossary(),
     )
     page = (ROOT / "template.html").read_text().replace("/*DATA*/", json.dumps(data, ensure_ascii=False).replace("</", "<\\/"))
     (ROOT / "docs/index.html").write_text(page)
@@ -193,6 +254,8 @@ def main():
             changes.append(dict(date=raw["fetched"][:10], items=items))
         RAW.write_text(json.dumps(raw, ensure_ascii=False, indent=1))
         CHANGES.write_text(json.dumps(changes, ensure_ascii=False, indent=1))
+        ensure_champion_names(raw)
+        fetch_assets(raw)
         print(f"抓取完成：{len(raw['units'])} 棋子、{len(raw['traits'])} 羈絆、{len(raw['augments'])} 增幅；變動 {len(items)} 項")
     todo = sorted(s for s in strings(raw, changes) if key(s) not in zh)
     if todo and "--no-translate" not in sys.argv:

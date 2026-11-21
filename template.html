@@ -83,7 +83,14 @@ input[type=search]{flex:1 1 180px}
 .count{font-family:var(--f-mono);font-size:12.5px;color:var(--muted)}
 /* unit cards */
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,310px),1fr));gap:14px;margin-top:16px}
-.card{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--cc);border-radius:12px;padding:14px 16px;display:grid;grid-row:span 4;grid-template-rows:subgrid;row-gap:10px;min-width:0;scroll-margin-top:70px}
+.card{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--cc);border-radius:12px;padding:14px 16px;display:grid;grid-row:span 5;grid-template-rows:subgrid;row-gap:10px;overflow:hidden;min-width:0;scroll-margin-top:70px}
+.splash{display:block;width:calc(100% + 32px);max-width:none;margin:-14px -16px 0;aspect-ratio:580/258;object-fit:cover;background:var(--sunk)}
+.card[data-cost="7"] .splash{border-radius:0}
+.uchip img{width:20px;height:20px;border-radius:50%;object-fit:cover;flex:none;margin-left:-3px}
+.ability h4{display:flex;align-items:center;gap:8px}
+.ability h4 img{width:28px;height:28px;border-radius:6px;flex:none}
+.ti{display:inline-block;width:14px;height:14px;background:currentColor;-webkit-mask:var(--i) center/contain no-repeat;mask:var(--i) center/contain no-repeat;vertical-align:-2px;margin-right:4px;flex:none}
+.trait h3 .ti{width:18px;height:18px;margin-right:6px;color:var(--accent)}
 .card.flash{box-shadow:0 0 0 3px var(--accent)}
 .card[data-cost="7"]{border-image:linear-gradient(90deg,var(--c7a),var(--c4),var(--c7b)) 1;border-image-slice:1;border-style:solid;border-width:4px 1px 1px;border-radius:0}
 .chead{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
@@ -95,7 +102,7 @@ input[type=search]{flex:1 1 180px}
 .bar{flex:1;height:6px;border-radius:3px;background:var(--sunk);position:relative;overflow:hidden}
 .bar i{position:absolute;inset:0 auto 0 0;background:var(--accent);border-radius:3px}
 .tchips{display:flex;flex-wrap:wrap;gap:5px}
-.tchip{font:inherit;font-size:12px;border:none;border-radius:6px;padding:2px 7px;background:var(--sunk);color:var(--fg);cursor:pointer}
+.tchip{font:inherit;font-size:12px;border:none;border-radius:6px;padding:2px 7px;display:inline-flex;align-items:center;background:var(--sunk);color:var(--fg);cursor:pointer}
 .tchip.solo{background:var(--accent-soft);color:var(--accent)}
 .tchip:focus-visible{outline:2px solid var(--accent)}
 .ability{min-width:0}
@@ -318,9 +325,15 @@ langBtn.onclick=()=>setLang(!document.body.classList.contains("show-en"));
 // hex board 4x7
 document.getElementById("board").innerHTML=[0,1,2,3].map(r=>`<div class="hrow${r%2?" odd":""}">${Array.from({length:7},()=>`<div class="hex${r<2?" front":""}">${r<2?"前":"後"}</div>`).join("")}</div>`).join("");
 
-const chip=(n,carry)=>{const u=byName[n];return `<button class="uchip${carry?" carry":""}" data-go="${esc(n)}"><span class="dot" style="background:${u?cc(u.cost):"var(--muted)"}"></span>${esc(zhName(n))}</button>`};
+const face=u=>u&&u.slug?`<img src="img/champions/${u.slug}.webp" alt="" loading="lazy" onerror="this.remove()">`:"";
+const tslug=t=>t.toLowerCase().replace(/&/g," and ").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+const ti=t=>`<span class="ti" style="--i:url(img/traits/${tslug(t)}.svg)"></span>`;
+const chip=(n,carry)=>{const u=byName[n];return `<button class="uchip${carry?" carry":""}" data-go="${esc(n)}" style="border-left:3px solid ${u?cc(u.cost):"var(--line)"}">${face(u)}${esc(zhName(n))}</button>`};
 
-// comps
+// comps：手寫說明裡的英雄／裝備英文名換成官方譯名
+const GL=Object.entries(DATA.glossary||{}).sort((a,b)=>b[0].length-a[0].length);
+const gl=s=>GL.reduce((t,[en,zh])=>t.replace(new RegExp("(?<![A-Za-z])"+en.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"(?![A-Za-z'])","g"),zh),s);
+COMPS.forEach(c=>{c.why=gl(c.why);c.items=gl(c.items)});
 document.getElementById("compList").innerHTML=COMPS.map(c=>`<article class="comp">
  <div class="top"><h3>${esc(c.name)}</h3><span class="tag${c.theory?" theory":""}">${c.theory?"推論":esc(c.pace)}</span></div>
  ${c.theory?`<span class="tag" style="align-self:start">${esc(c.pace)}</span>`:""}
@@ -351,11 +364,12 @@ function manaBar(m){
 }
 function card(u){
  return `<article class="card" id="u-${slug(u.name)}" data-cost="${u.cost}" style="--cc:${cc(u.cost)}">
+  <img class="splash" src="img/splash/${u.slug}.webp" alt="${esc(zhName(u.name))} S19 立繪" loading="lazy" onerror="this.style.visibility='hidden'">
   <div class="chead"><div class="cname">${esc(zhName(u.name))}${zhName(u.name)!==u.name?`<span class="zhname">${esc(u.name)}</span>`:""}</div><div class="cost">${u.cost} 費</div></div>
   <div class="meta"><span class="role">${ROLE[u.role]||esc(u.role)}</span><span class="mono">射程 ${esc(u.range)}</span></div>
   <div style="display:grid;gap:8px">${manaBar(u.mana)}
-   <div class="tchips">${u.traits.map(t=>`<button class="tchip${solo(t)?" solo":""}" data-t="${esc(t)}">${esc(t)}</button>`).join("")}</div></div>
-  <div class="ability"><h4>${tx(u.ability,u.ability_zh)}</h4>
+   <div class="tchips">${u.traits.map(t=>`<button class="tchip${solo(t)?" solo":""}" data-t="${esc(t)}">${ti(t)}${esc(t)}</button>`).join("")}</div></div>
+  <div class="ability"><h4><img src="img/abilities/${u.slug}.webp" alt="" loading="lazy" onerror="this.remove()"><span>${tx(u.ability,u.ability_zh)}</span></h4>
    ${u.desc.map((p,i)=>`<p>${tx(p,u.desc_zh[i])}</p>`).join("")}
    ${u.effects.length?`<div class="fx">效果標籤：${u.effects.map(esc).join(" · ")}</div>`:""}
    ${u.unlock.length?`<div class="unlock"><b>解鎖條件</b>：${u.unlock.map((x,i)=>tx(x,u.unlock_zh[i])).join("；")}</div>`:""}
@@ -376,7 +390,7 @@ function traitCard(t){
  const desc=[],rows=[];
  for(let k=0;k<rest.length;k++){ if(/^\d+$/.test(rest[k][0])&&k+1<rest.length){rows.push([rest[k][0],rest[k+1]]);k++} else if(rows.length) rows.push(["",rest[k]]); else desc.push(rest[k]); }
  const mem=U.filter(u=>u.traits.includes(t));
- return `<article class="trait" id="t-${slug(t)}"><header><h3>${esc(t)}${ZH[t]&&ZH[t]!==t?`<span class="zh">${ZH[t]}</span>`:""}</h3><span class="bps">${solo(t)?"單人":bps.join(" / ")}</span></header>
+ return `<article class="trait" id="t-${slug(t)}"><header><h3>${ti(t)}${esc(t)}${ZH[t]&&ZH[t]!==t?`<span class="zh">${ZH[t]}</span>`:""}</h3><span class="bps">${solo(t)?"單人":bps.join(" / ")}</span></header>
   ${desc.map(d=>`<p>${tx(d[0],d[1])}</p>`).join("")}
   ${rows.length?`<ul>${rows.map(r=>`<li><span>${r[0]}</span><span>${tx(r[1][0],r[1][1])}</span></li>`).join("")}</ul>`:""}
   ${PBE[t]?`<div class="pbe"><b>PBE 數值（11/19）</b>：${esc(PBE[t])}</div>`:""}

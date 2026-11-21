@@ -18,7 +18,8 @@
    "desc": [
     "Transform into Spider Form, gaining Health. Fire webbing at the enemy that dealt the most damage this round, stunning the first enemy hit and dealing magic damage. Subsequent casts heal, then fire webbing."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "elise"
   },
   {
    "name": "Gnar",
@@ -35,7 +36,8 @@
    "desc": [
     "Passive: Every 3rd attack is replaced with a rock that deals physical damage and grants Gnar Attack Speed."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "gnar"
   },
   {
    "name": "Katarina",
@@ -52,7 +54,8 @@
    "desc": [
     "Twirl, slashing adjacent enemies for magic damage, then eviscerate the current target for magic damage. Enemies hit are Captivated, and Captivated enemies grant bonuses to Classical champions."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "katarina"
   },
   {
    "name": "Kayn",
@@ -69,7 +72,8 @@
    "desc": [
     "Dash and swipe, dealing physical damage to enemies in a 2-hex line. With the Heartsteel upgrade, transform into the Shadow Assassin at a health threshold, briefly becoming untargetable and dealing bonus magic damage for the rest of combat."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "kayn"
   },
   {
    "name": "Kennen",
@@ -86,7 +90,8 @@
    "desc": [
     "Passive: Reduce all incoming damage. Every second, zap adjacent enemies, dealing magic damage."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "kennen"
   },
   {
    "name": "Kobuko",
@@ -108,7 +113,8 @@
    ],
    "unlock": [
     "Reach the required star level on Ziggs and equip the required number of items to him."
-   ]
+   ],
+   "slug": "kobuko"
   },
   {
    "name": "Lillia",
@@ -127,7 +133,8 @@
    "desc": [
     "Heals and strikes the target, dealing magic damage to nearby enemies and weakening them for a duration. Weakening reduces damage dealt."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "lillia"
   },
   {
    "name": "Neeko",
@@ -145,7 +152,8 @@
    "desc": [
     "Convene the K/DA fan club and throw confetti streams at the target, each dealing magic damage. If a stream kills, permanently gain Ability Power."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "neeko"
   },
   {
    "name": "Olaf",
@@ -165,7 +173,8 @@
    "desc": [
     "Passive: On attack, heal. On death, instead heal to full and gain Attack Speed, but lose a percentage of maximum Health each second."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "olaf"
   },
   {
    "name": "Sett",
@@ -186,7 +195,8 @@
     "Active: Heal, then strike the target twice, dealing physical damage with each hit.",
     "Heartsteel Upgrade: Periodically heal a portion of maximum Health, increased based on missing Health."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "sett"
   },
   {
    "name": "Taric",
@@ -203,7 +213,8 @@
    "desc": [
     "Grant a shield to Taric and a nearby damaged ally for a duration."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "taric"
   },
   {
    "name": "Varus",
@@ -222,7 +233,8 @@
    "desc": [
     "Fire a hail of arrows, dealing physical damage to the target and damage to adjacent enemies. Slow them, reducing their Attack Speed."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "varus"
   },
   {
    "name": "Yunara",
@@ -239,7 +251,8 @@
    "desc": [
     "For the rest of combat, attacks fire an additional orb that deals physical damage."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "yunara"
   },
   {
    "name": "Ziggs",
@@ -258,7 +271,8 @@
     "Passive: Attacks deal bonus magic damage.",
     "Active: Throw a bomb at the target, dealing magic damage to them and adjacent enemies."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "ziggs"
   },
   {
    "name": "Zoe",
@@ -275,7 +289,8 @@
    "desc": [
     "Fires a paddle ball backwards, then redirects it toward the farthest enemy, dealing magic damage to the first enemy hit. If that enemy dies, the ball ricochets to the next enemy hit and deals excess damage."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "zoe"
   },
   {
    "name": "Annie",
@@ -295,7 +310,8 @@
    "desc": [
     "Gain a shield, then unleash a cone of fire that deals magic damage to enemies and Burns and Wounds them for 4 seconds."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "annie"
   },
   {
    "name": "Ashe",
@@ -314,7 +330,8 @@
    ],
    "unlock": [
     "Equip the required number of items to a Beach Pop champion."
-   ]
+   ],
+   "slug": "ashe"
   },
   {
    "name": "Camille",
@@ -332,7 +349,8 @@
     "Passive: When the target dies, hookshot to the next target and deal physical damage to them.",
     "Active: Sweep-kick in a cone, dealing physical damage."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "camille"
   },
   {
    "name": "Ezreal",
@@ -350,7 +368,8 @@
     "Fire a missile that marks the target, then launch a second blast that detonates the mark, dealing physical damage to the target and units within 1 Hex.",
     "Heartsteel Upgrade: The detonation deals increased damage. Every 3rd cast hits enemies within a 2 Hex radius instead."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "ezreal"
   },
   {
    "name": "Gragas",
@@ -369,7 +388,8 @@
    "desc": [
     "Become boisterous, restoring Health each second and dealing bonus magic damage on attack. For each 3-star K/DA ally, both effects increase."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "gragas"
   },
   {
    "name": "Illaoi",
@@ -389,7 +409,8 @@
     "Active: Heal and deal magic damage in a 2-hex line.",
     "Quest: On cast during player combat, gain Fame, with bonus Fame for every 10g you have up to a gold cap. At the Fame threshold, go Platinum, gaining Durability and dropping gold on cast instead."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "illaoi"
   },
   {
    "name": "Jax",
@@ -410,7 +431,8 @@
     "Bash the current target, dealing magic damage and healing for a percentage of damage dealt. Gain Attack Speed for the rest of combat.",
     "EDM Upgrade: Fire beams at nearby enemies, dealing magic damage reduced for each enemy the beams pass through."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "jax"
   },
   {
    "name": "Karthus",
@@ -427,7 +449,8 @@
    "desc": [
     "After a brief delay, deal magic damage to the current target. If they die, recast this ability at reduced effectiveness."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "karthus"
   },
   {
    "name": "Lucian",
@@ -445,7 +468,8 @@
    "desc": [
     "Dash to a nearby hex, then fire 2 shots at the target, each dealing physical damage."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "lucian"
   },
   {
    "name": "Lulu",
@@ -464,7 +488,8 @@
    ],
    "unlock": [
     "Have your Hyperpop champions cast the required number of times with the trait active."
-   ]
+   ],
+   "slug": "lulu"
   },
   {
    "name": "Lux",
@@ -481,7 +506,8 @@
    "desc": [
     "Toss a prism into the air and blast it with a beam of light. The beam splits, dealing magic damage to the target and another nearby enemy. Gain Mana for each enemy killed."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "lux"
   },
   {
    "name": "Nasus",
@@ -502,7 +528,8 @@
    ],
    "unlock": [
     "Equip the required number of items to a Classical champion."
-   ]
+   ],
+   "slug": "nasus"
   },
   {
    "name": "Qiyana",
@@ -522,7 +549,8 @@
     "Passive: Qiyana’s ring changes color periodically, granting her ability different bonus effects.",
     "Active: Dash through enemies in a line, dealing physical damage to the target and other enemies hit. Red deals bonus damage; Green heals based on damage dealt; Blue refunds mana; Gold grants gold and randomly applies one of the other effects."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "qiyana"
   },
   {
    "name": "Renata Glasc",
@@ -541,7 +569,8 @@
    ],
    "unlock": [
     "Equip the required number of items to a Classical or Choreographer champion."
-   ]
+   ],
+   "slug": "renata-glasc"
   },
   {
    "name": "Renekton",
@@ -558,7 +587,8 @@
    "desc": [
     "Grow larger, gaining max Health for the rest of combat. Then spin, dealing physical damage to adjacent enemies."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "renekton"
   },
   {
    "name": "Samira",
@@ -579,7 +609,8 @@
    ],
    "unlock": [
     "Equip the required number of items to a Classical, Renegade, or Trickshot champion."
-   ]
+   ],
+   "slug": "samira"
   },
   {
    "name": "Seraphine",
@@ -599,7 +630,8 @@
    ],
    "unlock": [
     "Reroll the required number of times before the Stage 2 Carousel."
-   ]
+   ],
+   "slug": "seraphine"
   },
   {
    "name": "Tristana",
@@ -618,7 +650,8 @@
    ],
    "unlock": [
     "Get the required number of kills with Hyperpop active."
-   ]
+   ],
+   "slug": "tristana"
   },
   {
    "name": "Amumu",
@@ -637,7 +670,8 @@
    "desc": [
     "Heal and toss bandages at the nearest enemies, dealing magic damage and stunning them."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "amumu"
   },
   {
    "name": "Bard",
@@ -655,7 +689,8 @@
     "Passive: Gain the Horn of the Traveler. While equipped, casts generate XP and attacks grant bonus Mana.",
     "Active: Summon a wave of meeps that deals magic damage to enemies hit, with damage reduced for each enemy it passes through."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "bard"
   },
   {
    "name": "Braum",
@@ -674,7 +709,8 @@
    "desc": [
     "Gain a shield, then slam the ground, dealing magic damage to adjacent enemies and stunning them."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "braum"
   },
   {
    "name": "Briar",
@@ -693,7 +729,8 @@
    "desc": [
     "Heals and kicks a snack at the furthest enemy within range. Dashes toward it, dealing physical damage in an area. Then chow downs, gaining Attack Speed for the next several attacks and replacing them with slashes that deal physical damage."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "briar"
   },
   {
    "name": "Draven",
@@ -710,7 +747,8 @@
    "desc": [
     "Throws a massive spinning record at the target, dealing physical damage. It leaves behind a vortex that deals physical damage per second, split among enemies within 1 hex."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "draven"
   },
   {
    "name": "Ekko",
@@ -731,7 +769,8 @@
     "Passive: Rewinds a portion of damage taken over time.",
     "Active: Instantly heals all damage being rewound and restores bonus Health, then deals magic damage to the current target."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "ekko"
   },
   {
    "name": "Evelynn",
@@ -751,7 +790,8 @@
    ],
    "unlock": [
     "Field the required number of K/DA or Renegade champions."
-   ]
+   ],
+   "slug": "evelynn"
   },
   {
    "name": "Galio",
@@ -773,7 +813,8 @@
    "unlock": [
     "Have the required number of Bodyguard, Juggernaut, or Frontman traits active.",
     "Level 7"
-   ]
+   ],
+   "slug": "galio"
   },
   {
    "name": "K'Sante",
@@ -793,7 +834,8 @@
     "Gain a shield, then charge and push the target, stunning them and other enemies hit before slamming them for physical damage. After charging, taunt nearby enemies.",
     "Heartsteel Upgrade: Gain Armor and Magic Resist and deal bonus physical damage on attack."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "k-sante"
   },
   {
    "name": "Kai'Sa",
@@ -811,7 +853,8 @@
     "Passive: Every few attacks, fire missiles that deal physical damage.",
     "Active: Gain Attack Speed for the rest of combat."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "kai-sa"
   },
   {
    "name": "Malzahar",
@@ -830,7 +873,8 @@
    "desc": [
     "Fire a beam at the target, dealing magic damage over time. The energy rhythmically explodes 4 times, reducing the Magic Resist of enemies in an area and dealing magic damage with each explosion."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "malzahar"
   },
   {
    "name": "Senna",
@@ -847,7 +891,8 @@
    "desc": [
     "Blast the target, dealing physical damage and marking them. If they’re already marked, detonate the mark instead, dealing damage. Detonating the mark or killing a marked enemy grants Damage Amp until the end of combat."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "senna"
   },
   {
    "name": "Swain",
@@ -867,7 +912,8 @@
    "desc": [
     "Enter Demon Form, gaining max Health and dealing magic damage to adjacent enemies every second. Subsequent casts heal and increase the damage."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "swain"
   },
   {
    "name": "Syndra",
@@ -886,7 +932,8 @@
    ],
    "unlock": [
     "Field the required number of unique star levels of Beach Pop or Choreographer."
-   ]
+   ],
+   "slug": "syndra"
   },
   {
    "name": "Tibbers",
@@ -906,7 +953,8 @@
    ],
    "unlock": [
     "Reach the required star level on Annie and equip the required number of items to her."
-   ]
+   ],
+   "slug": "tibbers"
   },
   {
    "name": "Viego",
@@ -924,7 +972,8 @@
    "desc": [
     "Summon swords around the target, then impale them after a brief delay, dealing physical damage per sword. Gain a permanent sword every set number of takedowns."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "viego"
   },
   {
    "name": "Ahri",
@@ -942,7 +991,8 @@
     "Passive: Start combat with fox-fires and gain more after casting, up to a limit. Then enter a flow state, moving faster and empowering subsequent casts.",
     "Active: Launch all fox-fires at the target, each dealing magic damage. While in the flow state, launch a heart at the target that deals magic damage and split the fox-fires among enemies near the target."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "ahri"
   },
   {
    "name": "Alistar",
@@ -964,7 +1014,8 @@
    "unlock": [
     "A Chain Vest equipped to a Caster or Marksman.",
     "Level 7"
-   ]
+   ],
+   "slug": "alistar"
   },
   {
    "name": "Alune",
@@ -986,7 +1037,8 @@
    "unlock": [
     "Field the required number of unique Heartsteel or Prodigy champions.",
     "Level 7"
-   ]
+   ],
+   "slug": "alune"
   },
   {
    "name": "Aurora",
@@ -1003,7 +1055,8 @@
    "desc": [
     "Blink away and fire a blast through the best line, dealing magic damage to the two highest-Health enemies and less magic damage to the rest. Then blink back."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "aurora"
   },
   {
    "name": "Garen",
@@ -1022,7 +1075,8 @@
    "desc": [
     "Heal, then fire a wave toward the current target, dealing physical damage to enemies hit and weakening them, reducing their damage dealt."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "garen"
   },
   {
    "name": "Graves",
@@ -1039,7 +1093,8 @@
    "desc": [
     "For the next attacks, gain Attack Speed, dash to targets, and fire a cone of bullets that each deal physical damage. On a kill, empower an additional attack."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "graves"
   },
   {
    "name": "Jhin",
@@ -1056,7 +1111,8 @@
    "desc": [
     "Passive: Convert bonus Attack Speed into Attack Damage. Attacks summon violins that strike in unison, dealing physical damage and captivating the target. Every fourth attack deals empowered physical damage and resets the violins. From the fourth sequence onward, all violins remain out, Jhin gains infinite range, and his attacks pierce targets, dealing reduced damage with each target hit."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "jhin"
   },
   {
    "name": "Jinx",
@@ -1076,7 +1132,8 @@
    "unlock": [
     "Equip the required number of items to an Ionic Spark or Hitmaker champion.",
     "Level 7"
-   ]
+   ],
+   "slug": "jinx"
   },
   {
    "name": "Kayle",
@@ -1097,7 +1154,8 @@
    "unlock": [
     "Field the required number of unique Pentakill or Swiftstriker champions.",
     "Level 7"
-   ]
+   ],
+   "slug": "kayle"
   },
   {
    "name": "Leona",
@@ -1117,7 +1175,8 @@
    "desc": [
     "Gain a shield for a duration. Call down beams of light on nearby enemies; each deals magic damage and reduces its target’s Magic Resist."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "leona"
   },
   {
    "name": "Locke",
@@ -1135,7 +1194,8 @@
     "Passive: Attacks deal bonus magic damage. All damage Locke deals to an enemy increases for each mark he has applied to them.",
     "Active: Hurl 3 Soul Nails at the furthest enemy within range, dealing magic damage to and marking all enemies hit. Then teleport to that enemy and deal magic damage."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "locke"
   },
   {
    "name": "Mel",
@@ -1152,7 +1212,8 @@
    "desc": [
     "Fire missiles split between the closest enemies, dealing magic damage and applying a stack of Blues to each. For every required stack threshold of Blues, enemies take increased damage from this ability."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "mel"
   },
   {
    "name": "Shyvana",
@@ -1170,7 +1231,8 @@
     "Passive: At a health threshold, transform into Dragon Form. While transformed, gain max Health and Attack Speed, and every third attack deals bonus magic damage in a 1-hex area.",
     "Active: Gain a Shield for a duration."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "shyvana"
   },
   {
    "name": "Thresh",
@@ -1192,7 +1254,8 @@
    ],
    "unlock": [
     "Have enemies spend the required number of seconds Captivated by Classical."
-   ]
+   ],
+   "slug": "thresh"
   },
   {
    "name": "Vayne",
@@ -1213,7 +1276,8 @@
    "unlock": [
     "Field Rock for the required number of combats.",
     "Level 7"
-   ]
+   ],
+   "slug": "vayne"
   },
   {
    "name": "Wukong",
@@ -1235,7 +1299,8 @@
    ],
    "unlock": [
     "Have allies deal the required damage while fielding Xayah."
-   ]
+   ],
+   "slug": "wukong"
   },
   {
    "name": "Xayah",
@@ -1254,7 +1319,8 @@
    "desc": [
     "Summon feathers that strike the target, each dealing physical damage and reducing its Armor."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "xayah"
   },
   {
    "name": "Yasuo",
@@ -1276,7 +1342,8 @@
    "unlock": [
     "Field the required number of star levels of True Damage and Slayer champions.",
     "Level 7"
-   ]
+   ],
+   "slug": "yasuo"
   },
   {
    "name": "Yone",
@@ -1295,7 +1362,8 @@
     "Active: Rapidly strike the target and nearby enemies multiple times, dealing physical damage with each strike, then unleash a massive slash that deals physical damage to the target.",
     "Heartsteel Upgrade: Strike additional times and ignore some of the target’s Armor."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "yone"
   },
   {
    "name": "Yorick",
@@ -1315,7 +1383,8 @@
    "desc": [
     "Play an epic solo to restore Health and create a Hex zone that deals magic damage each second to enemies within. The final note deals magic damage to enemies in the zone and Slows them for a duration, reducing their Attack Speed."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "yorick"
   },
   {
    "name": "Yuumi",
@@ -1334,7 +1403,8 @@
    "desc": [
     "Throws a spinning disc that deals magic damage and stacks on the target, reducing their Magic Resist every second. When the stack reaches its required number of discs, it topples, dealing a portion of the stacked discs’ total damage to the target and splitting additional damage among nearby enemies. If an enemy dies with a disc, it passes to another enemy."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "yuumi"
   },
   {
    "name": "Zac",
@@ -1357,7 +1427,8 @@
    "unlock": [
     "Field the required number of unique Beach Pop or Juggernaut champions.",
     "Level 7"
-   ]
+   ],
+   "slug": "zac"
   },
   {
    "name": "Akali (K/DA)",
@@ -1375,7 +1446,8 @@
    ],
    "unlock": [
     "Field the required number of unique star levels of K/DA without True Damage Akali unlocked."
-   ]
+   ],
+   "slug": "akali-k-da"
   },
   {
    "name": "Akali (True Damage)",
@@ -1395,7 +1467,8 @@
    ],
    "unlock": [
     "Earn the required True Damage Bling without K/DA Akali unlocked."
-   ]
+   ],
+   "slug": "akali-true-damage"
   },
   {
    "name": "Aphelios",
@@ -1415,7 +1488,8 @@
    ],
    "unlock": [
     "Reach the required star level on Alune or Yone."
-   ]
+   ],
+   "slug": "aphelios"
   },
   {
    "name": "Dr. Mundo",
@@ -1435,7 +1509,8 @@
     "Passive: While Dr. Mundo has the required amount of max Health, he becomes Pumped Up, gaining max Health and causing attacks to deal bonus magic damage.",
     "Active: Restore Health over time and deal magic damage each second to all nearby enemies."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "dr-mundo"
   },
   {
    "name": "Gwen",
@@ -1455,7 +1530,8 @@
    ],
    "unlock": [
     "Have Ionic Spark fans cheer the required number of times."
-   ]
+   ],
+   "slug": "gwen"
   },
   {
    "name": "Janna",
@@ -1480,7 +1556,8 @@
    ],
    "unlock": [
     "Earn the required interest while fielding Xayah."
-   ]
+   ],
+   "slug": "janna"
   },
   {
    "name": "Lee Sin",
@@ -1500,7 +1577,8 @@
    ],
    "unlock": [
     "Deal the required player damage while fielding Xayah."
-   ]
+   ],
+   "slug": "lee-sin"
   },
   {
    "name": "Miss Fortune",
@@ -1517,7 +1595,8 @@
    "desc": [
     "Fire a pinball toward the target, dealing physical damage. It bounces after hitting an enemy, damaging nearby enemies with reduced damage on each hit until it expires. Damage cannot fall below a minimum."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "miss-fortune"
   },
   {
    "name": "Mordekaiser",
@@ -1538,7 +1617,8 @@
    ],
    "unlock": [
     "Field the required number of unique star levels of Pentakill."
-   ]
+   ],
+   "slug": "mordekaiser"
   },
   {
    "name": "Nidalee",
@@ -1557,7 +1637,8 @@
    "desc": [
     "In Cougar Form, Pounce Party pounces on enemies, dealing magic damage that increases with each pounce. In Human Form, Dance of Life heals, then hurls a javelin at the target for magic damage and scatters flowers around them; after a brief delay, the flowers deal magic damage to enemies nearby."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "nidalee"
   },
   {
    "name": "Nunu & Willump",
@@ -1580,7 +1661,8 @@
     "Passive: Gain Mana Regen. Slowly roll a Disco Ball, dealing magic damage to all enemies it passes through.",
     "Active: For the rest of combat, move faster and increase the Disco Ball’s size and damage."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "nunu-and-willump"
   },
   {
    "name": "Pyke",
@@ -1601,7 +1683,8 @@
    "unlock": [
     "Have at least the required amount of gold at the end of combat.",
     "Level 7"
-   ]
+   ],
+   "slug": "pyke"
   },
   {
    "name": "Rell",
@@ -1623,7 +1706,8 @@
    "desc": [
     "While unmounted, Rhythm Blaster grants a shield and summons 3 speakers for a duration. Each second, they blast a wave that deals magic damage to enemies hit. While mounted, Metal Pony Club slams into a crowd, dealing magic damage to the center enemy and damage split among enemies within 2 hexes."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "rell"
   },
   {
    "name": "Taliyah",
@@ -1644,7 +1728,8 @@
    ],
    "unlock": [
     "Start a champion of each cost in a Beach Pop hex."
-   ]
+   ],
+   "slug": "taliyah"
   },
   {
    "name": "Teemo",
@@ -1664,7 +1749,8 @@
    ],
    "unlock": [
     "Collect the required amount of Hyperpop Hype."
-   ]
+   ],
+   "slug": "teemo"
   },
   {
    "name": "Twisted Fate",
@@ -1687,7 +1773,8 @@
     "Passive: At combat start, draw a card for each champion in the shop. If the shop has refreshed this round, gain loot based on the cards drawn: 1 or 2 of a kind grants gold, 3 of a kind grants a random champion, 4 of a kind grants an item component, and 5 of a kind grants a mystery box.",
     "Active: The next 5 attacks gain Attack Speed and are replaced with cards that deal magic damage to the target and 2 nearby enemies."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "twisted-fate"
   },
   {
    "name": "Vi",
@@ -1707,7 +1794,8 @@
     "Summon giant hologram fists, gain a shield for a duration, and shield nearby allies. Slam the target repeatedly, dealing physical damage to them and damage to other enemies within 2 hexes.",
     "EDM Upgrade: Slam one additional time and heal for a portion of the damage dealt by this ability."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "vi"
   },
   {
    "name": "Vladimir",
@@ -1730,7 +1818,8 @@
    "unlock": [
     "Field only the specified number of champions in the two front rows of the battlefield.",
     "Level 8"
-   ]
+   ],
+   "slug": "vladimir"
   },
   {
    "name": "Zeri",
@@ -1747,7 +1836,8 @@
    "desc": [
     "Quickly dashes around the arena, firing lasers in rapid succession at the current target. Each laser deals physical damage to enemies hit and ignores a portion of their Armor."
    ],
-   "unlock": []
+   "unlock": [],
+   "slug": "zeri"
   },
   {
    "name": "Baron Nashor",
@@ -1768,7 +1858,8 @@
    "unlock": [
     "Collect all members of Baron's ensemble.",
     "Deal the required damage with your strongest Malzahar."
-   ]
+   ],
+   "slug": "baron-nashor"
   },
   {
    "name": "Rakan",
@@ -1788,7 +1879,8 @@
    ],
    "unlock": [
     "At Level 8+, win or lose the required number of consecutive combats."
-   ]
+   ],
+   "slug": "rakan"
   },
   {
    "name": "Smeech",
@@ -1809,7 +1901,8 @@
    "unlock": [
     "Have at least the required number of non-unique traits active.",
     "Level 9"
-   ]
+   ],
+   "slug": "smeech"
   },
   {
    "name": "Sona",
@@ -1832,7 +1925,8 @@
    "unlock": [
     "Inspire Collab champions the required number of times.",
     "Level 10"
-   ]
+   ],
+   "slug": "sona"
   }
  ],
  "traits": {
@@ -4786,5 +4880,5 @@
    "origin": ""
   }
  ],
- "fetched": "2026-11-21 15:27"
+ "fetched": "2026-11-21 15:47"
 }
