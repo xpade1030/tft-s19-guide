@@ -149,7 +149,7 @@ def translate(todo):
                 if isinstance(zh, list) and len(zh) == len(batch) and all(isinstance(z, str) for z in zh):
                     out.update({key(e): z for e, z in zip(batch, zh)})
                     break
-                print(f"翻譯批次 {i} 第 {attempt + 1} 次格式不符：{r.stderr[:200]}", file=sys.stderr)
+                print(f"翻譯批次 {i} 第 {attempt + 1} 次格式不符：rc={r.returncode} out={r.stdout[:300]!r} err={r.stderr[:300]!r}", file=sys.stderr)
             print(f"翻譯 {min(i + 60, len(todo))}/{len(todo)}", file=sys.stderr)
     return out
 
