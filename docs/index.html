@@ -10,7 +10,7 @@
 /* 版面：演唱會節目單——頂部固定分頁、內文單欄 65ch、圖鑑為自動欄寬卡片格 */
 :root{
   --bg:#f5f4fa; --surface:#ffffff; --sunk:#ebe9f4; --fg:#1d1a2e; --muted:#5f5a78; --line:#d9d5e8;
-  --accent:#6a3df0; --accent-soft:#e9e2ff; --warn:#a1530b; --warn-soft:#fdf0e1;
+  --accent:#6a3df0; --accent-soft:#e9e2ff; --lock:#c2410c; --lock-soft:#ffedd5; --warn:#a1530b; --warn-soft:#fdf0e1;
   --c1:#7d7f8c; --c2:#1f9d55; --c3:#2b6fd6; --c4:#9b37c9; --c5:#c98a0c; --c7a:#e0457b; --c7b:#3aa6c9;
   --f-display:"Bricolage Grotesque","Noto Sans TC",system-ui,sans-serif;
   --f-body:"Noto Sans TC",system-ui,-apple-system,"PingFang TC",sans-serif;
@@ -18,11 +18,11 @@
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#12101c; --surface:#1b1829; --sunk:#242036; --fg:#ece9f7; --muted:#a49fbe; --line:#332e4a;
-  --accent:#a68bff; --accent-soft:#2c2450; --warn:#f0a85a; --warn-soft:#3a2a17;
+  --accent:#a68bff; --accent-soft:#2c2450; --lock:#fb923c; --lock-soft:#3b2414; --warn:#f0a85a; --warn-soft:#3a2a17;
   --c1:#a3a5b3; --c2:#3ccf7a; --c3:#5f9bff; --c4:#c573f0; --c5:#f2b733; --c7a:#ff6b9c; --c7b:#5fd0f2; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#12101c; --surface:#1b1829; --sunk:#242036; --fg:#ece9f7; --muted:#a49fbe; --line:#332e4a;
-  --accent:#a68bff; --accent-soft:#2c2450; --warn:#f0a85a; --warn-soft:#3a2a17;
+  --accent:#a68bff; --accent-soft:#2c2450; --lock:#fb923c; --lock-soft:#3b2414; --warn:#f0a85a; --warn-soft:#3a2a17;
   --c1:#a3a5b3; --c2:#3ccf7a; --c3:#5f9bff; --c4:#c573f0; --c5:#f2b733; --c7a:#ff6b9c; --c7b:#5fd0f2; color-scheme:dark}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.65}
@@ -81,7 +81,8 @@ kbd,.mono{font-family:var(--f-mono);font-size:.9em}
 .seg button .n{font-size:11px;color:var(--muted);margin-left:4px}
 .seg button[aria-pressed="true"] .n{color:inherit;opacity:.7}
 .seg button:disabled{opacity:.35;cursor:default}
-.seg button{display:inline-flex;align-items:center}
+.seg button{display:inline-flex;align-items:center;gap:4px}
+.seg button svg{width:13px;height:13px;color:var(--lock)}
 #bandSeg button,#classSeg button{font-family:var(--f-body)}
 .clearbtn{font:inherit;font-size:13px;border:none;background:none;color:var(--accent);cursor:pointer;padding:4px 6px}
 .fhint{margin:2px 0 0;font-size:12px;color:var(--muted)}
@@ -103,6 +104,13 @@ input[type=search]{flex:1 1 180px}
 .ability h4 img{width:28px;height:28px;border-radius:6px;flex:none}
 .ti{display:inline-block;width:14px;height:14px;background:currentColor;-webkit-mask:var(--i) center/contain no-repeat;mask:var(--i) center/contain no-repeat;vertical-align:-2px;margin-right:4px;flex:none}
 .trait h3 .ti{width:18px;height:18px;margin-right:6px;color:var(--accent)}
+/* 需解鎖標示：立繪左上角徽章＋卡片外框（2026-11-21 使用者選定 A） */
+.card{position:relative}
+.lockmark{display:none}
+.lockmark svg,.uchip .lk svg{width:1em;height:1em;flex:none}
+.uchip .lk{color:var(--lock);display:inline-flex;margin-left:2px}
+.card.locked .lockmark{display:inline-flex;position:absolute;top:10px;left:10px;z-index:1;align-items:center;gap:5px;background:var(--lock);color:#fff;font:700 12px/1 var(--f-mono);letter-spacing:.08em;padding:6px 9px;border-radius:999px;box-shadow:0 2px 8px rgb(0 0 0 / .35)}
+.card.locked{outline:2px solid var(--lock);outline-offset:-1px}
 .card.flash{box-shadow:0 0 0 3px var(--accent)}
 .card[data-cost="7"]{border-image:linear-gradient(90deg,var(--c7a),var(--c4),var(--c7b)) 1;border-image-slice:1;border-style:solid;border-width:4px 1px 1px;border-radius:0}
 .chead{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
@@ -224,6 +232,7 @@ html{scroll-behavior:smooth}
   <p class="lead">魔力格式是「起始／上限」。沒有魔力條的是純被動技能。</p>
   <div class="fpanel">
     <div class="frow"><span class="flabel">費用</span><div class="seg" id="costSeg" role="group" aria-label="費用（可複選）"></div></div>
+    <div class="frow"><span class="flabel">取得</span><div class="seg" id="srcSeg" role="group" aria-label="取得方式（可複選）"></div></div>
     <div class="frow"><span class="flabel">傷害</span><div class="seg" id="dmgSeg" role="group" aria-label="傷害類型（可複選）"></div></div>
     <div class="frow"><span class="flabel">職能</span><div class="seg" id="jobSeg" role="group" aria-label="職能（可複選）"></div></div>
     <div class="frow"><span class="flabel">樂團<small>這隻是誰</small></span><div class="seg" id="bandSeg" role="group" aria-label="樂團羈絆（可複選，取交集）"></div></div>
@@ -342,10 +351,11 @@ langBtn.onclick=()=>setLang(!document.body.classList.contains("show-en"));
 // hex board 4x7
 document.getElementById("board").innerHTML=[0,1,2,3].map(r=>`<div class="hrow${r%2?" odd":""}">${Array.from({length:7},()=>`<div class="hex${r<2?" front":""}">${r<2?"前":"後"}</div>`).join("")}</div>`).join("");
 
+const LOCK=`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>`;
 const face=u=>u&&u.slug?`<img src="img/champions/${u.slug}.webp" alt="" loading="lazy" onerror="this.remove()">`:"";
 const tslug=t=>t.toLowerCase().replace(/&/g," and ").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
 const ti=t=>`<span class="ti" style="--i:url(img/traits/${tslug(t)}.svg)"></span>`;
-const chip=(n,carry)=>{const u=byName[n];return `<button class="uchip${carry?" carry":""}" data-go="${esc(n)}" style="border-left:3px solid ${u?cc(u.cost):"var(--line)"}">${face(u)}${esc(zhName(n))}</button>`};
+const chip=(n,carry)=>{const u=byName[n];return `<button class="uchip${carry?" carry":""}" data-go="${esc(n)}" style="border-left:3px solid ${u?cc(u.cost):"var(--line)"}">${face(u)}${esc(zhName(n))}${u&&u.unlock.length?`<span class="lk" title="需解鎖">${LOCK}</span>`:""}</button>`};
 
 // comps：手寫說明裡的英雄／裝備英文名換成官方譯名
 const GL=Object.entries(DATA.glossary||{}).sort((a,b)=>b[0].length-a[0].length);
@@ -364,12 +374,12 @@ document.getElementById("compList").innerHTML=COMPS.map(c=>`<article class="comp
 const allTraits=Object.keys(T).sort((a,b)=>solo(a)-solo(b)||a.localeCompare(b));
 const BANDS=allTraits.filter(t=>!solo(t)&&!CLASSES.includes(t)), CLS=CLASSES.filter(t=>T[t]);
 const DMG={Attack:"物理",Magic:"魔法"}, JOB={Tank:"坦克",Fighter:"戰士",Caster:"施法者",Marksman:"射手",Assassin:"刺客",Specialist:"特化"};
-const F={cost:new Set(),dmg:new Set(),job:new Set(),traits:new Set()}; let fQ="";
+const F={src:new Set(),cost:new Set(),dmg:new Set(),job:new Set(),traits:new Set()}; let fQ="";
 const roleParts=u=>u.role.split(" ");
-const match=(u,extraTrait)=>(!F.cost.size||F.cost.has(String(u.cost)))&&(!F.dmg.size||F.dmg.has(roleParts(u)[0]))&&(!F.job.size||F.job.has(roleParts(u)[1]))&&
+const match=(u,extraTrait)=>(!F.src.size||F.src.has(u.unlock.length?"lock":"shop"))&&(!F.cost.size||F.cost.has(String(u.cost)))&&(!F.dmg.size||F.dmg.has(roleParts(u)[0]))&&(!F.job.size||F.job.has(roleParts(u)[1]))&&
   [...F.traits,...(extraTrait?[extraTrait]:[])].every(t=>u.traits.includes(t))&&
   (!fQ||[u.name,u.name_zh,u.ability,u.ability_zh,...u.desc,...u.desc_zh,...u.traits].join(" ").toLowerCase().includes(fQ));
-const segs=[["costSeg","cost",[1,2,3,4,5,7].map(c=>[String(c),c+" 費"])],["dmgSeg","dmg",Object.entries(DMG)],["jobSeg","job",Object.entries(JOB)],
+const segs=[["srcSeg","src",[["shop","商店直接買"],["lock",LOCK+"需解鎖"]]],["costSeg","cost",[1,2,3,4,5,7].map(c=>[String(c),c+" 費"])],["dmgSeg","dmg",Object.entries(DMG)],["jobSeg","job",Object.entries(JOB)],
   ["bandSeg","traits",BANDS.map(t=>[t,ti(t)+esc(t)])],["classSeg","traits",CLS.map(t=>[t,ti(t)+esc(t)])]];
 for(const [id,k,opts] of segs){
  const el=document.getElementById(id);
@@ -385,7 +395,8 @@ function manaBar(m){
  return `<div class="mana"><span>魔力</span><div class="bar"><i style="width:${x?Math.min(100,s/x*100):0}%"></i></div><span>${s} / ${x}</span></div>`;
 }
 function card(u){
- return `<article class="card" id="u-${slug(u.name)}" data-cost="${u.cost}" style="--cc:${cc(u.cost)}">
+ return `<article class="card${u.unlock.length?" locked":""}" id="u-${slug(u.name)}" data-cost="${u.cost}" style="--cc:${cc(u.cost)}">
+  ${u.unlock.length?`<div class="lockmark">${LOCK}<span>UNLOCK</span></div>`:""}
   <img class="splash" src="img/splash/${u.slug}.webp" alt="${esc(zhName(u.name))} S19 立繪" loading="lazy" onerror="this.style.visibility='hidden'">
   <div class="chead"><div class="cname">${esc(zhName(u.name))}${zhName(u.name)!==u.name?`<span class="zhname">${esc(u.name)}</span>`:""}</div><div class="cost">${u.cost} 費</div></div>
   <div class="meta"><span class="role">${ROLE[u.role]||esc(u.role)}</span><span class="mono">射程 ${esc(u.range)}</span></div>
