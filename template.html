@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>S19 Prismatic Tour 圖鑑</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Noto+Sans+TC:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* 版面：演唱會節目單——頂部固定分頁、內文單欄 65ch、圖鑑為自動欄寬卡片格 */
+:root{
+  --bg:#f5f4fa; --surface:#ffffff; --sunk:#ebe9f4; --fg:#1d1a2e; --muted:#5f5a78; --line:#d9d5e8;
+  --accent:#6a3df0; --accent-soft:#e9e2ff; --warn:#a1530b; --warn-soft:#fdf0e1;
+  --c1:#7d7f8c; --c2:#1f9d55; --c3:#2b6fd6; --c4:#9b37c9; --c5:#c98a0c; --c7a:#e0457b; --c7b:#3aa6c9;
+  --f-display:"Bricolage Grotesque","Noto Sans TC",system-ui,sans-serif;
+  --f-body:"Noto Sans TC",system-ui,-apple-system,"PingFang TC",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#12101c; --surface:#1b1829; --sunk:#242036; --fg:#ece9f7; --muted:#a49fbe; --line:#332e4a;
+  --accent:#a68bff; --accent-soft:#2c2450; --warn:#f0a85a; --warn-soft:#3a2a17;
+  --c1:#a3a5b3; --c2:#3ccf7a; --c3:#5f9bff; --c4:#c573f0; --c5:#f2b733; --c7a:#ff6b9c; --c7b:#5fd0f2; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12101c; --surface:#1b1829; --sunk:#242036; --fg:#ece9f7; --muted:#a49fbe; --line:#332e4a;
+  --accent:#a68bff; --accent-soft:#2c2450; --warn:#f0a85a; --warn-soft:#3a2a17;
+  --c1:#a3a5b3; --c2:#3ccf7a; --c3:#5f9bff; --c4:#c573f0; --c5:#f2b733; --c7a:#ff6b9c; --c7b:#5fd0f2; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.65}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header.hero{padding-block:40px 24px}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--f-display);font-weight:800;font-size:clamp(34px,6vw,60px);line-height:1.05;margin:8px 0 12px;text-wrap:balance}
+h1 .prism{background:linear-gradient(90deg,var(--c7a),var(--c4),var(--c7b));-webkit-background-clip:text;background-clip:text;color:transparent}
+h2{font-family:var(--f-display);font-weight:800;font-size:clamp(24px,3.4vw,32px);margin:0 0 6px;text-wrap:balance}
+h3{font-size:17px;margin:0;text-wrap:balance}
+.lead{max-width:65ch;color:var(--muted);margin:0}
+.facts{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:18px;font-family:var(--f-mono);font-size:13px}
+.facts b{color:var(--fg);font-weight:600}.facts span{color:var(--muted)}
+.note{background:var(--warn-soft);color:var(--fg);border-radius:10px;padding:10px 14px;font-size:13.5px;max-width:80ch;margin-top:18px}
+.note b{color:var(--warn)}
+nav.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--surface);border-bottom:1px solid var(--line)}
+nav.tabs .wrap{display:flex;gap:4px;overflow-x:auto;padding-block:8px}
+nav.tabs a{flex:none;font-weight:500;text-decoration:none;color:var(--muted);padding:6px 12px;border-radius:999px;font-size:14px}
+nav.tabs a:hover,nav.tabs a:focus-visible{color:var(--fg);background:var(--sunk);outline:none}
+section{padding-block:40px;border-bottom:1px solid var(--line);scroll-margin-top:60px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:20px;margin-top:20px}
+.prose{min-width:0}.prose h3{margin-bottom:6px}.prose p,.prose li{max-width:65ch}
+.prose ul{padding-left:1.2em;margin:6px 0}.prose li{margin:4px 0}
+kbd,.mono{font-family:var(--f-mono);font-size:.9em}
+/* hex board */
+.board{display:flex;flex-direction:column;gap:3px;margin-top:10px}
+.hrow{display:flex;gap:4px}.hrow.odd{padding-left:22px}
+.hex{width:40px;height:44px;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);background:var(--sunk);display:grid;place-items:center;font-size:11px;font-family:var(--f-mono);color:var(--muted)}
+.hex.front{background:var(--accent-soft);color:var(--accent)}
+.legend{display:flex;flex-wrap:wrap;gap:12px;font-size:12.5px;color:var(--muted);margin-top:8px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-2px;margin-right:4px}
+/* comps */
+.comps{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:16px;margin-top:20px}
+.comp{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.comp .top{display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.tag{font-family:var(--f-mono);font-size:11.5px;padding:2px 8px;border-radius:999px;background:var(--sunk);color:var(--muted);white-space:nowrap}
+.tag.theory{background:var(--warn-soft);color:var(--warn)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.stats div{background:var(--sunk);border-radius:8px;padding:6px 8px}
+.stats small{display:block;font-size:10.5px;color:var(--muted);font-family:var(--f-body)}
+.stats b{font-size:16px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.uchip{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--bg);color:var(--fg);border-radius:8px;padding:3px 8px;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.uchip:hover,.uchip:focus-visible{border-color:var(--accent);outline:none}
+.uchip.carry{border-color:var(--accent);background:var(--accent-soft)}
+.dot{width:8px;height:8px;border-radius:50%;flex:none}
+.comp p{margin:0;font-size:14px}
+.comp .why{color:var(--muted);font-size:13.5px}
+.comp .items{font-size:13px}
+/* filters */
+.filters{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:18px}
+.seg{display:flex;flex-wrap:wrap;gap:4px}
+.seg button{font:inherit;font-size:13px;font-family:var(--f-mono);border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:8px;padding:4px 10px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+select,input[type=search]{font:inherit;font-size:14px;background:var(--surface);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:5px 10px;min-width:0}
+input[type=search]{flex:1 1 180px}
+.count{font-family:var(--f-mono);font-size:12.5px;color:var(--muted)}
+/* unit cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,310px),1fr));gap:14px;margin-top:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--cc);border-radius:12px;padding:14px 16px;display:grid;grid-row:span 4;grid-template-rows:subgrid;row-gap:10px;min-width:0;scroll-margin-top:70px}
+.card.flash{box-shadow:0 0 0 3px var(--accent)}
+.card[data-cost="7"]{border-image:linear-gradient(90deg,var(--c7a),var(--c4),var(--c7b)) 1;border-image-slice:1;border-style:solid;border-width:4px 1px 1px;border-radius:0}
+.chead{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.cname{font-family:var(--f-display);font-weight:800;font-size:20px;line-height:1.15}
+.cost{font-family:var(--f-mono);font-weight:600;font-size:13px;color:var(--cc);white-space:nowrap}
+.meta{display:grid;grid-template-columns:1fr auto;gap:2px 10px;font-size:13px;color:var(--muted)}
+.meta .role{color:var(--fg);font-weight:500}
+.mana{display:flex;align-items:center;gap:8px;font-family:var(--f-mono);font-size:12.5px;font-variant-numeric:tabular-nums}
+.bar{flex:1;height:6px;border-radius:3px;background:var(--sunk);position:relative;overflow:hidden}
+.bar i{position:absolute;inset:0 auto 0 0;background:var(--accent);border-radius:3px}
+.tchips{display:flex;flex-wrap:wrap;gap:5px}
+.tchip{font:inherit;font-size:12px;border:none;border-radius:6px;padding:2px 7px;background:var(--sunk);color:var(--fg);cursor:pointer}
+.tchip.solo{background:var(--accent-soft);color:var(--accent)}
+.tchip:focus-visible{outline:2px solid var(--accent)}
+.ability{min-width:0}
+.ability h4{margin:0 0 4px;font-size:14.5px}
+.ability p{margin:0 0 6px;font-size:13.5px;line-height:1.6;overflow-wrap:anywhere}
+.ability p b{font-family:var(--f-mono);font-size:11.5px;font-weight:600;color:var(--accent);margin-right:4px}
+.unlock{background:var(--warn-soft);border-radius:8px;padding:6px 10px;font-size:12.5px;margin-top:6px}
+.unlock b{color:var(--warn)}
+.fx{font-size:11.5px;color:var(--muted);font-family:var(--f-mono)}
+/* traits table */
+.tgroups{display:grid;gap:28px;margin-top:20px}
+.tlist{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,360px),1fr));gap:12px;margin-top:10px}
+.trait{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;min-width:0;scroll-margin-top:70px}
+.trait.flash{box-shadow:0 0 0 3px var(--accent)}
+.trait header{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.trait .zh{color:var(--muted);font-size:13px;margin-left:6px;font-weight:400}
+.bps{font-family:var(--f-mono);font-size:12.5px;color:var(--accent);white-space:nowrap}
+.trait p{margin:6px 0;font-size:13.5px}
+.trait ul{list-style:none;padding:0;margin:6px 0;font-size:13px;display:grid;gap:3px}
+.trait li{display:grid;grid-template-columns:auto 1fr;gap:8px;min-width:0}
+.trait li span:first-child{font-family:var(--f-mono);color:var(--muted);min-width:2.5em}
+.pbe{font-size:12.5px;background:var(--sunk);border-radius:8px;padding:6px 10px;margin-top:6px}
+.members{font-size:12.5px;color:var(--muted);margin-top:8px}
+footer{padding-block:28px 48px;color:var(--muted);font-size:13px}
+footer a{color:var(--accent)}
+.en{display:none;color:var(--muted);font-size:.9em;font-weight:400}
+.show-en .en{display:block}
+.pending{font-family:var(--f-mono);font-size:10.5px;color:var(--warn);margin-left:6px}
+.zhname{display:block;font-family:var(--f-mono);font-size:12px;color:var(--muted);font-weight:400}
+nav.tabs .wrap{align-items:center}
+.langbtn{margin-left:auto;flex:none;font:inherit;font-size:13px;border:1px solid var(--line);background:var(--bg);color:var(--fg);border-radius:999px;padding:5px 12px;cursor:pointer}
+.langbtn[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
+/* augments */
+.augs{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:10px;margin-top:16px}
+.aug{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--tc);border-radius:10px;padding:10px 14px;min-width:0}
+.aug h4{margin:0 0 4px;font-size:14.5px;display:flex;justify-content:space-between;gap:8px}
+.aug h4 small{font-family:var(--f-mono);font-size:11px;color:var(--tc);white-space:nowrap;font-weight:600}
+.aug p{margin:0;font-size:13.5px;overflow-wrap:anywhere}
+.aug .origin{font-size:11.5px;color:var(--muted);margin-top:4px}
+/* changes */
+.day{margin-top:18px}
+.day h3{font-family:var(--f-mono);font-size:15px}
+.chg{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;padding:10px 0;border-bottom:1px dashed var(--line);font-size:13.5px;min-width:0}
+.chg .k{font-family:var(--f-mono);font-size:12px;color:var(--muted);white-space:nowrap}
+.chg del{color:var(--muted)}.chg ins{text-decoration:none;color:var(--fg);background:var(--accent-soft);border-radius:4px;padding:0 3px}
+.chg>div{min-width:0;overflow-wrap:anywhere}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+html{scroll-behavior:smooth}
+</style>
+</head>
+<body>
+
+<header class="hero wrap">
+  <div class="eyebrow">TFT Set 19 · Prismatic Tour · PBE 資料更新於 <span id="updated">–</span></div>
+  <h1>聯盟戰棋 S19 <span class="prism">Prismatic Tour</span></h1>
+  <p class="lead">排兵布陣的底層邏輯、6 套有根據的潛在陣容、全部棋子的技能／定位／射程／魔力、羈絆門檻、增幅裝置，以及每天自動追蹤的 PBE 變動。點陣容裡的棋子會跳到技能卡，點羈絆標籤會跳到羈絆說明。</p>
+  <div class="facts"><span>棋子 <b id="nU">–</b></span><span>羈絆 <b id="nT">–</b></span><span>增幅裝置 <b id="nA">–</b></span><span>需解鎖 <b id="unlockN">–</b></span><span>正式上線 <b>12/2（19.1）</b></span></div>
+  <div class="note"><b>注意</b>：目前是 PBE 測試服資料，上線前還會變。中文是 AI 依台服用語翻的，羈絆名保留英文（官方繁中譯名上線後才確定）；右上角可切換顯示英文原文對照。</div>
+</header>
+
+<nav class="tabs"><div class="wrap">
+  <a href="#changes">PBE 變動</a><a href="#logic">底層邏輯</a><a href="#comps">潛在陣容</a><a href="#units">棋子圖鑑</a><a href="#traits">羈絆</a><a href="#augments">增幅裝置</a><a href="#sources">資料來源</a>
+  <button class="langbtn" id="langBtn" aria-pressed="false">EN 原文</button>
+</div></nav>
+
+<main>
+<section id="changes"><div class="wrap">
+  <h2>PBE 變動</h2>
+  <p class="lead">每天台北時間 10:00 自動比對前一天的資料，列出改動的技能、魔力、羈絆與增幅裝置（保留最近 30 次）。</p>
+  <div id="changeList"></div>
+</div></section>
+<section id="logic"><div class="wrap">
+  <h2>排兵布陣的底層邏輯</h2>
+  <p class="lead">先決定「用誰贏」，再決定「怎麼撐到他贏」，最後才是站位。</p>
+  <div class="cols">
+    <div class="prose">
+      <h3>組陣容</h3>
+      <ul>
+        <li><b>骨架 = 1 個主 C ＋ 前排。</b>主 C 決定 AD 或 AP 裝，前排存在的意義是幫主 C 買施法時間。常見結構是「主 C 羈絆 ＋ 1～2 個坦克羈絆」。</li>
+        <li><b>羈絆門檻不是線性的。</b>2→4 常是質變，所以第 9、10 格常拿去多開一個 2 層羈絆，而不是追高層（直羈絆 vs 橫向）。</li>
+        <li><b>兩種節奏擇一：</b>Reroll（5～7 級刷 1～3 費三星，前期強、上限有限）或快 8／快 9（存滿 50 金利息衝等級，拿 4、5 費二星，上限高）。</li>
+        <li><b>魔力決定 C 位的出裝。</b>魔力上限低（例如 0/30）的施法者靠回魔與增傷就能一直放技能；被動型棋子（沒有魔力條）主要吃攻速與坦度。</li>
+        <li><b>S19 新增「解鎖鏈」：</b>94 隻裡有三十幾隻要先完成任務才會出現在商店。判斷能不能玩一套，先看解鎖條件做不做得到。</li>
+      </ul>
+    </div>
+    <div class="prose">
+      <h3>站位</h3>
+      <ul>
+        <li>棋子先打最近的敵人：坦克放前排，主 C 放後排角落。</li>
+        <li>對手有刺客就把 C 換邊或旁邊放坦克當誘餌；對手範圍傷害高就散開。</li>
+        <li><b>S19 有好幾個羈絆直接看站位：</b>Choreographer（前兩排拿護盾、其他拿增傷）、Emo（Amumu 開場旁邊不能有隊友）、Manager（聚光燈格）、Beach Pop（樂器加強相鄰隊友）、Vladimir 解鎖（前兩排只能放指定數量）。</li>
+      </ul>
+      <div class="board" id="board" aria-label="棋盤示意：4 排 × 7 格，前兩排為 Choreographer 護盾區"></div>
+      <div class="legend"><span><i style="background:var(--accent-soft)"></i>前兩排（Choreographer 護盾區）</span><span><i style="background:var(--sunk)"></i>後兩排（增傷區、C 位）</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="comps"><div class="wrap">
+  <h2>6 套潛在陣容</h2>
+  <p class="lead">數據來自 TOPMETA PBE 頁（19.1、近 3 天，未公開樣本數）。第 6 套是我依羈絆數值推的，沒有勝率數據。紫框是主 C。</p>
+  <div class="comps" id="compList"></div>
+</div></section>
+
+<section id="units"><div class="wrap">
+  <h2>棋子圖鑑</h2>
+  <p class="lead">魔力格式是「起始／上限」。沒有魔力條的是純被動技能。</p>
+  <div class="filters">
+    <div class="seg" id="costSeg" role="group" aria-label="費用篩選"></div>
+    <select id="roleSel" aria-label="定位篩選"></select>
+    <select id="traitSel" aria-label="羈絆篩選"></select>
+    <input type="search" id="q" placeholder="搜尋名字、技能字…" aria-label="搜尋">
+    <span class="count" id="count"></span>
+  </div>
+  <div class="grid" id="grid"></div>
+</div></section>
+
+<section id="traits"><div class="wrap">
+  <h2>羈絆</h2>
+  <p class="lead">門檻與效果原文來自 tft.ninja（多數只寫效果方向，沒寫數字）。職業羈絆另附 senseos 公布的 PBE 數值。</p>
+  <div class="tgroups" id="traitGroups"></div>
+</div></section>
+
+<section id="augments"><div class="wrap">
+  <h2>增幅裝置</h2>
+  <p class="lead">銀、金、稜彩三階。Emblem／Trait／Hero 是分類標籤。</p>
+  <div class="filters">
+    <div class="seg" id="tierSeg" role="group" aria-label="階級篩選"></div>
+    <div class="seg" id="catSeg" role="group" aria-label="分類篩選"></div>
+    <input type="search" id="aq" placeholder="搜尋增幅名稱或效果…" aria-label="搜尋增幅裝置">
+    <span class="count" id="acount"></span>
+  </div>
+  <div class="augs" id="augList"></div>
+</div></section>
+<section id="sources"><div class="wrap">
+  <h2>資料來源</h2>
+  <ul class="prose">
+    <li>棋子、技能、魔力、射程、定位、解鎖條件、羈絆、增幅裝置原文：<a href="https://tft.ninja/sets/19/units">tft.ninja Set 19</a>（Source: Riot Dev Drop），每日自動抓取</li>
+    <li>中文翻譯：Claude（Sonnet）依台服用語翻譯，只翻新出現的文字</li>
+    <li>職業羈絆 PBE 數值：<a href="https://senseos.gg/guides/tft/set-19-traits/">senseos.gg</a>（2026-11-19）</li>
+    <li>陣容勝率：<a href="https://topmeta.gg/en/comps/pbe/">TOPMETA PBE comps</a>；排名參考 <a href="https://mobalytics.gg/tft/guides/best-tft-pbe-comps">Mobalytics</a>、<a href="https://blitz.gg/tft/set19/comps">Blitz</a></li>
+    <li>上線日期、稜彩任務：<a href="https://emblemcomp.gg/set-19">EmblemComp</a></li>
+  </ul>
+</div></section>
+</main>
+<footer class="wrap">基礎血量、攻擊力、護甲等數值這幾個來源尚未公開，正式上線後可補。</footer>
+
+<script>
+const DATA=/*DATA*/;
+const ROLE={"Magic Tank":"魔法坦克","Attack Tank":"物理坦克","Magic Caster":"魔法施法者","Attack Caster":"物理施法者","Magic Fighter":"魔法戰士","Attack Fighter":"物理戰士","Magic Marksman":"魔法射手","Attack Marksman":"物理射手","Magic Assassin":"魔法刺客","Attack Assassin":"物理刺客","Magic Specialist":"魔法特化","Attack Specialist":"物理特化"};
+const ZH={"Beach Pop":"海灘流行","Classical":"古典","EDM":"電音","Gu Feng":"古風","Heartsteel":"心之鋼","Hyperpop":"超流行","Illbeats":"病態節拍","Ionic Spark":"離子火花","Jazz":"爵士","K/DA":"K/DA","Pentakill":"五殺","R&B":"節奏藍調","Rock":"搖滾","True Damage":"真實傷害",
+"Arcanist":"秘術師","Bodyguard":"保鑣","Choreographer":"編舞家","Encore":"安可","Frontman":"主唱","Hitmaker":"金曲製造機","Juggernaut":"主宰","Manager":"經紀人","Prodigy":"神童","Renegade":"叛逆者","Slayer":"屠戮者","Swiftstriker":"疾擊者","Trickshot":"花式射手","Collab":"合作"};
+const CLASSES=["Arcanist","Bodyguard","Choreographer","Encore","Frontman","Hitmaker","Juggernaut","Manager","Prodigy","Renegade","Slayer","Swiftstriker","Trickshot","Collab"];
+const PBE={
+ Arcanist:"全隊 AP 12% / 18% / 30%；秘術師本身另得 0% / 50% / 70%",
+ Bodyguard:"任一保鑣存活時全隊 +15 雙抗；保鑣本身 22 / 55 / 105（11/20 已調整，可能過時）",
+ Choreographer:"前兩排護盾 150 / 225 / 375 / 550；其他隊友增傷 6% / 10% / 10% / 20%；編舞家雙倍",
+ Encore:"技能多射一發較弱的投射物（4 層時為半效果；2 層數值看起來未完成）",
+ Frontman:"全隊 +100 血；主唱額外血量 15% / 22% / 35%，首次施法後升到 25% / 40% / 60%",
+ Hitmaker:"+12% 攻擊力；裝最多的成為 Big Shot（4 層時 2 隻、35%）",
+ Juggernaut:"隨損血增加耐久：2 層 15→25%、4 層 15→35%、6 層 35→48%（11/20 已調整，可能過時）",
+ Manager:"聚光燈格：站上去的隊友開場得 6% 加成，每 5 秒再一次；3 層 +8 魔力；4 層掉 1 金",
+ Prodigy:"全隊 +1 回魔；神童 2 / 3 / 5 / 6 回魔；5 層時血最低的隊友回復神童技能傷害的 10%（11/20 已調整，可能過時）",
+ Renegade:"精準＋暴擊率/暴傷：15%·12% / 15%·18% / 25%·22% / 35%·25%；5 層另得 10% 耐久",
+ Slayer:"隨損血得攻速與全能吸血（最高 100% 加成）：20%·8% / 40%·10% / 65%·12%",
+ Swiftstriker:"全隊 +10% 攻速；疾擊者每 2 秒疊一層、最多 5 層，每層 5% / 7% / 13% / 20%",
+ Trickshot:"普攻與技能彈射：1 次 22% / 1 次 33% / 2 次 33%",
+ Collab:"受傷或造成傷害 8 次後被激勵，得 AD 與 AP 8% / 20%；每局成員不同"
+};
+const COMPS=[
+ {name:"Hyperpop Reroll（Seraphine 版）",pace:"5～6 級 Reroll",carry:"Seraphine",stats:["2.80","78.3%","45.5%"],
+  board:["Seraphine","Tristana","Kobuko","Ziggs","Teemo","Nidalee","Garen","Swain","Lulu"],
+  traits:"Hyperpop 5 · Choreographer 3 · Frontman 2 · Arcanist 2",
+  items:"Seraphine：Morellonomicon、Spear of Shojin、Void Staff｜Ziggs：Guinsoo、Jeweled Gauntlet、Striker's Flail｜Kobuko：Gargoyle ×2、Warmog",
+  why:"Hyperpop 成員全加血量與攻速，打完 PvP 累積 Hype 換獎勵。前排靠 Frontman 全隊 +100 血。代價是商店一開始只有 Ziggs，Kobuko、Lulu、Tristana、Teemo 都要用 Ziggs 一路解鎖。Ziggs Teemo 版（5 級 Reroll）平均 3.07、前四 77.1%。"},
+ {name:"Malzahar Prodigy → Baron",pace:"7 級 Reroll",carry:"Malzahar",stats:["3.54","67.8%","22.0%"],
+  board:["Malzahar","Baron Nashor","Alune","Ekko","Dr. Mundo","Braum","Lux","Neeko"],
+  traits:"Prodigy 5 · Juggernaut 2 · Manager 2 · K/DA 2",
+  items:"Malzahar：Jeweled Gauntlet、Rabadon、Striker's Flail｜Baron：Bloodthirster、Sterak、Titan｜Ekko：Adaptive Helm、Crownguard、Gargoyle",
+  why:"Prodigy 5 讓 Malzahar 每秒 +6 回魔、一直放技能。Composer 讓商店出樂器，每個樂器加全隊 AP、Malzahar 吃雙倍；收齊五個再打夠傷害就解鎖 7 費 Baron。Alune 需要 7 級解鎖。"},
+ {name:"Miss Fortune Jazz",pace:"快 9",carry:"Miss Fortune",stats:["3.50","69.9%","29.0%"],
+  board:["Miss Fortune","Jhin","Smeech","Rell","Pyke","Vayne","Galio","Swain","Lucian","Samira"],
+  traits:"Jazz 3 · Rock 3 · Hitmaker 2 · Frontman 2 · Renegade 2 · Classical 2 · Encore 2 · Trickshot 2",
+  items:"Miss Fortune：Infinity Edge、Last Whisper、Shojin｜Jhin：Deathblade、Guinsoo、IE｜Smeech：Bloodthirster、Sterak、Titan",
+  why:"Jazz 是每開一個非單人羈絆就加全隊血量與增傷，所以刻意每個羈絆只開 2 層、湊 8 個以上。7 費 Smeech 的解鎖條件正好是 9 級時開夠多非單人羈絆。成員分散在很多羈絆裡，最不挑開局。"},
+ {name:"K/DA Ahri／Akali",pace:"快 9",carry:"Ahri",stats:["3.55","68.3%","23.6%"],
+  board:["Ahri","Akali (K/DA)","Leona","Garen","Evelynn","Kai'Sa","Gragas","Lillia","Neeko"],
+  traits:"K/DA 17 星 · Choreographer 2 · Bodyguard 2",
+  items:"Ahri：Jeweled Gauntlet、Shojin、Void Staff｜Akali：Bloodthirster、Edge of Night、Red Buff｜Garen：K/DA 紋章、Gargoyle、Warmog",
+  why:"K/DA 門檻算星等總和，1 費的 Lillia、Neeko 三星就能直接推高層數。Ahri 魔力 0/30 很低，配回魔裝一直放技能。往上有 21 星的稜彩任務（成員升四星）。"},
+ {name:"Ionic Spark 7",pace:"7～8 級",carry:"Jinx",stats:["3.98","62.6%","13.7%"],
+  board:["Jinx","Miss Fortune","Gwen","Shyvana","Aurora","Leona","Tibbers","Annie","Elise"],
+  traits:"Ionic Spark 7 · Hitmaker 2 · Frontman 2 · Bodyguard 2",
+  items:"Jinx：Guinsoo、Infinity Edge、Last Whisper（Aurora 版改 Morello、Shojin、Void，平均 4.20）",
+  why:"7 層開始有長期獎勵，10 層會滾雪球。Shyvana、Elise、Tibbers 都是坦，結構穩。Jinx、Gwen、Tibbers 都要解鎖。這組數據是轉述，沒逐字核對到。"},
+ {name:"Pentakill ＋ Juggernaut",pace:"8 級",carry:"Kayle",theory:true,stats:["—","—","—"],
+  board:["Kayle","Mordekaiser","Gnar","Olaf","Karthus","Viego","Yorick","Braum"],
+  traits:"Pentakill 7 · Juggernaut 2（Olaf、Yorick、Braum）",
+  items:"Kayle：Guinsoo、Nashor's Tooth、Jeweled Gauntlet（推測）｜Yorick／Braum：坦裝",
+  why:"推論陣容。Pentakill 給 AD/AP，並讓前幾個血量跌破門檻的敵人直接被處決、變成我方食屍鬼。Olaf、Yorick 同時是 Juggernaut，越掉血越硬，替斬殺買時間。Kayle、Mordekaiser 都要解鎖。Mobalytics 把 Pentakill 列 A 級。"}
+];
+const U=DATA.units, T=DATA.traits, A=DATA.augments, byName=Object.fromEntries(U.map(u=>[u.name,u]));
+const cc=c=>c===7?"var(--c7a)":`var(--c${c})`;
+const esc=s=>String(s??"").replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+const slug=s=>s.toLowerCase().replace(/[^a-z0-9]+/g,"-");
+const solo=t=>!(t in ZH);
+const zhName=n=>{const u=byName[n];return u&&u.name_zh&&u.name_zh!==n?u.name_zh:n};
+// 中文為主；有中文時附英文原文（切換顯示），沒中文就顯示英文並標待翻譯
+const tx=(en,zh)=>zh?`${esc(zh)}<span class="en">${esc(en)}</span>`:`${esc(en)}<span class="pending">待翻譯</span>`;
+document.getElementById("updated").textContent=DATA.updated||"–";
+document.getElementById("nU").textContent=U.length;
+document.getElementById("nT").textContent=Object.keys(T).length;
+document.getElementById("nA").textContent=A.length;
+document.getElementById("unlockN").textContent=U.filter(u=>u.unlock.length).length;
+const langBtn=document.getElementById("langBtn");
+const setLang=on=>{document.body.classList.toggle("show-en",on);langBtn.setAttribute("aria-pressed",on);try{localStorage.setItem("showEn",on?"1":"")}catch(e){}};
+try{setLang(localStorage.getItem("showEn")==="1")}catch(e){}
+langBtn.onclick=()=>setLang(!document.body.classList.contains("show-en"));
+
+// hex board 4x7
+document.getElementById("board").innerHTML=[0,1,2,3].map(r=>`<div class="hrow${r%2?" odd":""}">${Array.from({length:7},()=>`<div class="hex${r<2?" front":""}">${r<2?"前":"後"}</div>`).join("")}</div>`).join("");
+
+const chip=(n,carry)=>{const u=byName[n];return `<button class="uchip${carry?" carry":""}" data-go="${esc(n)}"><span class="dot" style="background:${u?cc(u.cost):"var(--muted)"}"></span>${esc(zhName(n))}</button>`};
+
+// comps
+document.getElementById("compList").innerHTML=COMPS.map(c=>`<article class="comp">
+ <div class="top"><h3>${esc(c.name)}</h3><span class="tag${c.theory?" theory":""}">${c.theory?"推論":esc(c.pace)}</span></div>
+ ${c.theory?`<span class="tag" style="align-self:start">${esc(c.pace)}</span>`:""}
+ <div class="stats"><div><small>平均名次</small><b>${c.stats[0]}</b></div><div><small>前四率</small><b>${c.stats[1]}</b></div><div><small>吃雞率</small><b>${c.stats[2]}</b></div></div>
+ <div class="chips">${c.board.map(n=>chip(n,n===c.carry)).join("")}</div>
+ <p class="mono" style="font-size:12.5px">${esc(c.traits)}</p>
+ <p class="items">${esc(c.items)}</p>
+ <p class="why">${esc(c.why)}</p></article>`).join("");
+
+// unit filters
+let fCost="all",fRole="",fTrait="",fQ="";
+const seg=document.getElementById("costSeg");
+seg.innerHTML=["all",1,2,3,4,5,7].map(c=>`<button data-c="${c}" aria-pressed="${c==="all"}">${c==="all"?"全部":c+" 費"}</button>`).join("");
+seg.onclick=e=>{const b=e.target.closest("button");if(!b)return;fCost=b.dataset.c;seg.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));render()};
+const roleSel=document.getElementById("roleSel");
+roleSel.innerHTML=`<option value="">所有定位</option>`+Object.keys(ROLE).map(r=>`<option value="${r}">${ROLE[r]}</option>`).join("");
+roleSel.onchange=()=>{fRole=roleSel.value;render()};
+const traitSel=document.getElementById("traitSel");
+const allTraits=Object.keys(T).sort((a,b)=>solo(a)-solo(b)||a.localeCompare(b));
+traitSel.innerHTML=`<option value="">所有羈絆</option>`+allTraits.map(t=>`<option value="${esc(t)}">${esc(t)}${ZH[t]&&ZH[t]!==t?"｜"+ZH[t]:""}</option>`).join("");
+traitSel.onchange=()=>{fTrait=traitSel.value;render()};
+document.getElementById("q").oninput=e=>{fQ=e.target.value.trim().toLowerCase();render()};
+
+function manaBar(m){
+ if(!m) return `<div class="mana"><span>魔力</span><div class="bar"></div><span>純被動</span></div>`;
+ const [s,x]=m.split("/").map(Number);
+ return `<div class="mana"><span>魔力</span><div class="bar"><i style="width:${x?Math.min(100,s/x*100):0}%"></i></div><span>${s} / ${x}</span></div>`;
+}
+function card(u){
+ return `<article class="card" id="u-${slug(u.name)}" data-cost="${u.cost}" style="--cc:${cc(u.cost)}">
+  <div class="chead"><div class="cname">${esc(zhName(u.name))}${zhName(u.name)!==u.name?`<span class="zhname">${esc(u.name)}</span>`:""}</div><div class="cost">${u.cost} 費</div></div>
+  <div class="meta"><span class="role">${ROLE[u.role]||esc(u.role)}</span><span class="mono">射程 ${esc(u.range)}</span></div>
+  <div style="display:grid;gap:8px">${manaBar(u.mana)}
+   <div class="tchips">${u.traits.map(t=>`<button class="tchip${solo(t)?" solo":""}" data-t="${esc(t)}">${esc(t)}</button>`).join("")}</div></div>
+  <div class="ability"><h4>${tx(u.ability,u.ability_zh)}</h4>
+   ${u.desc.map((p,i)=>`<p>${tx(p,u.desc_zh[i])}</p>`).join("")}
+   ${u.effects.length?`<div class="fx">效果標籤：${u.effects.map(esc).join(" · ")}</div>`:""}
+   ${u.unlock.length?`<div class="unlock"><b>解鎖條件</b>：${u.unlock.map((x,i)=>tx(x,u.unlock_zh[i])).join("；")}</div>`:""}
+  </div></article>`;
+}
+function render(){
+ const list=U.filter(u=>(fCost==="all"||u.cost==fCost)&&(!fRole||u.role===fRole)&&(!fTrait||u.traits.includes(fTrait))&&
+  (!fQ||[u.name,u.name_zh,u.ability,u.ability_zh,...u.desc,...u.desc_zh,...u.traits].join(" ").toLowerCase().includes(fQ)));
+ document.getElementById("grid").innerHTML=list.map(card).join("")||`<p class="lead">沒有符合條件的棋子。</p>`;
+ document.getElementById("count").textContent=`${list.length} / ${U.length} 隻`;
+}
+render();
+
+// traits: T[t] = [[en, zh], ...]；開頭的純數字是門檻，之後「數字＋說明」成對是各層效果
+function traitCard(t){
+ const L=T[t]; let i=0; const bps=[]; while(i<L.length&&/^\d+$/.test(L[i][0])) bps.push(L[i++][0]);
+ const rest=L.slice(i).filter(x=>x[0]!=="A unique trait: no other champion has it.");
+ const desc=[],rows=[];
+ for(let k=0;k<rest.length;k++){ if(/^\d+$/.test(rest[k][0])&&k+1<rest.length){rows.push([rest[k][0],rest[k+1]]);k++} else if(rows.length) rows.push(["",rest[k]]); else desc.push(rest[k]); }
+ const mem=U.filter(u=>u.traits.includes(t));
+ return `<article class="trait" id="t-${slug(t)}"><header><h3>${esc(t)}${ZH[t]&&ZH[t]!==t?`<span class="zh">${ZH[t]}</span>`:""}</h3><span class="bps">${solo(t)?"單人":bps.join(" / ")}</span></header>
+  ${desc.map(d=>`<p>${tx(d[0],d[1])}</p>`).join("")}
+  ${rows.length?`<ul>${rows.map(r=>`<li><span>${r[0]}</span><span>${tx(r[1][0],r[1][1])}</span></li>`).join("")}</ul>`:""}
+  ${PBE[t]?`<div class="pbe"><b>PBE 數值（11/19）</b>：${esc(PBE[t])}</div>`:""}
+  <div class="members">成員：${mem.map(u=>chip(u.name)).join(" ")}</div></article>`;
+}
+const groups=[["樂團羈絆",allTraits.filter(t=>!solo(t)&&!CLASSES.includes(t))],["職業羈絆",CLASSES.filter(t=>T[t])],["單人羈絆（Solo Artist）",allTraits.filter(solo)]];
+document.getElementById("traitGroups").innerHTML=groups.map(([g,ts])=>`<div><h3>${g}<span class="count" style="margin-left:8px">${ts.length} 個</span></h3><div class="tlist">${ts.map(traitCard).join("")}</div></div>`).join("");
+
+// augments
+const TIER={Silver:["銀","var(--c1)"],Gold:["金","var(--c5)"],Prismatic:["稜彩","var(--c4)"]};
+let aTier="all",aCat="all",aQ="";
+const tierSeg=document.getElementById("tierSeg"), catSeg=document.getElementById("catSeg");
+tierSeg.innerHTML=["all","Silver","Gold","Prismatic"].map(t=>`<button data-v="${t}" aria-pressed="${t==="all"}">${t==="all"?"全部":TIER[t][0]+" "+A.filter(a=>a.tier===t).length}</button>`).join("");
+catSeg.innerHTML=["all","Emblem","Trait","Hero"].map(t=>`<button data-v="${t}" aria-pressed="${t==="all"}">${t==="all"?"全部分類":t}</button>`).join("");
+const segClick=(el,set)=>el.onclick=e=>{const b=e.target.closest("button");if(!b)return;set(b.dataset.v);el.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));renderAug()};
+segClick(tierSeg,v=>aTier=v); segClick(catSeg,v=>aCat=v);
+document.getElementById("aq").oninput=e=>{aQ=e.target.value.trim().toLowerCase();renderAug()};
+function renderAug(){
+ const list=A.filter(a=>(aTier==="all"||a.tier===aTier)&&(aCat==="all"||a.cat.split(" / ").includes(aCat))&&
+  (!aQ||[a.name,a.name_zh,a.desc,a.desc_zh].join(" ").toLowerCase().includes(aQ)));
+ document.getElementById("augList").innerHTML=list.map(a=>`<article class="aug" style="--tc:${TIER[a.tier][1]}">
+  <h4><span>${tx(a.name,a.name_zh)}</span><small>${TIER[a.tier][0]}${a.cat?" · "+esc(a.cat):""}</small></h4>
+  <p>${tx(a.desc,a.desc_zh)}</p>${a.origin?`<div class="origin">回鍋：${esc(a.origin)}</div>`:""}</article>`).join("")||`<p class="lead">沒有符合條件的增幅裝置。</p>`;
+ document.getElementById("acount").textContent=`${list.length} / ${A.length} 個`;
+}
+renderAug();
+
+// changes
+const FIELD={cost:"費用",role:"定位",range:"射程",traits:"羈絆",mana:"魔力",ability:"技能名",desc:"技能說明",unlock:"解鎖條件",tier:"階級","內容":"內容","新增":"新增","移除":"移除"};
+const show=(v,z)=>Array.isArray(v)?v.map((x,i)=>tx(x,z&&z[i])).join("<br>"):tx(v,z);
+const days=[...(DATA.changes||[])].reverse();
+document.getElementById("changeList").innerHTML=days.length?days.map(d=>`<div class="day"><h3>${esc(d.date)}<span class="count" style="margin-left:8px">${d.items.length} 項</span></h3>
+ ${d.items.map(c=>`<div class="chg"><span class="k">${c.kind}</span><div><b>${c.kind==="棋子"?chip(c.name):esc(c.name_zh||c.name)}</b> · ${FIELD[c.field]||esc(c.field)}
+  ${c.old!=null?`<div><del>${show(c.old,c.old_zh)}</del></div>`:""}${c.new!=null?`<div><ins>${show(c.new,c.new_zh)}</ins></div>`:""}</div></div>`).join("")}</div>`).join("")
+ :`<p class="lead">目前還沒有變動紀錄。基準資料是 ${esc(DATA.updated)} 這一版，之後每天的差異會列在這裡。</p>`;
+
+// jump helpers
+function flash(el){el.scrollIntoView({block:"center"});el.classList.add("flash");setTimeout(()=>el.classList.remove("flash"),1600)}
+document.addEventListener("click",e=>{
+ const g=e.target.closest("[data-go]"); if(g){fCost="all";fRole="";fTrait="";fQ="";roleSel.value="";traitSel.value="";document.getElementById("q").value="";
+  seg.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x.dataset.c==="all"));render();
+  const el=document.getElementById("u-"+slug(g.dataset.go)); if(el) flash(el); return;}
+ const t=e.target.closest("[data-t]"); if(t){const el=document.getElementById("t-"+slug(t.dataset.t)); if(el) flash(el);}
+});
+</script>
+</body>
+</html>

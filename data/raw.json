@@ -1,0 +1,4790 @@
+{
+ "units": [
+  {
+   "name": "Elise",
+   "cost": 1,
+   "role": "Magic Tank",
+   "range": "1",
+   "traits": [
+    "Ionic Spark",
+    "Frontman"
+   ],
+   "effects": [
+    "CC",
+    "Healing"
+   ],
+   "ability": "Cocoon",
+   "mana": "60/120",
+   "desc": [
+    "Transform into Spider Form, gaining Health. Fire webbing at the enemy that dealt the most damage this round, stunning the first enemy hit and dealing magic damage. Subsequent casts heal, then fire webbing."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Gnar",
+   "cost": 1,
+   "role": "Attack Specialist",
+   "range": "2",
+   "traits": [
+    "Pentakill",
+    "Trickshot"
+   ],
+   "effects": [],
+   "ability": "Hard Rock",
+   "mana": "0/3",
+   "desc": [
+    "Passive: Every 3rd attack is replaced with a rock that deals physical damage and grants Gnar Attack Speed."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Katarina",
+   "cost": 1,
+   "role": "Magic Fighter",
+   "range": "1",
+   "traits": [
+    "Classical",
+    "Slayer"
+   ],
+   "effects": [],
+   "ability": "Blade Sonata",
+   "mana": "0/40",
+   "desc": [
+    "Twirl, slashing adjacent enemies for magic damage, then eviscerate the current target for magic damage. Enemies hit are Captivated, and Captivated enemies grant bonuses to Classical champions."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Kayn",
+   "cost": 1,
+   "role": "Attack Fighter",
+   "range": "1",
+   "traits": [
+    "Heartsteel",
+    "Slayer"
+   ],
+   "effects": [],
+   "ability": "Shadow of the Night",
+   "mana": "0/30",
+   "desc": [
+    "Dash and swipe, dealing physical damage to enemies in a 2-hex line. With the Heartsteel upgrade, transform into the Shadow Assassin at a health threshold, briefly becoming untargetable and dealing bonus magic damage for the rest of combat."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Kennen",
+   "cost": 1,
+   "role": "Magic Tank",
+   "range": "2",
+   "traits": [
+    "True Damage",
+    "Bodyguard"
+   ],
+   "effects": [],
+   "ability": "Electric Shock",
+   "mana": "",
+   "desc": [
+    "Passive: Reduce all incoming damage. Every second, zap adjacent enemies, dealing magic damage."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Kobuko",
+   "cost": 1,
+   "role": "Magic Tank",
+   "range": "1",
+   "traits": [
+    "Hyperpop",
+    "Frontman"
+   ],
+   "effects": [
+    "Healing"
+   ],
+   "ability": "Pump It Up!",
+   "mana": "40/90",
+   "desc": [
+    "Passive: Your strongest Kobuko gains bonus Health based on Hyperpop Hype.",
+    "Active: Amp Up, healing each second for the duration."
+   ],
+   "unlock": [
+    "Reach the required star level on Ziggs and equip the required number of items to him."
+   ]
+  },
+  {
+   "name": "Lillia",
+   "cost": 1,
+   "role": "Magic Tank",
+   "range": "1",
+   "traits": [
+    "K/DA",
+    "Bodyguard"
+   ],
+   "effects": [
+    "Healing"
+   ],
+   "ability": "We Love You K/DA",
+   "mana": "40/100",
+   "desc": [
+    "Heals and strikes the target, dealing magic damage to nearby enemies and weakening them for a duration. Weakening reduces damage dealt."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Neeko",
+   "cost": 1,
+   "role": "Magic Caster",
+   "range": "4",
+   "traits": [
+    "K/DA",
+    "Encore",
+    "Prodigy"
+   ],
+   "effects": [],
+   "ability": "K/DA Fan Club",
+   "mana": "0/40",
+   "desc": [
+    "Convene the K/DA fan club and throw confetti streams at the target, each dealing magic damage. If a stream kills, permanently gain Ability Power."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Olaf",
+   "cost": 1,
+   "role": "Attack Tank",
+   "range": "1",
+   "traits": [
+    "Pentakill",
+    "Rock",
+    "Juggernaut"
+   ],
+   "effects": [
+    "Healing"
+   ],
+   "ability": "Ragnarok 'n' Roll",
+   "mana": "",
+   "desc": [
+    "Passive: On attack, heal. On death, instead heal to full and gain Attack Speed, but lose a percentage of maximum Health each second."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Sett",
+   "cost": 1,
+   "role": "Attack Tank",
+   "range": "1",
+   "traits": [
+    "Heartsteel",
+    "Frontman"
+   ],
+   "effects": [
+    "Healing"
+   ],
+   "ability": "Live My Life",
+   "mana": "30/90",
+   "desc": [
+    "Passive: Gain more maximum Health from all sources.",
+    "Active: Heal, then strike the target twice, dealing physical damage with each hit.",
+    "Heartsteel Upgrade: Periodically heal a portion of maximum Health, increased based on missing Health."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Taric",
+   "cost": 1,
+   "role": "Magic Tank",
+   "range": "1",
+   "traits": [
+    "Beach Pop",
+    "Juggernaut"
+   ],
+   "effects": [],
+   "ability": "Good Reverberations",
+   "mana": "30/90",
+   "desc": [
+    "Grant a shield to Taric and a nearby damaged ally for a duration."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Varus",
+   "cost": 1,
+   "role": "Attack Caster",
+   "range": "4",
+   "traits": [
+    "Rock",
+    "Encore"
+   ],
+   "effects": [
+    "Slow"
+   ],
+   "ability": "One Thousand Arrows",
+   "mana": "30/70",
+   "desc": [
+    "Fire a hail of arrows, dealing physical damage to the target and damage to adjacent enemies. Slow them, reducing their Attack Speed."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Yunara",
+   "cost": 1,
+   "role": "Attack Marksman",
+   "range": "4",
+   "traits": [
+    "Ionic Spark",
+    "Swiftstriker"
+   ],
+   "effects": [],
+   "ability": "Cultivation of Teen Spirit",
+   "mana": "40/80",
+   "desc": [
+    "For the rest of combat, attacks fire an additional orb that deals physical damage."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Ziggs",
+   "cost": 1,
+   "role": "Magic Marksman",
+   "range": "4",
+   "traits": [
+    "Hyperpop",
+    "Arcanist",
+    "Swiftstriker"
+   ],
+   "effects": [],
+   "ability": "GlitterBOM3S",
+   "mana": "0/50",
+   "desc": [
+    "Passive: Attacks deal bonus magic damage.",
+    "Active: Throw a bomb at the target, dealing magic damage to them and adjacent enemies."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Zoe",
+   "cost": 1,
+   "role": "Magic Caster",
+   "range": "4",
+   "traits": [
+    "Beach Pop",
+    "Arcanist"
+   ],
+   "effects": [],
+   "ability": "Paddle Ball",
+   "mana": "15/90",
+   "desc": [
+    "Fires a paddle ball backwards, then redirects it toward the farthest enemy, dealing magic damage to the first enemy hit. If that enemy dies, the ball ricochets to the next enemy hit and deals excess damage."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Annie",
+   "cost": 2,
+   "role": "Magic Tank",
+   "range": "1",
+   "traits": [
+    "Ionic Spark",
+    "Arcanist",
+    "Juggernaut"
+   ],
+   "effects": [
+    "Burn"
+   ],
+   "ability": "We DID Start the Fire",
+   "mana": "20/80",
+   "desc": [
+    "Gain a shield, then unleash a cone of fire that deals magic damage to enemies and Burns and Wounds them for 4 seconds."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Ashe",
+   "cost": 2,
+   "role": "Attack Marksman",
+   "range": "4",
+   "traits": [
+    "Beach Pop",
+    "Swiftstriker"
+   ],
+   "effects": [],
+   "ability": "Feelin' Shot Shot Shot",
+   "mana": "20/60",
+   "desc": [
+    "Her next attacks gain Attack Speed and become flurries of arrows. Each arrow deals physical damage."
+   ],
+   "unlock": [
+    "Equip the required number of items to a Beach Pop champion."
+   ]
+  },
+  {
+   "name": "Camille",
+   "cost": 2,
+   "role": "Attack Fighter",
+   "range": "1",
+   "traits": [
+    "Rock",
+    "Slayer"
+   ],
+   "effects": [],
+   "ability": "Hookshot Through the Heart",
+   "mana": "0/40",
+   "desc": [
+    "Passive: When the target dies, hookshot to the next target and deal physical damage to them.",
+    "Active: Sweep-kick in a cone, dealing physical damage."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Ezreal",
+   "cost": 2,
+   "role": "Attack Caster",
+   "range": "4",
+   "traits": [
+    "Heartsteel",
+    "Encore"
+   ],
+   "effects": [],
+   "ability": "Bite the Bullet",
+   "mana": "0/35",
+   "desc": [
+    "Fire a missile that marks the target, then launch a second blast that detonates the mark, dealing physical damage to the target and units within 1 Hex.",
+    "Heartsteel Upgrade: The detonation deals increased damage. Every 3rd cast hits enemies within a 2 Hex radius instead."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Gragas",
+   "cost": 2,
+   "role": "Magic Tank",
+   "range": "1",
+   "traits": [
+    "K/DA",
+    "Juggernaut"
+   ],
+   "effects": [
+    "Healing"
+   ],
+   "ability": "Fan Clubbing",
+   "mana": "30/80",
+   "desc": [
+    "Become boisterous, restoring Health each second and dealing bonus magic damage on attack. For each 3-star K/DA ally, both effects increase."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Illaoi",
+   "cost": 2,
+   "role": "Magic Tank",
+   "range": "1",
+   "traits": [
+    "Illbeats",
+    "Frontman"
+   ],
+   "effects": [
+    "Healing"
+   ],
+   "ability": "Smash-Hit Royalties",
+   "mana": "30/90",
+   "desc": [
+    "Active: Heal and deal magic damage in a 2-hex line.",
+    "Quest: On cast during player combat, gain Fame, with bonus Fame for every 10g you have up to a gold cap. At the Fame threshold, go Platinum, gaining Durability and dropping gold on cast instead."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Jax",
+   "cost": 2,
+   "role": "Magic Fighter",
+   "range": "1",
+   "traits": [
+    "EDM",
+    "Bodyguard",
+    "Swiftstriker"
+   ],
+   "effects": [
+    "Healing"
+   ],
+   "ability": "Instant Crush",
+   "mana": "0/30",
+   "desc": [
+    "Bash the current target, dealing magic damage and healing for a percentage of damage dealt. Gain Attack Speed for the rest of combat.",
+    "EDM Upgrade: Fire beams at nearby enemies, dealing magic damage reduced for each enemy the beams pass through."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Karthus",
+   "cost": 2,
+   "role": "Magic Caster",
+   "range": "4",
+   "traits": [
+    "Pentakill",
+    "Arcanist"
+   ],
+   "effects": [],
+   "ability": "Requiem",
+   "mana": "10/50",
+   "desc": [
+    "After a brief delay, deal magic damage to the current target. If they die, recast this ability at reduced effectiveness."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Lucian",
+   "cost": 2,
+   "role": "Attack Caster",
+   "range": "4",
+   "traits": [
+    "Jazz",
+    "Hitmaker",
+    "Encore"
+   ],
+   "effects": [],
+   "ability": "Relentless Pursuit",
+   "mana": "0/20",
+   "desc": [
+    "Dash to a nearby hex, then fire 2 shots at the target, each dealing physical damage."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Lulu",
+   "cost": 2,
+   "role": "Magic Caster",
+   "range": "4",
+   "traits": [
+    "Hyperpop",
+    "Choreographer"
+   ],
+   "effects": [],
+   "ability": "Hype Girl",
+   "mana": "0/50",
+   "desc": [
+    "Rotate between two effects: Whimsy! grants an ally decaying Attack Speed and deals magic damage on hit. Wild Growth increases an ally’s Health; while active, adjacent enemies take magic damage each second."
+   ],
+   "unlock": [
+    "Have your Hyperpop champions cast the required number of times with the trait active."
+   ]
+  },
+  {
+   "name": "Lux",
+   "cost": 2,
+   "role": "Magic Caster",
+   "range": "4",
+   "traits": [
+    "Ionic Spark",
+    "Prodigy"
+   ],
+   "effects": [],
+   "ability": "Lux Lux Beam!",
+   "mana": "0/40",
+   "desc": [
+    "Toss a prism into the air and blast it with a beam of light. The beam splits, dealing magic damage to the target and another nearby enemy. Gain Mana for each enemy killed."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Nasus",
+   "cost": 2,
+   "role": "Magic Tank",
+   "range": "1",
+   "traits": [
+    "Classical",
+    "Bodyguard"
+   ],
+   "effects": [
+    "Healing"
+   ],
+   "ability": "Patron of the Arts",
+   "mana": "25/75",
+   "desc": [
+    "Create a magnificent hex field that lasts several seconds. While active, heal each second, and allies within the field heal. Enemies take magic damage and are Captivated if they have less maximum Health than Nasus. Captivated enemies grant bonuses to Classical champions."
+   ],
+   "unlock": [
+    "Equip the required number of items to a Classical champion."
+   ]
+  },
+  {
+   "name": "Qiyana",
+   "cost": 2,
+   "role": "Attack Fighter",
+   "range": "1",
+   "traits": [
+    "True Damage",
+    "Renegade"
+   ],
+   "effects": [
+    "Healing"
+   ],
+   "ability": "Shuffled Playlist",
+   "mana": "0/40",
+   "desc": [
+    "Passive: Qiyana’s ring changes color periodically, granting her ability different bonus effects.",
+    "Active: Dash through enemies in a line, dealing physical damage to the target and other enemies hit. Red deals bonus damage; Green heals based on damage dealt; Blue refunds mana; Gold grants gold and randomly applies one of the other effects."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Renata Glasc",
+   "cost": 2,
+   "role": "Magic Caster",
+   "range": "4",
+   "traits": [
+    "Classical",
+    "Choreographer"
+   ],
+   "effects": [],
+   "ability": "Hostile Measures",
+   "mana": "0/45",
+   "desc": [
+    "Fires a musical bar at the target, applying Toxin stacks that deal magic damage over time. Also applies Toxin to nearby enemies, prioritizing unpoisoned enemies. Enemies are Captivated when Toxin is applied; the effect lasts longer if their star level is less than or equal to Renata’s. Captivated enemies grant bonuses to Classical champions."
+   ],
+   "unlock": [
+    "Equip the required number of items to a Classical or Choreographer champion."
+   ]
+  },
+  {
+   "name": "Renekton",
+   "cost": 2,
+   "role": "Attack Tank",
+   "range": "1",
+   "traits": [
+    "Beach Pop",
+    "Frontman"
+   ],
+   "effects": [],
+   "ability": "Crocodile Rock",
+   "mana": "60/110",
+   "desc": [
+    "Grow larger, gaining max Health for the rest of combat. Then spin, dealing physical damage to adjacent enemies."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Samira",
+   "cost": 2,
+   "role": "Attack Caster",
+   "range": "4",
+   "traits": [
+    "Classical",
+    "Renegade",
+    "Trickshot"
+   ],
+   "effects": [],
+   "ability": "Bullets N' Roses",
+   "mana": "0/60",
+   "desc": [
+    "Passive: When Samira critically strikes an enemy, they become Captivated.",
+    "Active: Fire bullets at the current target, each dealing physical damage. Captivated enemies grant bonuses to Classical champions."
+   ],
+   "unlock": [
+    "Equip the required number of items to a Classical, Renegade, or Trickshot champion."
+   ]
+  },
+  {
+   "name": "Seraphine",
+   "cost": 2,
+   "role": "Magic Caster",
+   "range": "4",
+   "traits": [
+    "Indie"
+   ],
+   "effects": [],
+   "ability": "Livestream of Note",
+   "mana": "0/50",
+   "desc": [
+    "Indie: Release a stream of notes at the target while posing for the fans, dealing magic damage over 2.5 seconds.",
+    "Rising Star: Release bonus notes at nearby enemies.",
+    "Superstar: Toss high notes at every enemy."
+   ],
+   "unlock": [
+    "Reroll the required number of times before the Stage 2 Carousel."
+   ]
+  },
+  {
+   "name": "Tristana",
+   "cost": 2,
+   "role": "Attack Caster",
+   "range": "4",
+   "traits": [
+    "Hyperpop",
+    "Hitmaker"
+   ],
+   "effects": [],
+   "ability": "Head Banger",
+   "mana": "0/55",
+   "desc": [
+    "Throw bombs at nearby enemies and detonate them, dealing physical damage. The final blast deals different physical damage."
+   ],
+   "unlock": [
+    "Get the required number of kills with Hyperpop active."
+   ]
+  },
+  {
+   "name": "Amumu",
+   "cost": 3,
+   "role": "Magic Tank",
+   "range": "1",
+   "traits": [
+    "Emo"
+   ],
+   "effects": [
+    "CC",
+    "Healing"
+   ],
+   "ability": "So Sad and Lorn",
+   "mana": "60/120",
+   "desc": [
+    "Heal and toss bandages at the nearest enemies, dealing magic damage and stunning them."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Bard",
+   "cost": 3,
+   "role": "Magic Marksman",
+   "range": "4",
+   "traits": [
+    "Jazz",
+    "Swiftstriker"
+   ],
+   "effects": [],
+   "ability": "Come Chime with Me",
+   "mana": "20/80",
+   "desc": [
+    "Passive: Gain the Horn of the Traveler. While equipped, casts generate XP and attacks grant bonus Mana.",
+    "Active: Summon a wave of meeps that deals magic damage to enemies hit, with damage reduced for each enemy it passes through."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Braum",
+   "cost": 3,
+   "role": "Magic Tank",
+   "range": "1",
+   "traits": [
+    "Illbeats",
+    "Juggernaut"
+   ],
+   "effects": [
+    "CC"
+   ],
+   "ability": "Percussive Slam",
+   "mana": "75/135",
+   "desc": [
+    "Gain a shield, then slam the ground, dealing magic damage to adjacent enemies and stunning them."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Briar",
+   "cost": 3,
+   "role": "Attack Assassin",
+   "range": "1",
+   "traits": [
+    "Ionic Spark",
+    "Slayer"
+   ],
+   "effects": [
+    "Healing"
+   ],
+   "ability": "Snack Attack",
+   "mana": "0/30",
+   "desc": [
+    "Heals and kicks a snack at the furthest enemy within range. Dashes toward it, dealing physical damage in an area. Then chow downs, gaining Attack Speed for the next several attacks and replacing them with slashes that deal physical damage."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Draven",
+   "cost": 3,
+   "role": "Attack Caster",
+   "range": "4",
+   "traits": [
+    "Illbeats",
+    "Trickshot"
+   ],
+   "effects": [],
+   "ability": "You Spin Me Round (Like An Axe)",
+   "mana": "0/60",
+   "desc": [
+    "Throws a massive spinning record at the target, dealing physical damage. It leaves behind a vortex that deals physical damage per second, split among enemies within 1 hex."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Ekko",
+   "cost": 3,
+   "role": "Magic Tank",
+   "range": "1",
+   "traits": [
+    "True Damage",
+    "Juggernaut",
+    "Prodigy"
+   ],
+   "effects": [
+    "Healing"
+   ],
+   "ability": "Turn Back Time",
+   "mana": "30/120",
+   "desc": [
+    "Passive: Rewinds a portion of damage taken over time.",
+    "Active: Instantly heals all damage being rewound and restores bonus Health, then deals magic damage to the current target."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Evelynn",
+   "cost": 3,
+   "role": "Magic Fighter",
+   "range": "1",
+   "traits": [
+    "K/DA",
+    "Renegade"
+   ],
+   "effects": [],
+   "ability": "Villainous",
+   "mana": "0/40",
+   "desc": [
+    "Passive: At combat start, teleport behind the current target and become enshrouded for a duration. While enshrouded, become untargetable to attacks and gain Durability if enough other allies are alive.",
+    "Active: Deal magic damage to the current target and other enemies in a semi-circle, ignoring a portion of their Magic Resist."
+   ],
+   "unlock": [
+    "Field the required number of K/DA or Renegade champions."
+   ]
+  },
+  {
+   "name": "Galio",
+   "cost": 3,
+   "role": "Magic Tank",
+   "range": "1",
+   "traits": [
+    "Jazz",
+    "Frontman"
+   ],
+   "effects": [
+    "CC"
+   ],
+   "ability": "Blow Up a Storm",
+   "mana": "50/120",
+   "desc": [
+    "Gain a shield for a duration. Fire wind at the enemy who dealt the most damage this fight, dealing magic damage and stunning them for a duration."
+   ],
+   "unlock": [
+    "Have the required number of Bodyguard, Juggernaut, or Frontman traits active.",
+    "Level 7"
+   ]
+  },
+  {
+   "name": "K'Sante",
+   "cost": 3,
+   "role": "Attack Tank",
+   "range": "1",
+   "traits": [
+    "Heartsteel",
+    "Bodyguard"
+   ],
+   "effects": [
+    "CC"
+   ],
+   "ability": "In Your House!",
+   "mana": "70/140",
+   "desc": [
+    "Gain a shield, then charge and push the target, stunning them and other enemies hit before slamming them for physical damage. After charging, taunt nearby enemies.",
+    "Heartsteel Upgrade: Gain Armor and Magic Resist and deal bonus physical damage on attack."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Kai'Sa",
+   "cost": 3,
+   "role": "Attack Marksman",
+   "range": "4",
+   "traits": [
+    "K/DA",
+    "Trickshot"
+   ],
+   "effects": [],
+   "ability": "Make it Rain",
+   "mana": "0/30",
+   "desc": [
+    "Passive: Every few attacks, fire missiles that deal physical damage.",
+    "Active: Gain Attack Speed for the rest of combat."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Malzahar",
+   "cost": 3,
+   "role": "Magic Caster",
+   "range": "4",
+   "traits": [
+    "Composer",
+    "Prodigy"
+   ],
+   "effects": [
+    "Shred"
+   ],
+   "ability": "Forbidden Cacophony",
+   "mana": "0/50",
+   "desc": [
+    "Fire a beam at the target, dealing magic damage over time. The energy rhythmically explodes 4 times, reducing the Magic Resist of enemies in an area and dealing magic damage with each explosion."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Senna",
+   "cost": 3,
+   "role": "Attack Caster",
+   "range": "4",
+   "traits": [
+    "True Damage",
+    "Hitmaker"
+   ],
+   "effects": [],
+   "ability": "Reverberation Devastation",
+   "mana": "0/20",
+   "desc": [
+    "Blast the target, dealing physical damage and marking them. If they’re already marked, detonate the mark instead, dealing damage. Detonating the mark or killing a marked enemy grants Damage Amp until the end of combat."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Swain",
+   "cost": 3,
+   "role": "Magic Tank",
+   "range": "1",
+   "traits": [
+    "Rock",
+    "Arcanist",
+    "Frontman"
+   ],
+   "effects": [
+    "Healing"
+   ],
+   "ability": "A Cruel Devil's Thesis",
+   "mana": "70/120",
+   "desc": [
+    "Enter Demon Form, gaining max Health and dealing magic damage to adjacent enemies every second. Subsequent casts heal and increase the damage."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Syndra",
+   "cost": 3,
+   "role": "Magic Caster",
+   "range": "4",
+   "traits": [
+    "Beach Pop",
+    "Choreographer"
+   ],
+   "effects": [],
+   "ability": "Serve's Up",
+   "mana": "0/30",
+   "desc": [
+    "Spike a volleyball at the target, dealing magic damage. It bounces to the enemy behind them with the fewest items, dealing magic damage."
+   ],
+   "unlock": [
+    "Field the required number of unique star levels of Beach Pop or Choreographer."
+   ]
+  },
+  {
+   "name": "Tibbers",
+   "cost": 3,
+   "role": "Attack Tank",
+   "range": "1",
+   "traits": [
+    "Ionic Spark",
+    "Bodyguard"
+   ],
+   "effects": [],
+   "ability": "Girl's Best Friend",
+   "mana": "40/100",
+   "desc": [
+    "Passive: At low health or when your strongest Annie dies, become enraged, gaining max Health, Attack Damage, and Attack Speed that decays over time.",
+    "Active: Gain a shield for a fixed duration. If enraged, refresh the decaying Attack Speed."
+   ],
+   "unlock": [
+    "Reach the required star level on Annie and equip the required number of items to her."
+   ]
+  },
+  {
+   "name": "Viego",
+   "cost": 3,
+   "role": "Attack Fighter",
+   "range": "1",
+   "traits": [
+    "Pentakill",
+    "Choreographer",
+    "Slayer"
+   ],
+   "effects": [],
+   "ability": "Singled Out",
+   "mana": "0/40",
+   "desc": [
+    "Summon swords around the target, then impale them after a brief delay, dealing physical damage per sword. Gain a permanent sword every set number of takedowns."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Ahri",
+   "cost": 4,
+   "role": "Magic Caster",
+   "range": "4",
+   "traits": [
+    "K/DA",
+    "Choreographer"
+   ],
+   "effects": [],
+   "ability": "Burn it Down",
+   "mana": "0/30",
+   "desc": [
+    "Passive: Start combat with fox-fires and gain more after casting, up to a limit. Then enter a flow state, moving faster and empowering subsequent casts.",
+    "Active: Launch all fox-fires at the target, each dealing magic damage. While in the flow state, launch a heart at the target that deals magic damage and split the fox-fires among enemies near the target."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Alistar",
+   "cost": 4,
+   "role": "Magic Tank",
+   "range": "1",
+   "traits": [
+    "Country"
+   ],
+   "effects": [
+    "CC",
+    "Healing"
+   ],
+   "ability": "Blue Cow Crying in the Rain",
+   "mana": "55/155",
+   "desc": [
+    "Heal, with the amount increased based on missing Health. Then slam the target, knocking up nearby enemies and dealing magic damage to all enemies hit."
+   ],
+   "unlock": [
+    "A Chain Vest equipped to a Caster or Marksman.",
+    "Level 7"
+   ]
+  },
+  {
+   "name": "Alune",
+   "cost": 4,
+   "role": "Magic Caster",
+   "range": "4",
+   "traits": [
+    "Heartsteel",
+    "Manager",
+    "Prodigy"
+   ],
+   "effects": [],
+   "ability": "Spotlight",
+   "mana": "20/65",
+   "desc": [
+    "Call down a spotlight on the target, dealing magic damage. Nearby enemies split magic damage. If the target dies, excess damage is split among the nearest enemies.",
+    "Heartsteel Upgrade: Fire blasts at the target that deal magic damage."
+   ],
+   "unlock": [
+    "Field the required number of unique Heartsteel or Prodigy champions.",
+    "Level 7"
+   ]
+  },
+  {
+   "name": "Aurora",
+   "cost": 4,
+   "role": "Magic Caster",
+   "range": "2",
+   "traits": [
+    "Ionic Spark",
+    "Renegade"
+   ],
+   "effects": [],
+   "ability": "Between Worlds Apart",
+   "mana": "0/60",
+   "desc": [
+    "Blink away and fire a blast through the best line, dealing magic damage to the two highest-Health enemies and less magic damage to the rest. Then blink back."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Garen",
+   "cost": 4,
+   "role": "Attack Tank",
+   "range": "1",
+   "traits": [
+    "Synthwave",
+    "Choreographer"
+   ],
+   "effects": [
+    "Healing"
+   ],
+   "ability": "Sword of Truth",
+   "mana": "30/100",
+   "desc": [
+    "Heal, then fire a wave toward the current target, dealing physical damage to enemies hit and weakening them, reducing their damage dealt."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Graves",
+   "cost": 4,
+   "role": "Attack Fighter",
+   "range": "2",
+   "traits": [
+    "Beach Pop",
+    "Renegade"
+   ],
+   "effects": [],
+   "ability": "Left Hand Free",
+   "mana": "0/30",
+   "desc": [
+    "For the next attacks, gain Attack Speed, dash to targets, and fire a cone of bullets that each deal physical damage. On a kill, empower an additional attack."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Jhin",
+   "cost": 4,
+   "role": "Attack Specialist",
+   "range": "5",
+   "traits": [
+    "Classical",
+    "Encore"
+   ],
+   "effects": [],
+   "ability": "String Quartet",
+   "mana": "4/4",
+   "desc": [
+    "Passive: Convert bonus Attack Speed into Attack Damage. Attacks summon violins that strike in unison, dealing physical damage and captivating the target. Every fourth attack deals empowered physical damage and resets the violins. From the fourth sequence onward, all violins remain out, Jhin gains infinite range, and his attacks pierce targets, dealing reduced damage with each target hit."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Jinx",
+   "cost": 4,
+   "role": "Attack Marksman",
+   "range": "4",
+   "traits": [
+    "Ionic Spark",
+    "Hitmaker"
+   ],
+   "effects": [],
+   "ability": "Boom Boom POW POW",
+   "mana": "30/90",
+   "desc": [
+    "Rapidly fire missiles at nearby enemies, each dealing physical damage."
+   ],
+   "unlock": [
+    "Equip the required number of items to an Ionic Spark or Hitmaker champion.",
+    "Level 7"
+   ]
+  },
+  {
+   "name": "Kayle",
+   "cost": 4,
+   "role": "Magic Marksman",
+   "range": "4",
+   "traits": [
+    "Pentakill",
+    "Swiftstriker"
+   ],
+   "effects": [],
+   "ability": "Stairway to Hell",
+   "mana": "0/50",
+   "desc": [
+    "Passive: Attacks deal bonus magic damage.",
+    "Active: Gain Attack Speed and infinite range for a duration, summoning a sword with each attack. Afterwards, rain swords on the target, dealing magic damage to nearby enemies and additional magic damage to the target for each sword."
+   ],
+   "unlock": [
+    "Field the required number of unique Pentakill or Swiftstriker champions.",
+    "Level 7"
+   ]
+  },
+  {
+   "name": "Leona",
+   "cost": 4,
+   "role": "Magic Tank",
+   "range": "1",
+   "traits": [
+    "K/DA",
+    "Bodyguard",
+    "Manager"
+   ],
+   "effects": [
+    "Shred"
+   ],
+   "ability": "Coordinated Light Show",
+   "mana": "40/100",
+   "desc": [
+    "Gain a shield for a duration. Call down beams of light on nearby enemies; each deals magic damage and reduces its target’s Magic Resist."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Locke",
+   "cost": 4,
+   "role": "Magic Assassin",
+   "range": "2",
+   "traits": [
+    "Rock",
+    "Swiftstriker"
+   ],
+   "effects": [],
+   "ability": "Pursue Sin (The Soul Nail Song)",
+   "mana": "0/30",
+   "desc": [
+    "Passive: Attacks deal bonus magic damage. All damage Locke deals to an enemy increases for each mark he has applied to them.",
+    "Active: Hurl 3 Soul Nails at the furthest enemy within range, dealing magic damage to and marking all enemies hit. Then teleport to that enemy and deal magic damage."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Mel",
+   "cost": 4,
+   "role": "Magic Caster",
+   "range": "4",
+   "traits": [
+    "R&B",
+    "Arcanist"
+   ],
+   "effects": [],
+   "ability": "Chain of Blues",
+   "mana": "0/40",
+   "desc": [
+    "Fire missiles split between the closest enemies, dealing magic damage and applying a stack of Blues to each. For every required stack threshold of Blues, enemies take increased damage from this ability."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Shyvana",
+   "cost": 4,
+   "role": "Magic Tank",
+   "range": "1",
+   "traits": [
+    "Ionic Spark",
+    "Frontman"
+   ],
+   "effects": [],
+   "ability": "Dragon Force",
+   "mana": "30/100",
+   "desc": [
+    "Passive: At a health threshold, transform into Dragon Form. While transformed, gain max Health and Attack Speed, and every third attack deals bonus magic damage in a 1-hex area.",
+    "Active: Gain a Shield for a duration."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Thresh",
+   "cost": 4,
+   "role": "Magic Tank",
+   "range": "1",
+   "traits": [
+    "Classical",
+    "Frontman"
+   ],
+   "effects": [
+    "Healing"
+   ],
+   "ability": "Dark Passage (Reprise)",
+   "mana": "40/100",
+   "desc": [
+    "Passive: Periodically Captivate the farthest enemy who isn’t already Captivated.",
+    "Active: Heal, then drain max Health from nearby enemies over time. While draining, gain Durability. Captivated enemies grant bonuses to Classical champions."
+   ],
+   "unlock": [
+    "Have enemies spend the required number of seconds Captivated by Classical."
+   ]
+  },
+  {
+   "name": "Vayne",
+   "cost": 4,
+   "role": "Attack Marksman",
+   "range": "4",
+   "traits": [
+    "Rock",
+    "Trickshot"
+   ],
+   "effects": [],
+   "ability": "Darkest Hour",
+   "mana": "0/50",
+   "desc": [
+    "Passive: On cast or when hit, tumble and gain Durability for a duration (cooldown applies).",
+    "Active: Gain demonic power, enhancing the next attacks to deal physical damage based on Attack Damage and the target’s max Health."
+   ],
+   "unlock": [
+    "Field Rock for the required number of combats.",
+    "Level 7"
+   ]
+  },
+  {
+   "name": "Wukong",
+   "cost": 4,
+   "role": "Attack Tank",
+   "range": "1",
+   "traits": [
+    "Gu Feng"
+   ],
+   "effects": [
+    "Shred",
+    "Sunder",
+    "Healing"
+   ],
+   "ability": "The Tricks of the Many Mythical Tricksters",
+   "mana": "40/100",
+   "desc": [
+    "Heals Wukong and sends out clones in a 2-Hex circle that quickly return. Clones steal Armor and Magic Resist from enemies they pass through and deal physical damage. When they return, Wukong gains the stolen defenses."
+   ],
+   "unlock": [
+    "Have allies deal the required damage while fielding Xayah."
+   ]
+  },
+  {
+   "name": "Xayah",
+   "cost": 4,
+   "role": "Attack Caster",
+   "range": "4",
+   "traits": [
+    "Gu Feng",
+    "Hitmaker"
+   ],
+   "effects": [
+    "Sunder"
+   ],
+   "ability": "Feathers Flying Like Leaves on the Wind",
+   "mana": "0/60",
+   "desc": [
+    "Summon feathers that strike the target, each dealing physical damage and reducing its Armor."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Yasuo",
+   "cost": 4,
+   "role": "Attack Fighter",
+   "range": "1",
+   "traits": [
+    "True Damage",
+    "Slayer"
+   ],
+   "effects": [
+    "CC"
+   ],
+   "ability": "Last Breath",
+   "mana": "0/30",
+   "desc": [
+    "Dash and thrust forward, dealing physical damage to enemies in a line. Every third cast, knock up the target and deal physical damage, then slam them down, dealing physical damage to nearby enemies."
+   ],
+   "unlock": [
+    "Field the required number of star levels of True Damage and Slayer champions.",
+    "Level 7"
+   ]
+  },
+  {
+   "name": "Yone",
+   "cost": 4,
+   "role": "Attack Fighter",
+   "range": "1",
+   "traits": [
+    "Heartsteel",
+    "Slayer"
+   ],
+   "effects": [],
+   "ability": "Two Sides",
+   "mana": "0/50",
+   "desc": [
+    "Passive: This ability scales with whichever is higher, Attack Damage or Ability Power. Attacks deal physical damage.",
+    "Active: Rapidly strike the target and nearby enemies multiple times, dealing physical damage with each strike, then unleash a massive slash that deals physical damage to the target.",
+    "Heartsteel Upgrade: Strike additional times and ignore some of the target’s Armor."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Yorick",
+   "cost": 4,
+   "role": "Magic Tank",
+   "range": "1",
+   "traits": [
+    "Pentakill",
+    "Juggernaut"
+   ],
+   "effects": [
+    "Slow",
+    "Healing"
+   ],
+   "ability": "Danse Macabre",
+   "mana": "50/100",
+   "desc": [
+    "Play an epic solo to restore Health and create a Hex zone that deals magic damage each second to enemies within. The final note deals magic damage to enemies in the zone and Slows them for a duration, reducing their Attack Speed."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Yuumi",
+   "cost": 4,
+   "role": "Magic Caster",
+   "range": "4",
+   "traits": [
+    "Illbeats",
+    "Encore"
+   ],
+   "effects": [
+    "Shred"
+   ],
+   "ability": "Girl, Put Your Records On (Your Head)",
+   "mana": "0/20",
+   "desc": [
+    "Throws a spinning disc that deals magic damage and stacks on the target, reducing their Magic Resist every second. When the stack reaches its required number of discs, it topples, dealing a portion of the stacked discs’ total damage to the target and splitting additional damage among nearby enemies. If an enemy dies with a disc, it passes to another enemy."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Zac",
+   "cost": 4,
+   "role": "Magic Tank",
+   "range": "1",
+   "traits": [
+    "Beach Pop",
+    "Juggernaut"
+   ],
+   "effects": [
+    "CC",
+    "Healing"
+   ],
+   "ability": "Cannonball!",
+   "mana": "60/120",
+   "desc": [
+    "Charge up, gaining Durability and healing. Then leap and crash onto the target, dealing magic damage to adjacent enemies and briefly knocking them up."
+   ],
+   "unlock": [
+    "Field the required number of unique Beach Pop or Juggernaut champions.",
+    "Level 7"
+   ]
+  },
+  {
+   "name": "Akali (K/DA)",
+   "cost": 5,
+   "role": "Attack Assassin",
+   "range": "1",
+   "traits": [
+    "K/DA"
+   ],
+   "effects": [],
+   "ability": "Sk8er Gurl",
+   "mana": "0/45",
+   "desc": [
+    "Skateboard through the longest line of unpainted enemies, dealing physical damage to enemies hit and painting them and the hexes along the path. Painted enemies and enemies standing in painted hexes are Vulnerable, increasing damage taken. After every 3rd cast, ignite the paint to deal physical damage to all painted enemies and enemies standing in painted hexes."
+   ],
+   "unlock": [
+    "Field the required number of unique star levels of K/DA without True Damage Akali unlocked."
+   ]
+  },
+  {
+   "name": "Akali (True Damage)",
+   "cost": 5,
+   "role": "Magic Fighter",
+   "range": "1",
+   "traits": [
+    "True Damage",
+    "Freestyle"
+   ],
+   "effects": [],
+   "ability": "Killin' like Domino",
+   "mana": "0/50",
+   "desc": [
+    "B-Side Passive: After every set number of takedowns, gain Player Health.",
+    "Active: Rapidly slash through the current target, dealing magic damage, increased against Tanks. While casting, gain Durability and become untargetable by attacks. Then blink over the target and throw a bomb that deals magic damage split among nearby enemies."
+   ],
+   "unlock": [
+    "Earn the required True Damage Bling without K/DA Akali unlocked."
+   ]
+  },
+  {
+   "name": "Aphelios",
+   "cost": 5,
+   "role": "Attack Marksman",
+   "range": "4",
+   "traits": [
+    "Heartsteel"
+   ],
+   "effects": [],
+   "ability": "BANG BANG BANGERS",
+   "mana": "40/180",
+   "desc": [
+    "Passive: Gain a Chakram every set number of attacks, up to a maximum. Attacks deal bonus physical damage for each equipped Chakram. After reaching the maximum, gain bonus Attack Damage and infinite range.",
+    "Active: Fire bolts at the nearest enemies, dealing physical damage, then split into bolts that damage enemies they pass through. Gain Attack Speed for a duration.",
+    "Heartsteel Upgrade: Start combat with Chakrams equipped."
+   ],
+   "unlock": [
+    "Reach the required star level on Alune or Yone."
+   ]
+  },
+  {
+   "name": "Dr. Mundo",
+   "cost": 5,
+   "role": "Magic Tank",
+   "range": "1",
+   "traits": [
+    "Record Mogul",
+    "Manager"
+   ],
+   "effects": [
+    "Healing"
+   ],
+   "ability": "Big Business",
+   "mana": "20/80",
+   "desc": [
+    "Passive: While Dr. Mundo has the required amount of max Health, he becomes Pumped Up, gaining max Health and causing attacks to deal bonus magic damage.",
+    "Active: Restore Health over time and deal magic damage each second to all nearby enemies."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Gwen",
+   "cost": 5,
+   "role": "Magic Fighter",
+   "range": "1",
+   "traits": [
+    "Ionic Spark",
+    "Melodic Heart"
+   ],
+   "effects": [],
+   "ability": "Glimmer in the Night",
+   "mana": "0/100",
+   "desc": [
+    "Passive: Attacks deal bonus magic damage to the target and other enemies in a cone. Dash to new targets.",
+    "Active: After a short delay, summon a massive pair of scissors to snip a horizontal line on the target, dealing magic damage to all enemies hit, plus damage split between them. If only a limited number of enemies are hit, refund Mana."
+   ],
+   "unlock": [
+    "Have Ionic Spark fans cheer the required number of times."
+   ]
+  },
+  {
+   "name": "Janna",
+   "cost": 5,
+   "role": "Magic Caster",
+   "range": "4",
+   "traits": [
+    "Gu Feng",
+    "Windblessed",
+    "Prodigy"
+   ],
+   "effects": [
+    "CC",
+    "CC comes from the",
+    "Windblessed",
+    "trait"
+   ],
+   "ability": "Hymn of the Heaven's Gale",
+   "mana": "0/45",
+   "desc": [
+    "Fire celestial dragons at nearby enemies, dealing magic damage. After several casts, envelop the arena in Heaven’s Gale, dealing magic damage to every enemy over time."
+   ],
+   "unlock": [
+    "Earn the required interest while fielding Xayah."
+   ]
+  },
+  {
+   "name": "Lee Sin",
+   "cost": 5,
+   "role": "Attack Fighter",
+   "range": "1",
+   "traits": [
+    "Gu Feng"
+   ],
+   "effects": [
+    "CC"
+   ],
+   "ability": "Celestial Combo To Impress The Heavens",
+   "mana": "0/50",
+   "desc": [
+    "Unleash a combo attack beginning with Dragon Slam; subsequent casts add moves to the sequence. Dragon Slam deals physical damage to the target and reduced physical damage to nearby enemies. Tempest Spin deals physical damage to the target, knocks them up, and deals reduced physical damage to nearby enemies. Celestial Punch deals physical damage and marks the target; if they are already marked, it strikes their core for bonus true damage."
+   ],
+   "unlock": [
+    "Deal the required player damage while fielding Xayah."
+   ]
+  },
+  {
+   "name": "Miss Fortune",
+   "cost": 5,
+   "role": "Attack Caster",
+   "range": "5",
+   "traits": [
+    "8-Bit",
+    "Hitmaker"
+   ],
+   "effects": [],
+   "ability": "Pinball Wizard",
+   "mana": "0/50",
+   "desc": [
+    "Fire a pinball toward the target, dealing physical damage. It bounces after hitting an enemy, damaging nearby enemies with reduced damage on each hit until it expires. Damage cannot fall below a minimum."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Mordekaiser",
+   "cost": 5,
+   "role": "Magic Fighter",
+   "range": "1",
+   "traits": [
+    "Pentakill"
+   ],
+   "effects": [
+    "CC",
+    "Healing"
+   ],
+   "ability": "Hand of Doom",
+   "mana": "0/60",
+   "desc": [
+    "Briefly gain Durability and summon a claw that deals magic damage in a massive line. The closest enemies take more damage and are pulled toward Mordekaiser. For the rest of combat, gain Omnivamp and Attack Range, and replace attacks with a slam that deals magic damage to the target and nearby enemies."
+   ],
+   "unlock": [
+    "Field the required number of unique star levels of Pentakill."
+   ]
+  },
+  {
+   "name": "Nidalee",
+   "cost": 5,
+   "role": "Magic Fighter",
+   "range": "2",
+   "traits": [
+    "Mariachi",
+    "Choreographer"
+   ],
+   "effects": [
+    "Healing"
+   ],
+   "ability": "Pounce Party|Dance of Life",
+   "mana": "20/45",
+   "desc": [
+    "In Cougar Form, Pounce Party pounces on enemies, dealing magic damage that increases with each pounce. In Human Form, Dance of Life heals, then hurls a javelin at the target for magic damage and scatters flowers around them; after a brief delay, the flowers deal magic damage to enemies nearby."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Nunu & Willump",
+   "cost": 5,
+   "role": "Magic Specialist",
+   "range": "1",
+   "traits": [
+    "Disco",
+    "Frontman"
+   ],
+   "effects": [
+    "Healing",
+    "Healing comes from the",
+    "Disco",
+    "trait"
+   ],
+   "ability": "It's the Time to Disco!",
+   "mana": "20/75",
+   "desc": [
+    "Passive: Gain Mana Regen. Slowly roll a Disco Ball, dealing magic damage to all enemies it passes through.",
+    "Active: For the rest of combat, move faster and increase the Disco Ball’s size and damage."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Pyke",
+   "cost": 5,
+   "role": "Attack Fighter",
+   "range": "1",
+   "traits": [
+    "Rock",
+    "Renegade"
+   ],
+   "effects": [],
+   "ability": "Execute Gon' Give it to Ya",
+   "mana": "0/30",
+   "desc": [
+    "Passive: When an enemy drops below the health threshold, instantly cast on them, then dash back to the current target.",
+    "Active: Deal physical damage to the target and to other enemies in an X shape. Execute enemies below the health threshold."
+   ],
+   "unlock": [
+    "Have at least the required amount of gold at the end of combat.",
+    "Level 7"
+   ]
+  },
+  {
+   "name": "Rell",
+   "cost": 5,
+   "role": "Magic Tank",
+   "range": "1",
+   "traits": [
+    "R&B",
+    "Beat Master"
+   ],
+   "effects": [
+    "Healing",
+    "Healing comes from the",
+    "Beat Master",
+    "trait"
+   ],
+   "ability": "Rhythm Blaster | Metal Pony Club",
+   "mana": "30/100",
+   "desc": [
+    "While unmounted, Rhythm Blaster grants a shield and summons 3 speakers for a duration. Each second, they blast a wave that deals magic damage to enemies hit. While mounted, Metal Pony Club slams into a crowd, dealing magic damage to the center enemy and damage split among enemies within 2 hexes."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Taliyah",
+   "cost": 5,
+   "role": "Magic Caster",
+   "range": "4",
+   "traits": [
+    "Beach Pop",
+    "Encore"
+   ],
+   "effects": [
+    "CC"
+   ],
+   "ability": "Crowd Surfing",
+   "mana": "0/40",
+   "desc": [
+    "Throws rocks at the target, each dealing magic damage. Every few casts, quickly repositions and surfs in a line, dealing magic damage based on enemies’ max Health and briefly knocking up enemies hit."
+   ],
+   "unlock": [
+    "Start a champion of each cost in a Beach Pop hex."
+   ]
+  },
+  {
+   "name": "Teemo",
+   "cost": 5,
+   "role": "Magic Caster",
+   "range": "4",
+   "traits": [
+    "Hyperpop",
+    "Hype Man"
+   ],
+   "effects": [],
+   "ability": "Going Viral",
+   "mana": "0/100",
+   "desc": [
+    "Passive: Attacks apply Viral, dealing magic damage over time. Infected enemies become zombies on death, seeking unaffected enemies and exploding to damage adjacent enemies and apply Viral.",
+    "Active: Launch a mushroom that applies Viral to enemies within 3 hexes and deals magic damage, reduced for each hex from the center."
+   ],
+   "unlock": [
+    "Collect the required amount of Hyperpop Hype."
+   ]
+  },
+  {
+   "name": "Twisted Fate",
+   "cost": 5,
+   "role": "Magic Marksman",
+   "range": "4",
+   "traits": [
+    "Tango",
+    "Trickshot"
+   ],
+   "effects": [
+    "Burn",
+    "Burn comes from the",
+    "Tango",
+    "trait"
+   ],
+   "ability": "Wildcard Cortado",
+   "mana": "0/50",
+   "desc": [
+    "Passive: At combat start, draw a card for each champion in the shop. If the shop has refreshed this round, gain loot based on the cards drawn: 1 or 2 of a kind grants gold, 3 of a kind grants a random champion, 4 of a kind grants an item component, and 5 of a kind grants a mystery box.",
+    "Active: The next 5 attacks gain Attack Speed and are replaced with cards that deal magic damage to the target and 2 nearby enemies."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Vi",
+   "cost": 5,
+   "role": "Attack Fighter",
+   "range": "1",
+   "traits": [
+    "EDM",
+    "Juggernaut"
+   ],
+   "effects": [
+    "Healing"
+   ],
+   "ability": "Drop the Beatdown",
+   "mana": "0/50",
+   "desc": [
+    "Summon giant hologram fists, gain a shield for a duration, and shield nearby allies. Slam the target repeatedly, dealing physical damage to them and damage to other enemies within 2 hexes.",
+    "EDM Upgrade: Slam one additional time and heal for a portion of the damage dealt by this ability."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Vladimir",
+   "cost": 5,
+   "role": "Magic Fighter",
+   "range": "2",
+   "traits": [
+    "Classical",
+    "Arcanist"
+   ],
+   "effects": [
+    "Healing"
+   ],
+   "ability": "The Opera Phantom",
+   "mana": "0/40",
+   "desc": [
+    "Passive: Gain Omnivamp. Debuffed enemies are Captivated.",
+    "Active: Deal magic damage to the nearest enemies and Captivate them for a duration. Every few casts, drop a chandelier that deals magic damage to all enemies, reduced for each hex they are from the epicenter. Debuffs include Burn, Wound, Shred, Sunder, Mana Reave, Weaken, Slow, and Vulnerable."
+   ],
+   "unlock": [
+    "Field only the specified number of champions in the two front rows of the battlefield.",
+    "Level 8"
+   ]
+  },
+  {
+   "name": "Zeri",
+   "cost": 5,
+   "role": "Attack Caster",
+   "range": "4",
+   "traits": [
+    "Goth",
+    "Swiftstriker"
+   ],
+   "effects": [],
+   "ability": "Lasers After Midnight",
+   "mana": "0/150",
+   "desc": [
+    "Quickly dashes around the arena, firing lasers in rapid succession at the current target. Each laser deals physical damage to enemies hit and ignores a portion of their Armor."
+   ],
+   "unlock": []
+  },
+  {
+   "name": "Baron Nashor",
+   "cost": 7,
+   "role": "Attack Fighter",
+   "range": "1",
+   "traits": [
+    "One Monster Band"
+   ],
+   "effects": [
+    "CC"
+   ],
+   "ability": "Assemble the Ensemble",
+   "mana": "80/120",
+   "desc": [
+    "Summon an 8-member orchestra and a Riff Herald, knocking up all enemies. Deal physical and magic damage split among all enemies. Each minion attacks multiple times, dealing physical damage with each attack."
+   ],
+   "unlock": [
+    "Collect all members of Baron's ensemble.",
+    "Deal the required damage with your strongest Malzahar."
+   ]
+  },
+  {
+   "name": "Rakan",
+   "cost": 7,
+   "role": "Magic Assassin",
+   "range": "1",
+   "traits": [
+    "Boy Band"
+   ],
+   "effects": [
+    "CC"
+   ],
+   "ability": "Fly like a Peacock",
+   "mana": "0/55",
+   "desc": [
+    "Dash to a nearby group of enemies, then fling feathers split among enemies within 1 hex, dealing magic damage. Rakan hits enemies within 2 hexes and briefly knocks them up."
+   ],
+   "unlock": [
+    "At Level 8+, win or lose the required number of consecutive combats."
+   ]
+  },
+  {
+   "name": "Smeech",
+   "cost": 7,
+   "role": "Attack Specialist",
+   "range": "1",
+   "traits": [
+    "Jazz",
+    "Slayer"
+   ],
+   "effects": [],
+   "ability": "Upswing",
+   "mana": "0/4",
+   "desc": [
+    "Passive: Gain Beats per attack and cast periodically.",
+    "Active: Gain a shield and deal physical damage to all enemies within 2 hexes, then strike the current target multiple times, dealing physical damage plus additional damage per Beat. After unleashing a set number of Beats, gain an emblem for a trait you don’t have active; the number of Beats required increases."
+   ],
+   "unlock": [
+    "Have at least the required number of non-unique traits active.",
+    "Level 9"
+   ]
+  },
+  {
+   "name": "Sona",
+   "cost": 7,
+   "role": "Magic Specialist",
+   "range": "0",
+   "traits": [
+    "Producer",
+    "Collab"
+   ],
+   "effects": [
+    "CC"
+   ],
+   "ability": "feat. Sona",
+   "mana": "0/190",
+   "desc": [
+    "Passive: Cannot attack. Every few seconds, gains Mana, deals magic damage to nearby enemies, and grants allies a Shield for a duration.",
+    "Active: Sends a sonic wave across the battlefield, dealing magic damage split among all enemies and Stunning them for a duration. Allies gain a Shield split among them for a duration."
+   ],
+   "unlock": [
+    "Inspire Collab champions the required number of times.",
+    "Level 10"
+   ]
+  }
+ ],
+ "traits": {
+  "8-Bit": [
+   "1",
+   "1",
+   "Keep score of your team's damage dealt, with Miss Fortune’s damage contributing triple. When you beat a high score, get a prize.",
+   "A unique trait: no other champion has it.",
+   "Hitmaker",
+   "2",
+   "4",
+   "Hitmakers gain bonus Attack Damage. The Hitmakers with the most items become Big Shots, gaining even more Attack Damage.",
+   "2",
+   "Big Shot, bonus Attack Damage",
+   "4",
+   "Big Shots, bonus Attack Damage"
+  ],
+  "Arcanist": [
+   "2",
+   "4",
+   "6",
+   "Your team gains Ability Power, Arcanists gain more.",
+   "2",
+   "Bonus Ability Power, more for Arcanists",
+   "4",
+   "Bonus Ability Power, more for Arcanists",
+   "6",
+   "Bonus Ability Power, more for Arcanists"
+  ],
+  "Beach Pop": [
+   "3",
+   "5",
+   "7",
+   "Gain placeable instruments that empower adjacent allies. Empowered allies regenerate a portion of their Health periodically.",
+   "Empowered Beach Pop champions gain Attack Speed and also regenerate Mana periodically.",
+   "3",
+   "1 Instrument; bonus Attack Speed, Mana regeneration",
+   "5",
+   "2 Instruments; bonus Attack Speed, Mana regeneration",
+   "7",
+   "AND periodically, an ocean breeze heals Beach Pop champions and grants them Mana."
+  ],
+  "Beat Master": [
+   "1",
+   "1",
+   "At a threshold of her max Health, Rell mounts up and fully heals over time.",
+   "While mounted, her max Mana is reduced and every 3rd attack deals a portion of her total Armor and Magic Resist as magic damage in a line.",
+   "A unique trait: no other champion has it."
+  ],
+  "Bodyguard": [
+   "2",
+   "4",
+   "6",
+   "While at least one Bodyguard is alive, your team gains bonus Armor and Magic Resist. Bodyguards gain more.",
+   "2",
+   "Bonus Armor and Magic Resist for Bodyguards",
+   "4",
+   "Bonus Armor and Magic Resist for Bodyguards",
+   "6",
+   "Bonus Armor and Magic Resist for Bodyguards"
+  ],
+  "Boy Band": [
+   "1",
+   "1",
+   "Rakan is accompanied by placeable clones that have a portion of his max Health, deal damage, and copy his Completed and Radiant items.",
+   "A unique trait: no other champion has it."
+  ],
+  "Choreographer": [
+   "2",
+   "3",
+   "4",
+   "5",
+   "Allies who start in the front 2 rows gain Shield. All other allies gain Damage Amp. Choreographers gain double.",
+   "2",
+   "Shield; Damage Amp",
+   "3",
+   "Shield; Damage Amp",
+   "4",
+   "Shield; Damage Amp",
+   "5",
+   "Shield; Damage Amp"
+  ],
+  "Classical": [
+   "2",
+   "4",
+   "6",
+   "Classical champions Captivate enemies in unique ways. They gain Damage Amp, increased periodically while an enemy is Captivated.",
+   "2",
+   "Bonus Damage Amp; the Captivated deal reduced damage.",
+   "4",
+   "Bonus Damage Amp; the Captivated throw roses on death, healing a Classical champion.",
+   "6",
+   "Bonus Damage Amp; the Captivated have a chance to join your bench on death."
+  ],
+  "Collab": [
+   "3",
+   "5",
+   "Collab champions become inspired after taking or dealing damage a set number of times, gaining Attack Damage and Ability Power.",
+   "Every time you reach the required number of inspirations during player combat, gain copies of Collab champions.",
+   "3",
+   "Bonus Attack Damage and Ability Power",
+   "5",
+   "Bonus Attack Damage and Ability Power",
+   "Each game a different set of champions gain the Collab trait!",
+   "A unique trait: no other champion has it."
+  ],
+  "Composer": [
+   "1",
+   "1",
+   "Mystical Instruments can appear in your shop. There is one of each rarity.",
+   "For each one you have, your team gains bonus Ability Power. Malzahar gains double.",
+   "If he has dealt enough damage and you have all 5 instruments, Malzahar writes his masterpiece, unlocking Baron Nashor.",
+   "A unique trait: no other champion has it.",
+   "Prodigy",
+   "2",
+   "3",
+   "4",
+   "5",
+   "Your team gains bonus Mana Regen. Prodigies gain more.",
+   "2",
+   "Bonus Mana Regen",
+   "3",
+   "Bonus Mana Regen",
+   "4",
+   "Bonus Mana Regen",
+   "5",
+   "Bonus Mana Regen; The lowest Health ally heals for a portion of damage dealt by Prodigies' abilities."
+  ],
+  "Country": [
+   "1",
+   "1",
+   "Combat Start: If your strongest Alistar has enough bonus Health, he gains Durability.",
+   "A unique trait: no other champion has it."
+  ],
+  "Disco": [
+   "1",
+   "1",
+   "Your team heals for a portion of max Health per second.",
+   "Enter Disco Fever after casting enough times, granting your team Attack Speed.",
+   "A unique trait: no other champion has it.",
+   "Frontman",
+   "2",
+   "4",
+   "6",
+   "Your team gains bonus Health. Frontmen gain more, which increases after the first time they cast.",
+   "2",
+   "Bonus Health, increased after the first cast",
+   "4",
+   "Bonus Health, increased after the first cast",
+   "6",
+   "Bonus Health, increased after the first cast"
+  ],
+  "EDM": [
+   "2",
+   "2",
+   "EDM Abilities become harder, better, faster, and stronger."
+  ],
+  "Emo": [
+   "1",
+   "1",
+   "Amumu gains bonus Armor and Magic Resist if he starts combat with no adjacent allies.",
+   "A unique trait: no other champion has it."
+  ],
+  "Encore": [
+   "2",
+   "4",
+   "When Encore champions fire projectiles with their abilities, they fire an extra one with reduced effectiveness.",
+   "2",
+   "Reduced projectile effectiveness",
+   "4",
+   "Reduced projectile effectiveness"
+  ],
+  "Freestyle": [
+   "1",
+   "1",
+   "Akali gains a different passive on each side of the True Damage record. A-Side prints gold. B-Side restores Player Health.",
+   "A unique trait: no other champion has it."
+  ],
+  "Frontman": [
+   "Unlockable:",
+   "Gwen",
+   "5-cost",
+   "Magic Fighter",
+   "Melodic Heart",
+   "Frontman",
+   "2",
+   "4",
+   "6",
+   "Your team gains bonus Health. Frontmen gain more, which increases after the first time they cast.",
+   "2",
+   "Bonus Health, increased after the first cast",
+   "4",
+   "Bonus Health, increased after the first cast",
+   "6",
+   "Bonus Health, increased after the first cast"
+  ],
+  "Goth": [
+   "1",
+   "1",
+   "The first time your strongest Zeri damages an enemy each combat, vampiric bats steal some Attack Damage from them, bringing it back to her.",
+   "A unique trait: no other champion has it.",
+   "Swiftstriker",
+   "2",
+   "3",
+   "4",
+   "5",
+   "Your team gains Attack Speed.",
+   "Swiftstrikers gain more periodically, up to a stack limit.",
+   "2",
+   "Bonus Attack Speed per stack",
+   "3",
+   "Bonus Attack Speed per stack",
+   "4",
+   "Bonus Attack Speed per stack",
+   "5",
+   "Bonus Attack Speed per stack"
+  ],
+  "Gu Feng": [
+   "2",
+   "3",
+   "4",
+   "Gu Feng champions gain stats, scaling with your player level.",
+   "2",
+   "Bonus Attack Damage and Ability Power, plus Armor and Magic Resist per level.",
+   "3",
+   "and bonus Health per level.",
+   "4",
+   "Choose between two Scrolls that can be equipped by Gu Feng champions. One of the Scrolls opens a dangerous path to Level 11."
+  ],
+  "Heartsteel": [
+   "1",
+   "3",
+   "5",
+   "7",
+   "1",
+   "Heartsteel members grant your team bonuses.",
+   "3",
+   "Choose a Bias, empowering their Ability.",
+   "5",
+   "Choose a 2nd Bias.",
+   "7",
+   "Heartsteel champions gain an additional portion of active Heartsteel bonuses.",
+   "Prismatic: Buckle up—HEARTSTEEL IS BACK!",
+   "Sett: Health",
+   "Kayn: Attack Damage",
+   "Ezreal: Critical Strike Chance",
+   "K'Sante: Armor and Magic Resist",
+   "Alune: Ability Power",
+   "Yone: Omnivamp",
+   "Aphelios: Attack Speed",
+   "Emblem: Durability",
+   "Sona: Increased Healing and Shielding"
+  ],
+  "Hitmaker": [
+   "2",
+   "4",
+   "Hitmakers gain bonus Attack Damage. The Hitmakers with the most items become Big Shots, gaining even more Attack Damage.",
+   "2",
+   "Big Shot, bonus Attack Damage",
+   "4",
+   "Big Shots, bonus Attack Damage"
+  ],
+  "Hype Man": [
+   "1",
+   "1",
+   "Whenever a Hyperpop champion deals enough damage or takes enough damage, store an extra Hyperpop Hype.",
+   "A unique trait: no other champion has it."
+  ],
+  "Hyperpop": [
+   "2",
+   "3",
+   "4",
+   "5",
+   "Hyperpop champions gain Health and Attack Speed. After player combat, they generate 4/6/12/40 Hype based on their star level + 1 Hype per takedown.",
+   "Each time you hit a new Hype Level, gain special rewards! At higher trait tiers, gain more Hype!",
+   "2",
+   "Bonus Health, bonus Attack Speed",
+   "3",
+   "Bonus Health, bonus Attack Speed, Hype multiplier",
+   "4",
+   "Bonus Health, bonus Attack Speed, Hype multiplier",
+   "5",
+   "Bonus Health, bonus Attack Speed, Hype multiplier"
+  ],
+  "Illbeats": [
+   "2",
+   "3",
+   "4",
+   "Open the Illbeats Mixer to allocate Decibels. Illbeats champions receive different stats based on your mix. Your team gains a portion of the mix.",
+   "2",
+   "Decibels",
+   "3",
+   "Decibels",
+   "4",
+   "Decibels. The mix is stronger.",
+   "Health",
+   "Attack Damage",
+   "Ability Power",
+   "Gold Chance on Takedown"
+  ],
+  "Indie": [
+   "1",
+   "1",
+   "After combat, Seraphine attracts new followers, granting you a random champion.",
+   "When you 3-star a champion, she becomes a Rising Star, upgrading her Ability and granting you a special subscriber reward.",
+   "After 3-starring enough champions, she becomes a Superstar!",
+   "A unique trait: no other champion has it."
+  ],
+  "Ionic Spark": [
+   "3",
+   "5",
+   "7",
+   "10",
+   "Fans cheer on Ionic Spark members with gifts periodically. Ionic Spark members gain Health.",
+   "3",
+   "Bonus Health; Letters that restore Health and grant Attack Speed",
+   "5",
+   "Bonus Health; Personalized gifts that grant Attack Damage or Ability Power",
+   "7",
+   "Bonus Health; Periodically after player combat, gain gold and a consumable!",
+   "10",
+   "Fans rush the stage!"
+  ],
+  "Jazz": [
+   "2",
+   "3",
+   "4",
+   "For each active trait (except uniques), your team gains bonus Health and Damage Amp.",
+   "2",
+   "Bonus Health, bonus Damage Amp",
+   "3",
+   "Bonus Health, bonus Damage Amp",
+   "4",
+   "Bonus Health, bonus Damage Amp"
+  ],
+  "Juggernaut": [
+   "2",
+   "4",
+   "6",
+   "Juggernauts gain Durability, increasing based on their missing Health.",
+   "2",
+   "Base to maximum Durability",
+   "4",
+   "Base to maximum Durability",
+   "6",
+   "Base to maximum Durability"
+  ],
+  "K/DA": [
+   "3",
+   "5",
+   "7",
+   "10",
+   "13",
+   "15",
+   "21",
+   "K/DA champions release new songs based on their total star level. At Combat Start and after a delay, they gain power for each of their songs.",
+   "3",
+   "POP/STARS: Reduced max Mana.",
+   "5",
+   "DRUM GO DUM: Shield based on max Health.",
+   "7",
+   "VILLAIN: Attack Speed that decays over time.",
+   "10",
+   "I'LL SHOW YOU: Boost all previous effects.",
+   "13",
+   "WATCH ME: Stun all enemies temporarily.",
+   "15",
+   "FIRESTARTER: Enemies take magic damage based on their max Health over time.",
+   "21",
+   "GIRLS: K/DA members ascend to 4-star."
+  ],
+  "Manager": [
+   "2",
+   "3",
+   "4",
+   "Gain a Spotlight Hex. The ally who starts combat in it gains bonuses at Combat Start and periodically thereafter.",
+   "2",
+   "Bonus Attack Damage and Ability Power",
+   "3",
+   "AND Mana",
+   "4",
+   "AND they drop Gold!"
+  ],
+  "Mariachi": [
+   "1",
+   "1",
+   "When Nidalee casts her Ability while above a Health threshold, she transforms into Cougar Form and casts Pounce Party. Otherwise, she casts Dance of Life.",
+   "Whenever she drops below a Health threshold, she leaps away and transforms back to Human form.",
+   "A unique trait: no other champion has it.",
+   "Choreographer",
+   "2",
+   "3",
+   "4",
+   "5",
+   "Allies who start in the front 2 rows gain Shield. All other allies gain Damage Amp. Choreographers gain double.",
+   "2",
+   "Shield; Damage Amp",
+   "3",
+   "Shield; Damage Amp",
+   "4",
+   "Shield; Damage Amp",
+   "5",
+   "Shield; Damage Amp"
+  ],
+  "Melodic Heart": [
+   "1",
+   "1",
+   "For the opening moments of combat, your strongest Gwen is surrounded by Mist and cannot be targeted by attacks. Allies gain Durability while within the Mist.",
+   "A unique trait: no other champion has it."
+  ],
+  "One Monster Band": [
+   "1",
+   "1",
+   "Baron Nashor takes up 2 team slots and is unstoppable.",
+   "After the first time Baron Nashor casts, he envelops the board in song, stealing a portion of the Attack Damage, Ability Power, Attack Speed, and Critical Strike Chance from all enemies.",
+   "A unique trait: no other champion has it."
+  ],
+  "Pentakill": [
+   "3",
+   "5",
+   "7",
+   "Pentakill members gain Attack Damage and Ability Power.",
+   "The first few enemies to drop below a Health threshold are executed and summon an allied ghoul in their place.",
+   "3",
+   "Bonus Attack Damage and Ability Power, a set number of enemies executed",
+   "5",
+   "Bonus Attack Damage and Ability Power, a set number of enemies executed",
+   "7",
+   "Bonus Attack Damage and Ability Power, a set number of enemies executed. The first enemy to die summons the Iron Maiden instead.",
+   "7",
+   "Bonus Attack Damage and Ability Power. MOSH PIT!!!!!!!"
+  ],
+  "Prodigy": [
+   "2",
+   "3",
+   "4",
+   "5",
+   "Your team gains bonus Mana Regen. Prodigies gain more.",
+   "2",
+   "Bonus Mana Regen",
+   "3",
+   "Bonus Mana Regen",
+   "4",
+   "Bonus Mana Regen",
+   "5",
+   "Bonus Mana Regen; The lowest Health ally heals for a portion of damage dealt by Prodigies' abilities."
+  ],
+  "Producer": [
+   "1",
+   "1",
+   "When Sona is fielded, choose a band to feature, gaining their trait.",
+   "Sona converts all bonus Attack Damage and Attack Speed into Ability Power.",
+   "A unique trait: no other champion has it.",
+   "Collab",
+   "3",
+   "5",
+   "Collab champions become inspired after taking or dealing damage a set number of times, gaining Attack Damage and Ability Power.",
+   "Every time you reach the required number of inspirations during player combat, gain copies of Collab champions.",
+   "3",
+   "Bonus Attack Damage and Ability Power",
+   "5",
+   "Bonus Attack Damage and Ability Power",
+   "Each game a different set of champions gain the Collab trait!",
+   "A unique trait: no other champion has it."
+  ],
+  "R&B": [
+   "1",
+   "2",
+   "1",
+   "Your team takes less damage from abilities.",
+   "2",
+   "Your strongest Mel and Rell are soul-linked. A portion of damage Mel takes is redirected to Rell. Rell heals for a portion of damage dealt by Mel."
+  ],
+  "Record Mogul": [
+   "1",
+   "1",
+   "Gain a Record Contract now and periodically thereafter. Contracted champions gain Damage Amp and their kills grant Dr. Mundo permanent Health.",
+   "The Record Contract is returned when the Recording Artist is sold or benched.",
+   "A unique trait: no other champion has it.",
+   "Manager",
+   "2",
+   "3",
+   "4",
+   "Gain a Spotlight Hex. The ally who starts combat in it gains bonuses at Combat Start and periodically thereafter.",
+   "2",
+   "Bonus Attack Damage and Ability Power",
+   "3",
+   "AND Mana",
+   "4",
+   "AND they drop Gold!"
+  ],
+  "Renegade": [
+   "2",
+   "3",
+   "4",
+   "5",
+   "Renegades gain Precision , Critical Strike Chance, and Critical Strike Damage.",
+   "2",
+   "Bonus Critical Strike Chance, bonus Critical Strike Damage",
+   "3",
+   "Bonus Critical Strike Chance, bonus Critical Strike Damage",
+   "4",
+   "Bonus Critical Strike Chance, bonus Critical Strike Damage",
+   "5",
+   "Bonus Critical Strike Chance, bonus Critical Strike Damage. Additionally, Renegades gain Durability."
+  ],
+  "Rock": [
+   "3",
+   "4",
+   "5",
+   "7",
+   "3",
+   "Summon the Infernal Idol.",
+   "4",
+   "He heals for a portion of damage dealt by Rock champions.",
+   "5",
+   "On cast, he fires a massive blast through the most enemies!",
+   "7",
+   "Periodically while he lives, bolts blast nearby enemies, repeating a portion of damage dealt by Rock champions as magic damage.",
+   "The Infernal Idol grows stronger based on the star level of your Rock champions."
+  ],
+  "Slayer": [
+   "2",
+   "4",
+   "6",
+   "Slayers gain Attack Speed and Omnivamp, which increases up to a cap, based on their missing Health.",
+   "2",
+   "Bonus Attack Speed, bonus Omnivamp",
+   "4",
+   "Bonus Attack Speed, bonus Omnivamp",
+   "6",
+   "Bonus Attack Speed, bonus Omnivamp"
+  ],
+  "Swiftstriker": [
+   "2",
+   "3",
+   "4",
+   "5",
+   "Your team gains Attack Speed.",
+   "Swiftstrikers gain more periodically, up to a stack limit.",
+   "2",
+   "Bonus Attack Speed per stack",
+   "3",
+   "Bonus Attack Speed per stack",
+   "4",
+   "Bonus Attack Speed per stack",
+   "5",
+   "Bonus Attack Speed per stack"
+  ],
+  "Synthwave": [
+   "1",
+   "1",
+   "At a Health threshold, gain a temporary Shield equal to a portion of Healing and Shielding received this combat.",
+   "A unique trait: no other champion has it.",
+   "Choreographer",
+   "2",
+   "3",
+   "4",
+   "5",
+   "Allies who start in the front 2 rows gain Shield. All other allies gain Damage Amp. Choreographers gain double.",
+   "2",
+   "Shield; Damage Amp",
+   "3",
+   "Shield; Damage Amp",
+   "4",
+   "Shield; Damage Amp",
+   "5",
+   "Shield; Damage Amp"
+  ],
+  "Tango": [
+   "1",
+   "1",
+   "Twisted Fate marks the nearest ally as his Tango Partner. They ignite with passion, gaining Attack Speed. Their damage Burns and Wounds enemies for a time.",
+   "Burn: Deals a percent of the target’s max Health as true damage every second.",
+   "Wound: Reduces healing received.",
+   "A unique trait: no other champion has it.",
+   "Trickshot",
+   "2",
+   "3",
+   "4",
+   "Trickshots' Attacks and Abilities ricochet. Each ricochet deals a percentage of the previous bounce's damage.",
+   "2",
+   "Ricochets; a portion of previous damage",
+   "3",
+   "Ricochets; a portion of previous damage",
+   "4",
+   "Ricochets; a portion of previous damage"
+  ],
+  "Trickshot": [
+   "2",
+   "3",
+   "4",
+   "Trickshots' Attacks and Abilities ricochet. Each ricochet deals a percentage of the previous bounce's damage.",
+   "2",
+   "Ricochets; a portion of previous damage",
+   "3",
+   "Ricochets; a portion of previous damage",
+   "4",
+   "Ricochets; a portion of previous damage"
+  ],
+  "True Damage": [
+   "3",
+   "5",
+   "While on the A-Side, earn Bling for winning player combat. On the B-Side, earn Bling for losing.",
+   "Periodically, choose to convert Bling into rewards or Keep Rising.",
+   "A-Side: Win",
+   "3",
+   "True Damage members deal bonus true damage. Gain Bling on kill + additional Bling if you win combat.",
+   "5",
+   "Bonus true damage. Bling on kill + additional Bling if you win combat.",
+   "Prismatic: KNOW MY NAME blasts from the record player!",
+   "True Damage members deal 99% bonus true damage and earn double the bling.",
+   "B-Side: Lose",
+   "3",
+   "After losing, gain Bling + additional Bling per consecutive loss on the B-Side. If you win, lose a portion of your Bling.",
+   "5",
+   "Each round after combat, heal some player Health and gain XP.",
+   "Prismatic: GIANTS blasts from the record player!",
+   "True Damage members deal 99% bonus true damage and drop gold on kill."
+  ],
+  "Windblessed": [
+   "1",
+   "1",
+   "Combat Start: Your strongest Janna releases a tornado that travels forward, knocking up enemies in its path.",
+   "A unique trait: no other champion has it.",
+   "Prodigy",
+   "2",
+   "3",
+   "4",
+   "5",
+   "Your team gains bonus Mana Regen. Prodigies gain more.",
+   "2",
+   "Bonus Mana Regen",
+   "3",
+   "Bonus Mana Regen",
+   "4",
+   "Bonus Mana Regen",
+   "5",
+   "Bonus Mana Regen; The lowest Health ally heals for a portion of damage dealt by Prodigies' abilities."
+  ]
+ },
+ "augments": [
+  {
+   "tier": "Silver",
+   "name": "3|4 Time",
+   "cat": "",
+   "desc": "Gain gold, player Health, and rerolls now, then gain a random champion after a delay.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "4|4 Time",
+   "cat": "",
+   "desc": "Gain gold, player Health, and rerolls now, then gain a random champion after a delay.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Augmented Power",
+   "cat": "",
+   "desc": "Your next augment is one tier higher.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Backup Bows",
+   "cat": "",
+   "desc": "Gain a Recurve Bow. After your champions attack, gain additional Recurve Bows.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Band of Thieves",
+   "cat": "",
+   "desc": "Gain Thief's Gloves.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Beltsmith",
+   "cat": "",
+   "desc": "Gain random completed items that build from Giant's Belt.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Bite Marks",
+   "cat": "Hero",
+   "desc": "Gain an Elise. Your strongest Elise becomes a Magic Assassin with a bite that she recasts on low Health enemies on kill.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Blind Box",
+   "cat": "",
+   "desc": "Gain a random Gold Augment, but lose gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Boxing Lessons",
+   "cat": "",
+   "desc": "Your team gains Health for each ally that starts combat in the front row.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Branching Out",
+   "cat": "Emblem",
+   "desc": "Gain a random Emblem.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Branching Out+",
+   "cat": "Emblem",
+   "desc": "Gain a random Emblem and a Reforger.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Bundle o' Shrooms",
+   "cat": "",
+   "desc": "Gain mushrooms; each grants either rerolls, XP, or Tactician Health. Mushrooms have a small chance to be huge and grant double loot.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Called Shot",
+   "cat": "",
+   "desc": "Set your win streak and gain gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Capital Gains",
+   "cat": "",
+   "desc": "Store gold equal to the interest you earn. On a stage-round, gain a portion of the stored gold. Gain gold now.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Caretaker's Ally",
+   "cat": "",
+   "desc": "Gain a random 2-cost champion now. Gain the same one again every time you level up.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Carve a Path",
+   "cat": "",
+   "desc": "Gain a B.F. Sword. After your champions deal physical damage, gain more.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Caster Apprentice",
+   "cat": "",
+   "desc": "Gain a Tear of the Goddess. After a set number of player combats, gain a Needlessly Large Rod.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Celestial Blessing",
+   "cat": "",
+   "desc": "Your team gains Omnivamp. Excess healing is converted into a shield, up to a maximum.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Champ Delivery",
+   "cat": "",
+   "desc": "Gain champions, then gain more champions after a delay.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Champ Delivery+",
+   "cat": "",
+   "desc": "Gain champions, then gain more after a delay.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Champ Delivery++",
+   "cat": "",
+   "desc": "Gain cost-based champions. After a delay, gain more.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Cheat Code",
+   "cat": "",
+   "desc": "Now and at the start of each stage, get a new cheat code. The first time you perform that exact sequence of actions, gain a reward.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Component Buffet",
+   "cat": "",
+   "desc": "Whenever you would get a component, gain a component anvil instead. Gain a random component. The anvil offers 4 choices.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Corrosion",
+   "cat": "",
+   "desc": "Enemies in the first two rows periodically lose Armor and Magic Resist.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Crafted Crafting",
+   "cat": "",
+   "desc": "Whenever you craft a completed item, you gain rerolls.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Crit Rune",
+   "cat": "",
+   "desc": "Gain gold. Your team gains Critical Strike Chance.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Crit Rune+",
+   "cat": "",
+   "desc": "Gain gold. Your team gains Critical Strike Chance.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Dummify",
+   "cat": "",
+   "desc": "Lose all champions on your board and bench. Gain a Training Dummy with health based on their combined health; it gains additional health each stage. Gain a random non-tank 2-star 2-cost champion.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Electrocharge",
+   "cat": "",
+   "desc": "After an ally takes enough attacks, they deal magic damage to nearby enemies, with a cooldown between activations.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Expedition",
+   "cat": "",
+   "desc": "At the start of every round, lose the champion in the rightmost bench slot. After losing enough gold value in champions this way, gain a powerful reward. Gain a 3-cost champion now.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Extra Buckles",
+   "cat": "",
+   "desc": "Gain a Giant's Belt. After your champions take damage, get more.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Feeling Lucky",
+   "cat": "",
+   "desc": "Gain gold, then flip a coin. If it lands heads, gain additional gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Feeling Lucky+",
+   "cat": "",
+   "desc": "Gain gold, then flip a coin; if heads, gain additional gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Fighter Apprentice",
+   "cat": "",
+   "desc": "Gain Sparring Gloves. After waiting through a set number of player combats, gain a Chain Vest.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Fighter Flight",
+   "cat": "",
+   "desc": "Your Fighters and Assassins move faster and gain Attack Speed. Both bonuses are doubled while they are below the health threshold.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Find Your Center",
+   "cat": "",
+   "desc": "The champion that starts combat in the center of the front row gains Damage Amp and max Health.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Flowing Tears",
+   "cat": "",
+   "desc": "Gain a Tear of the Goddess. After your champions spend Mana, gain more rewards.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Focused Fire",
+   "cat": "",
+   "desc": "Your team gains Attack Damage and gains more Attack Damage periodically.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Forge A Friend",
+   "cat": "",
+   "desc": "The next champion you buy is a star-ranked champion. Gain gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Future Focused",
+   "cat": "",
+   "desc": "Your Tactician loses Health, then gains 4-cost champions and gold after a set number of player combats.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Glass Cannon",
+   "cat": "",
+   "desc": "Allies that start combat in the back row begin combat at a Health level and gain Damage Amp.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Good For Something",
+   "cat": "",
+   "desc": "Champions that aren't holding items have a chance to drop gold when they die.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Group Hug",
+   "cat": "",
+   "desc": "At combat start, allies grant Armor and Magic Resist to other adjacent allies. This effect stacks.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Healing Orbs",
+   "cat": "",
+   "desc": "When an enemy dies, a nearby ally is healed.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Iron Assets",
+   "cat": "",
+   "desc": "Gain a component anvil and gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Item Grab Bag",
+   "cat": "",
+   "desc": "Gain 1 random completed item.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Keeping Tempo",
+   "cat": "",
+   "desc": "After winning player combat, gain a free Shop reroll.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Kick Start",
+   "cat": "",
+   "desc": "Gain a random champion and gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Kingslayer",
+   "cat": "",
+   "desc": "After winning player combat, gain gold; if your opponent had more health than you, gain a different amount instead. You also gain gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Knowledge Download",
+   "cat": "",
+   "desc": "Gain XP.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Late Game Specialist",
+   "cat": "",
+   "desc": "When you reach a level, gain gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Latent Forge",
+   "cat": "",
+   "desc": "Gain an Artifact Anvil after a set number of player combats.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Makeshift Armor",
+   "cat": "",
+   "desc": "Champions without items equipped gain Armor and Magic Resist.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Marksman Apprentice",
+   "cat": "",
+   "desc": "Gain a Recurve Bow. After a set number of player combats, gain a B.F. Sword.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Missed Connections",
+   "cat": "",
+   "desc": "Gain a copy of each 1-cost champion.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "One Twos Three",
+   "cat": "",
+   "desc": "Gain 2 1-cost champions, 2 2-cost champions, and 1 3-cost champion.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "One, Two, Five!",
+   "cat": "",
+   "desc": "Gain 1 random component, 2 gold, and 1 random 5-cost champion.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Pandora's Bench",
+   "cat": "",
+   "desc": "At the start of each round, champions in the rightmost bench slots transform into random champions of the same cost. Gain gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Pandora's Items",
+   "cat": "",
+   "desc": "At the start of each round, items on your bench are randomized. Gain random component items.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Partial Ascension",
+   "cat": "",
+   "desc": "Once combat has been underway for a while, your units gain Damage Amp.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Patience Is A Virtue",
+   "cat": "",
+   "desc": "Gain rerolls now. Each round, gain a free reroll if you did not buy a champion last round.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Quick Streaks",
+   "cat": "",
+   "desc": "You gain twice as much progress toward win and loss streaks. Gain gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Recombobulator",
+   "cat": "",
+   "desc": "Champions on your board permanently transform into random champions 1 cost tier higher, up to 5 cost. Gain Magnetic Removers and free rerolls.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Reunion Show",
+   "cat": "",
+   "desc": "Gain champions that all share a trait.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Rolling For Days",
+   "cat": "",
+   "desc": "Gain free Shop rerolls.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Silver Destiny",
+   "cat": "",
+   "desc": "Gain a random Silver Augment and gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Silver Destiny+",
+   "cat": "",
+   "desc": "Gain a random Silver Augment and gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Silver Destiny++",
+   "cat": "",
+   "desc": "Gain a random Silver Augment and gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Silver Spoon",
+   "cat": "",
+   "desc": "Gain XP.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Slice of Life",
+   "cat": "",
+   "desc": "Twice per stage, gain a random champion whose cost increases with the stage. This effect ends after you receive a champion at the maximum cost.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Slightly Magic Roll",
+   "cat": "",
+   "desc": "Roll a die and gain rewards based on the number rolled.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Small Grab Bag",
+   "cat": "",
+   "desc": "Gain random item components.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Staffsmith",
+   "cat": "",
+   "desc": "Gain random completed item(s) that build from Needlessly Large Rod.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Stats On Stats",
+   "cat": "",
+   "desc": "Gain stat-boosting consumables now and at regular intervals thereafter.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Strange Duet",
+   "cat": "",
+   "desc": "Allies that start combat isolated in pairs gain Durability and Damage Amp.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Swordsmith",
+   "cat": "",
+   "desc": "Gain random completed items that build from B.F. Sword.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Tank Apprentice",
+   "cat": "",
+   "desc": "Gain a Giant's Belt. After player combat, gain a Negatron Cloak.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Team Building",
+   "cat": "",
+   "desc": "Gain a Lesser Champion Duplicator, then gain another after a set number of player combats. It lets you copy a champion that costs 3 or less.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "The Drop",
+   "cat": "",
+   "desc": "After a delay in combat, your team heals for a portion of its max Health, and enemies take true damage based on their max Health.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "The Tower",
+   "cat": "",
+   "desc": "Gain a giant Training Dummy. At regular intervals, it zaps the nearest enemies, dealing true damage based on their max Health.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Twin Guardians",
+   "cat": "",
+   "desc": "When your first row meets the exact ally-count condition, those allies gain Health, Armor, and Magic Resist.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Verticality",
+   "cat": "",
+   "desc": "Champions gain Attack Damage, Ability Power, Armor, and Magic Resist for each ally that shares a trait with them.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "World Tour",
+   "cat": "",
+   "desc": "Gain a completed item anvil after every set number of player combats.",
+   "origin": ""
+  },
+  {
+   "tier": "Silver",
+   "name": "Young and Wild and Free",
+   "cat": "",
+   "desc": "You can always move freely on Carousel rounds and gain gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Advanced Loan",
+   "cat": "",
+   "desc": "Gain Gold. Your next augment is one tier lower.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Advanced Loan+",
+   "cat": "",
+   "desc": "Gain Gold. Your next augment is one tier lower.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Aim High",
+   "cat": "",
+   "desc": "For each of your first purchases of a unique unlockable 5-cost champion, gain a recommended item for that champion.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "All That Shimmers",
+   "cat": "",
+   "desc": "Choose a gold-generating Artifact. Gain a Magnetic Remover.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "All That Shimmers+",
+   "cat": "",
+   "desc": "Choose a gold-generating Artifact. Gain a Magnetic Remover and gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Arcane Viktor-y",
+   "cat": "",
+   "desc": "After an initial delay in combat, stun the enemy team; repeat this after another delay in combat.",
+   "origin": "TFT Macao Open, 2024"
+  },
+  {
+   "tier": "Gold",
+   "name": "Armed and Generous",
+   "cat": "",
+   "desc": "Gain a Hextech Gunblade. Your Gunblades' ally heal also applies to a second target.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Armor Stand",
+   "cat": "",
+   "desc": "Gain a Training Dummy with a Thief's Gloves. It always rolls Tank items.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Ascension",
+   "cat": "",
+   "desc": "After a delay in combat, your units gain Damage Amp.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Backline Blueprint",
+   "cat": "Emblem",
+   "desc": "Gain a 3-cost non-Tank champion and an Emblem that matches their class.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Battle of the Bands",
+   "cat": "",
+   "desc": "When you have enough active Bands, your team gains Attack Damage and Ability Power.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Beltsmith II",
+   "cat": "",
+   "desc": "Gain 1 random completed item that builds from Giant's Belt now, and another in a later round.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Big Solo",
+   "cat": "Trait",
+   "desc": "Your Heartsteel Biases gain more of all active Heartsteel bonuses. Gain Heartsteel champions.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Birthday Reunion",
+   "cat": "",
+   "desc": "Gain a random champion. At a later level, gain a random item component; at a subsequent level, gain another random champion.",
+   "origin": "Inkborn Fables Tactician's Crown, 2024"
+  },
+  {
+   "tier": "Gold",
+   "name": "Blind Box II",
+   "cat": "",
+   "desc": "Gain a random Prismatic Augment, but lose gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Bodyguard Training",
+   "cat": "",
+   "desc": "Allies gain Armor and Magic Resist, with the bonuses increasing per player level.",
+   "origin": "Gizmos & Gadgets Championship, 2022"
+  },
+  {
+   "tier": "Gold",
+   "name": "Bonus Gifts",
+   "cat": "",
+   "desc": "Start with gray loot orbs. Whenever you open a loot orb, you have a chance to gain gray loot orbs.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Bonus Gifts+",
+   "cat": "",
+   "desc": "Whenever you open a loot orb, you may gain a gray loot orb. Start with gray loot orbs.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Booster Pack",
+   "cat": "",
+   "desc": "Gain random champions, including at least one guaranteed champion.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Booster Pack+",
+   "cat": "",
+   "desc": "Gain random champions, including at least one champion of a guaranteed cost.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Booster Pack++",
+   "cat": "",
+   "desc": "Gain random champions, including at least one champion from a guaranteed cost tier.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Bundle o' Shrooms",
+   "cat": "",
+   "desc": "Gain mushrooms that each grant either a reroll, XP, or Tactician Health. Mushrooms have a small chance to be HUGE and grant double loot.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Calculated Loss",
+   "cat": "",
+   "desc": "After losing your combat, gain gold and a free Shop reroll.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Capital Gains II",
+   "cat": "",
+   "desc": "Store gold equal to the interest you earn. At a later stage and round, gain a percentage of the stored gold. Gain gold immediately.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Caretaker's Favor",
+   "cat": "",
+   "desc": "Gain a component anvil when you reach level 5, 6, 7, and 8. Component anvils offer 4 choices.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Celestial Blessing II",
+   "cat": "",
+   "desc": "Your team gains Omnivamp, and excess healing converts into a shield up to a maximum.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Chalice of Power",
+   "cat": "",
+   "desc": "Gain a Chalice of Power, an item that grants Ability Power and Mana Regen to its holder and allies in the same row.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Challenger's Grace",
+   "cat": "",
+   "desc": "At the start of combat, allies gain bonus Attack Speed temporarily. On takedown, they dash to their next target and gain this bonus again.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Champion Airdrop",
+   "cat": "",
+   "desc": "Gain champions, then gain more after a delay. After each airdrop, the delay and number of champions increase.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Cheat Code II",
+   "cat": "",
+   "desc": "Now and at the start of each stage, get a new cheat code. The first time you perform that exact sequence of actions, gain a reward.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Clear Mind",
+   "cat": "",
+   "desc": "If you have no champions on your bench at the end of player combat, gain XP.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Cluttered Mind",
+   "cat": "",
+   "desc": "Gain champions now. If your bench is full at the end of player combat, gain XP.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Cognitive Overload",
+   "cat": "",
+   "desc": "Gain gold, champions with star levels and costs, XP, and Shop rerolls.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Construct a Companion",
+   "cat": "",
+   "desc": "The next champion you buy is upgraded to a star level. Gain gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Cooking Pot",
+   "cat": "",
+   "desc": "At the start of each turn, allies holding a Frying Pan or Spatula item grant the nearest champion permanent Health. Gain a Frying Pan.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Counting Stars",
+   "cat": "",
+   "desc": "Gain gold. Each time you 3-star a champion, gain additional gold for each 3-star champion you have.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Cry Me A River",
+   "cat": "",
+   "desc": "Gain a Tear of the Goddess. Your team gains Mana Regen, which increases after a period in combat.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Cybernetic Implants",
+   "cat": "",
+   "desc": "Your champions holding an item gain Health and Attack Damage. Gain a B.F. Sword.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Cybernetic Uplink",
+   "cat": "",
+   "desc": "Champions holding an item gain Health and Mana Regen. Gain a Tear of the Goddess.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Dance Party",
+   "cat": "Trait",
+   "desc": "When you win combat, each surviving champion has a chance to drop gold. This chance increases for each Choreographer you field. Gain 2 Choreographers.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Death by a Thousand Cuts",
+   "cat": "Trait",
+   "desc": "After Swiftstriker attacks, gain a Completed Item Anvil and Gold. Gain a Ziggs and a Yunara.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Deathbringer",
+   "cat": "Trait",
+   "desc": "Every set of takedowns by Rock champions or the Infernal Idol permanently grants him Health, Attack Damage, and Ability Power. Gain 3 Rock champions.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Dig on This",
+   "cat": "Trait",
+   "desc": "Your Jazz champions gain increased Health and Damage Amp from the Jazz trait. Gain a Lucian and a Galio.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Double Trouble",
+   "cat": "",
+   "desc": "When you field exactly 2 copies of a champion, both gain Attack Damage and Ability Power, plus Armor and Magic Resist. When you 3-star, gain a 2-star copy.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Duo Queue",
+   "cat": "",
+   "desc": "Gain 2 random 5-cost champions and 2 copies of a random component.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Early Learnings",
+   "cat": "",
+   "desc": "Your team gains Attack Damage and Ability Power, with the bonus increasing after each player combat. 1-cost champions gain double.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Electrocharge II",
+   "cat": "",
+   "desc": "Whenever an ally has been attacked enough times, they deal magic damage to nearby enemies; the effect has a cooldown.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Epic Rolldown",
+   "cat": "",
+   "desc": "When you level up, gain Shop rerolls.",
+   "origin": "Runeterra Reforged Championship, 2023"
+  },
+  {
+   "tier": "Gold",
+   "name": "Epoch",
+   "cat": "",
+   "desc": "Gain XP and free rerolls now and at the start of every stage.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Epoch+",
+   "cat": "",
+   "desc": "Gain XP and free rerolls now and at the start of every stage.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Espresso",
+   "cat": "",
+   "desc": "Gain a Recurve Bow. Your team gains Attack Speed, which increases after combat has been underway for a while.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Exclusive Customization",
+   "cat": "",
+   "desc": "Gain a Lucky Item Chest, a Magnetic Remover, and gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Fighter Flight II",
+   "cat": "",
+   "desc": "Your Fighters and Assassins move faster and gain Attack Speed. Both bonuses are doubled while they are below a health threshold.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Forever Burning Brighter",
+   "cat": "Trait",
+   "desc": "Your Ionic Spark champions gain Attack Damage and Ability Power; these bonuses permanently increase each time fans reach another gift milestone. Gain 3 Ionic Spark champions.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "FOURcing",
+   "cat": "",
+   "desc": "Gain a random 4-cost champion. For each item equipped to that champion, your team gains health.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Frontline Foundation",
+   "cat": "Emblem",
+   "desc": "Gain a 2-star 1-cost Tank champion and an Emblem that matches their class.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Gain 21 Gold",
+   "cat": "",
+   "desc": "Gain gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Gain 21 Gold+",
+   "cat": "",
+   "desc": "Gain gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Gathering Storm",
+   "cat": "Trait",
+   "desc": "Pentakill champions permanently gain Health each time the Pentakill trait executes an enemy. Gain 3 Pentakill champions.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Gilded Steel",
+   "cat": "",
+   "desc": "Gain two 5-cost champions. If you field at least one 5-cost champion, your 1- to 4-cost champions gain Durability.",
+   "origin": "K.O. Coliseum Tactician's Crown, 2025"
+  },
+  {
+   "tier": "Gold",
+   "name": "Glass Cannon II",
+   "cat": "",
+   "desc": "Allies that start combat in the back row have their starting Health adjusted and gain Damage Amp.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Gold Destiny",
+   "cat": "",
+   "desc": "Gain a random Gold Augment, along with gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Gold Destiny+",
+   "cat": "",
+   "desc": "Gain a random Gold Augment and gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Good FOURtune",
+   "cat": "",
+   "desc": "Open a shop of 2-star 4-cost champions. You can buy only 1. Gain gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Group Hug II",
+   "cat": "",
+   "desc": "At combat start, allies grant Armor and Magic Resist to other adjacent allies. This effect stacks.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Hard Bargain",
+   "cat": "",
+   "desc": "You cannot choose your Carousel rewards. Each Carousel round, gain additional player health and gold. If you do not pick a Carousel reward, you receive an unpicked champion and the item it carries.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Healing Orbs II",
+   "cat": "",
+   "desc": "When an enemy dies, a nearby ally is healed.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Heart of Steel",
+   "cat": "",
+   "desc": "Steadfast Heart repeatedly gains permanent max Health as its holder survives combat.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Heroic Grab Bag",
+   "cat": "",
+   "desc": "Gain 2 Lesser Champion Duplicators and gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Heroic Grab Bag+",
+   "cat": "",
+   "desc": "Gain 2 Lesser Champion Duplicators and gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Heroic Grab Bag++",
+   "cat": "",
+   "desc": "Gain 2 Lesser Champion Duplicators and gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "High Rolling",
+   "cat": "Trait",
+   "desc": "Renegade kills have a chance to drop loot, scaling with Critical Strike Chance. The value of the loot given can also critically strike, granting even more loot. Gain a Qiyana.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Hustler",
+   "cat": "",
+   "desc": "You no longer gain interest (extra gold earned from saved gold), but gain gold at the start of every player combat round. Gain gold now.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Immortalized in Theater",
+   "cat": "",
+   "desc": "The first allies to die each combat become statues. When the statues die, they Captivate adjacent enemies. Gain a Katarina and a Renata Glasc.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Infinity Protection",
+   "cat": "",
+   "desc": "Gain gold now, then gain an Infinity Force. Infinity Force gives allies in the same row a Health-based shield.",
+   "origin": "Monsters Attack Championship, 2023"
+  },
+  {
+   "tier": "Gold",
+   "name": "Investment Strategy",
+   "cat": "",
+   "desc": "Your champions gain permanent max health for each interest you earn. Gain gold now.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "It's Me, Baby",
+   "cat": "",
+   "desc": "Gain a championship hex in the bottom-right corner. The champion in it gains Damage Amp and Attack Speed, and drops gold every set number of takedowns.",
+   "origin": "Lore & Legends Tactician's Crown, 2026"
+  },
+  {
+   "tier": "Gold",
+   "name": "Knowledge Download II",
+   "cat": "",
+   "desc": "Gain XP.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Late Game Scaling",
+   "cat": "",
+   "desc": "Gain XP at the start of player combat rounds. Your 5-cost champions gain Health and Attack Speed.",
+   "origin": "Cyber City Tactician's Crown, 2025"
+  },
+  {
+   "tier": "Gold",
+   "name": "Legion Of Threes",
+   "cat": "Emblem",
+   "desc": "Gain a random Emblem. Your 3-cost champions and all allies equipped with an Emblem gain Health and Attack Speed.",
+   "origin": "Reckoning Championship, 2021"
+  },
+  {
+   "tier": "Gold",
+   "name": "Light up the Sky",
+   "cat": "Trait",
+   "desc": "Periodically, the highest-Health enemies take magic damage based on their max Health, with additional damage for each Ionic Spark champion you have fielded. Gain 3 Ionic Spark champions.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Magic Roll",
+   "cat": "",
+   "desc": "Roll 3 dice and gain rewards based on their total.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Makeshift Armor II",
+   "cat": "",
+   "desc": "Champions without items equipped gain Armor and Magic Resist.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Max Build",
+   "cat": "",
+   "desc": "Gain free Shop rerolls. Upon reaching a level threshold, gain more free Shop rerolls and a Champion Duplicator.",
+   "origin": "Galaxies Championship, 2020"
+  },
+  {
+   "tier": "Gold",
+   "name": "Money Hungry",
+   "cat": "",
+   "desc": "Gain gold now, then gain gold at the start of every stage. Picking up gold makes your Tactician larger.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Money Hungry+",
+   "cat": "",
+   "desc": "Gain gold now, then gain gold at the start of every stage. Picking up gold makes your Tactician larger.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "NO SCOUT NO PIVOT",
+   "cat": "",
+   "desc": "Champions that fight in player combat cannot be benched or sold. After player combat, your champions gain Health, Attack Damage, and Ability Power.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Our Hearts Aligned",
+   "cat": "Trait",
+   "desc": "Whenever Ionic Spark champions collectively spend Mana, they each gain a temporary shield based on their max Health. Gain 3 Ionic Spark champions.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Pandora's Items II+",
+   "cat": "",
+   "desc": "At the start of each round, items on your bench are randomized. Gain random components and gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Patient Study",
+   "cat": "",
+   "desc": "After player combat, gain XP based on whether you won or lost.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "PiÃ±ata",
+   "cat": "",
+   "desc": "Gain a Training Dummy with Giant's Belts. Your Training Dummies drop 1 gold for every damage they take.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Pilfer",
+   "cat": "",
+   "desc": "Each round, gain a 1-star copy of the first champion you killed last combat. The first time the total gold value of champions gained this way reaches the threshold, gain Thief's Gloves.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Plot Armor",
+   "cat": "",
+   "desc": "Your team gains Armor and Magic Resist. After falling below a health threshold, these stats increase for the rest of combat.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Portable Forge",
+   "cat": "",
+   "desc": "Choose 1 of 4 Artifacts. Artifacts are more powerful items with a unique effect.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Promised Protection",
+   "cat": "",
+   "desc": "Gain a Protector's Vow, which grants its holder increased Mana from all sources and increased maximum Health.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Randuin's Omen",
+   "cat": "",
+   "desc": "Gain a Randuin's Omen, which grants Armor and Magic Resist to its holder and nearby allies.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Rare Collection",
+   "cat": "",
+   "desc": "Your team gains Health and Attack Speed for each unique unlockable champion fielded.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Replication",
+   "cat": "",
+   "desc": "Choose 1 of 3 components. Gain a copy of that component over the next few rounds.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "reroll.exe",
+   "cat": "Trait",
+   "desc": "At the start of every stage, including this one, gain free rerolls, plus additional free rerolls based on your Hyperpop Hype. Gain a 2-star Ziggs.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Reunion Show II",
+   "cat": "",
+   "desc": "Gain champions, all of whom share a trait.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Rock All Nite",
+   "cat": "Trait",
+   "desc": "Rock champions gain Attack Damage and Ability Power. For every interval the Infernal Idol remains alive, they gain more. Gain 3 Rock champions.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Running Wild",
+   "cat": "Trait",
+   "desc": "At Combat Start, your strongest K/DA champions below the item threshold each receive a temporary recommended item and bonus Health. Gain a Neeko and a Lillia.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Sacrificial Dummy",
+   "cat": "",
+   "desc": "Gain a Training Dummy. While it lives, all damage your champions would take is redirected to it.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Salvage Bin",
+   "cat": "",
+   "desc": "Gain 1 random completed item now, then gain 1 component after a set number of player combats. Selling champions breaks completed items into components, excluding Tactician's items and Emblems.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Salvage Bin+",
+   "cat": "",
+   "desc": "Gain 1 random completed item now, then gain 1 component after a set number of player combats. Selling champions breaks completed items into components, excluding Tactician's items and Emblems.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Seraphim's Staff",
+   "cat": "",
+   "desc": "Gain an Archangel's Staff. It grants its holder additional Mana Regen if they meet the Ability Power threshold.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Slammin'",
+   "cat": "",
+   "desc": "Gain gold. After each player combat, if there are no items on your bench other than consumables, gain XP.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Slammin'+",
+   "cat": "",
+   "desc": "Gain gold and XP now. After each player combat, gain XP if there are no items on your bench other than consumables.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Small Squad",
+   "cat": "Trait",
+   "desc": "When you field a limited number of Heartsteel champions, increase their bonuses. Gain Heartsteel champions.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Solo Leveling",
+   "cat": "",
+   "desc": "For a limited number of upcoming combats, your team size is restricted, but the champion you field has massively increased stats. They gain XP for each kill. Afterward, gain item components.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Solo Plate",
+   "cat": "",
+   "desc": "Gain a Gargoyle Stoneplate. Allies holding a Gargoyle Stoneplate gain bonus Max Health if they start combat alone in their row.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Speedy Double Kill",
+   "cat": "",
+   "desc": "Gain a Guinsoo's Rageblade. Gain gold after a threshold number of players are eliminated.",
+   "origin": "Fates Championship, 2021"
+  },
+  {
+   "tier": "Gold",
+   "name": "Spirit Of Redemption",
+   "cat": "",
+   "desc": "Gain a Spirit Visage. Periodically, it heals nearby allies based on their missing Health.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Spreading Roots",
+   "cat": "Emblem",
+   "desc": "Gain a random Emblem. After a set number of combats, gain another.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Spreading Roots+",
+   "cat": "Emblem",
+   "desc": "Gain random Emblems and gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Staffsmith II",
+   "cat": "",
+   "desc": "Gain a random completed item that builds from Needlessly Large Rod now, then gain another in a later round.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Stakeholder Management",
+   "cat": "Trait",
+   "desc": "Gain 2 additional Manager hexes. Managers placed in Manager hexes gain max Health and an additional share of hex bonuses. Gain a Leona after a round-based delay.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Stakeholder Management+",
+   "cat": "Trait",
+   "desc": "Gain 2 additional Manager hexes. Managers placed in Manager hexes gain max Health and increased hex bonuses. Gain a Leona.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Star Power",
+   "cat": "Trait",
+   "desc": "When you 2-star a K/DA champion, gain a free K/DA champion. Gain a Lillia and a Neeko.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Stats On Stats II",
+   "cat": "",
+   "desc": "Gain stat-boosting consumables now and again at regular intervals.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Strange Duet II",
+   "cat": "",
+   "desc": "Allies who start combat isolated in pairs gain Durability and Damage Amp.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Submit to the Pit",
+   "cat": "",
+   "desc": "Allies gain Attack Damage and Ability Power each second they spend in the center 4 rows of the battlefield.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Swordsmith II",
+   "cat": "",
+   "desc": "Gain a random completed item that builds from B.F. Sword now and another in a later round.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "The Drop II",
+   "cat": "",
+   "desc": "After a delay in combat, your team heals for a portion of its maximum Health, and enemies take true damage based on their maximum Health.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "The Golden Dragon",
+   "cat": "",
+   "desc": "Gain a Mogul's Mail. Champions holding Mogul's Mail take up additional team slots but gain Health and Durability. Mogul's Mail grants gold as well as combat power.",
+   "origin": "Dragonlands Championship, 2022"
+  },
+  {
+   "tier": "Gold",
+   "name": "Time Skip",
+   "cat": "",
+   "desc": "Your Shop is disabled temporarily; afterward, you gain XP.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Tons of Stats!",
+   "cat": "",
+   "desc": "Your team gains Health, Attack Damage, Ability Power, Armor, Magic Resist, Attack Speed, and Mana.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Trade Sector",
+   "cat": "",
+   "desc": "Gain a Shop reroll every round and gain gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Trade Sector+",
+   "cat": "",
+   "desc": "Gain a Shop reroll every round and gain gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "U.R.F",
+   "cat": "",
+   "desc": "Gain a Spatula. Champions holding Spatula or Frying Pan items gain Attack Speed and Mana Regen.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Verticality II",
+   "cat": "",
+   "desc": "Champions gain Attack Damage, Ability Power, Armor, and Magic Resist for each ally that shares a trait with them.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Warpath",
+   "cat": "",
+   "desc": "Gain a 2-star 2-cost champion. After dealing player damage, gain a chest of high-cost champions and items.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Weight The Worth",
+   "cat": "",
+   "desc": "The first time you 3-star a champion, gain a copy of them each round for the rest of the game. 3-starring the same champion again grants additional copies. Gain a Lesser Champion Duplicator.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Worth the Wait",
+   "cat": "",
+   "desc": "Gain a random 1-cost champion. Gain another copy of them at the start of each round for the rest of the game.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Woven Magic",
+   "cat": "",
+   "desc": "Gain a random item component. As your champions spend Mana, gain additional components at recurring Mana-spent intervals, up to a maximum.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Zeke's Herald",
+   "cat": "",
+   "desc": "Gain a Zeke's Herald, which grants Attack Speed to the holder and allies in the same row within its range.",
+   "origin": ""
+  },
+  {
+   "tier": "Gold",
+   "name": "Zz'Rot Portal",
+   "cat": "",
+   "desc": "Gain a Zz'Rot Portal, an item which summons a large Voidspawn.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Arcanist Circlet",
+   "cat": "Emblem",
+   "desc": "Gain an Arcanist Emblem, a Tear of the Goddess, and an Ahri.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Arcanist Crown",
+   "cat": "Emblem",
+   "desc": "Gain an Arcanist Emblem, a Jeweled Gauntlet, and a Swain.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Band of Thieves II",
+   "cat": "",
+   "desc": "Gain Thief's Gloves, then gain another after a set number of player combats.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Band of Thieves II+",
+   "cat": "",
+   "desc": "Gain Thief's Gloves, then gain another after a set number of player combats.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Band of Thieves II++",
+   "cat": "",
+   "desc": "Gain Thief's Gloves, then gain another after a set number of player combats.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Baron's Lair",
+   "cat": "",
+   "desc": "Gain a random Tank item. After a delay in combat, your team gains bonus Attack Damage and Ability Power every second for the rest of combat.",
+   "origin": "TFT Paris Open, 2025"
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Beach Pop Circlet",
+   "cat": "Emblem",
+   "desc": "Gain a Beach Pop Emblem, a Sparring Gloves, and a Graves.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Beach Pop Crown",
+   "cat": "Emblem",
+   "desc": "Gain a Beach Pop Emblem, a Blue Buff, and a Syndra.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Belt Overflow",
+   "cat": "",
+   "desc": "Gain Giant's Belts. Your Giant's Belts grant bonus Health.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Birthday Present",
+   "cat": "",
+   "desc": "Gain a 2-star champion and gold each time you level up. The champion's cost tier is below your level and capped at a maximum.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Booster Box",
+   "cat": "",
+   "desc": "Gain a pack of champions now and at the start of upcoming stages. At least one holographic is guaranteed!",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Build A Bud",
+   "cat": "",
+   "desc": "Gain a random champion and gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Buried Treasures III",
+   "cat": "",
+   "desc": "Gain a random item component now and at the start of the next several rounds.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Call To Chaos",
+   "cat": "",
+   "desc": "Gain a powerful and random reward.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Celestial Blessing III",
+   "cat": "",
+   "desc": "Your team gains Omnivamp. Excess healing is converted into a shield, up to a maximum shield size.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Cheat Code III",
+   "cat": "",
+   "desc": "Now and at the start of each stage, get a new cheat code. The first time you perform that exact sequence of actions, gain a reward.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Choreographer Circlet",
+   "cat": "Emblem",
+   "desc": "Gain a Choreographer Emblem, a Giant's Belt, and a Garen.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Choreographer Crown",
+   "cat": "Emblem",
+   "desc": "Gain a Choreographer Emblem, an Adaptive Helm, and a Syndra.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Classical Circlet",
+   "cat": "Emblem",
+   "desc": "Gain a Classical Emblem, a B.F. Sword, and a Jhin.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Classical Crown",
+   "cat": "Emblem",
+   "desc": "Gain a Classical Emblem, a Spirit Visage, and a Nasus.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Cloning",
+   "cat": "",
+   "desc": "After each player combat, gain a copy of a random champion on your board. If your board has few unique champions, you may instead gain gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Comeback Story",
+   "cat": "",
+   "desc": "Your team gains Health and Attack Speed for each point of player Health you’re missing.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Commerce Core",
+   "cat": "",
+   "desc": "Gain free Shop rerolls immediately and each round for the rest of the game.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Component Quest",
+   "cat": "",
+   "desc": "Gain a random component and gold. The next 7 times you win a player combat, gain a different random component. Afterwards, gain gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Cursed Crown",
+   "cat": "",
+   "desc": "Increase your maximum team size, but take double player damage when you lose a player combat.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Deadlier Blades",
+   "cat": "",
+   "desc": "Gain a Deathblade. Deathblades permanently gain Attack Damage each time their holders score a takedown.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Deadlier Caps",
+   "cat": "",
+   "desc": "Gain a Rabadon's Deathcap. Rabadon's Deathcaps grant Mana Regen and permanently gain Ability Power whenever their holders score a takedown.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Duplicator Deal",
+   "cat": "",
+   "desc": "Gain Champion Duplicators. You can no longer 3-star champions.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Expected Unexpectedness",
+   "cat": "",
+   "desc": "Now and at the start of the next 2 stages, roll 3 dice. Gain various rewards based on their total.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Flexible",
+   "cat": "Emblem",
+   "desc": "Gain 1 random Emblem. At the start of every Stage, gain a random Emblem. Your team gains Health for each Emblem they are holding.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Forged In Strength",
+   "cat": "",
+   "desc": "Gain a random Artifact. When you drop below a Health threshold, gain more random Artifacts, a random completed item, and random components.",
+   "origin": "Remix Rumble Championship, 2023"
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Giant and Mighty",
+   "cat": "",
+   "desc": "Your team becomes large, gaining Health and maximum Health.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Golden Gamble",
+   "cat": "",
+   "desc": "Gain gold and flip a coin. If heads, gain a Radiant Lucky Item Chest. If tails, gain Completed Item anvils.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Golden Gamble+",
+   "cat": "",
+   "desc": "Gain gold and flip a coin. If heads, gain a Radiant Lucky Item Chest. If tails, gain Completed Item anvils.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Golden Gamble++",
+   "cat": "",
+   "desc": "Gain gold and flip a coin. If heads, gain a Radiant Lucky Item Chest. If tails, gain Completed Item anvils.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Hard Commit",
+   "cat": "Emblem",
+   "desc": "Gain a random emblem. Now and at the start of each stage, gain a 1-star champion of that trait with a cost equal to the Stage (max 5) and 3 gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Heartsteel Circlet",
+   "cat": "Emblem",
+   "desc": "Gain a Heartsteel Emblem, a Sparring Gloves, and a Yone.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Heartsteel Crown",
+   "cat": "Emblem",
+   "desc": "Gain a Heartsteel Emblem, a Steadfast Heart, and a K'Sante.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Hedge Fund",
+   "cat": "",
+   "desc": "Gain gold. Your maximum interest is increased to 10.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Hitmaker Circlet",
+   "cat": "Emblem",
+   "desc": "Gain a Hitmaker Emblem, a B.F. Sword, and a Xayah.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Hitmaker Crown",
+   "cat": "Emblem",
+   "desc": "Gain a Hitmaker Emblem, an Infinity Edge, and a Senna.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Hold the Line",
+   "cat": "",
+   "desc": "Allies in your back 2 rows gain Ability Power and Attack Damage for each ally that starts combat in your front row.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Illbeats Circlet",
+   "cat": "Emblem",
+   "desc": "Gain an Illbeats Emblem, a Tear Of The Goddess, and a Draven.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Illbeats Crown",
+   "cat": "Emblem",
+   "desc": "Gain an Illbeats Emblem, a Gargoyle Stoneplate, and a Braum.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Invested+",
+   "cat": "",
+   "desc": "Gain 26 gold. At the start of each round, gain 1 Shop reroll for every 10 gold above 50 (max 80 gold).",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Invested++",
+   "cat": "",
+   "desc": "Gain 45 gold. At the start of each round, gain 1 Shop reroll for every 10 gold above 50 (max 80 gold).",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Investment Strategy II",
+   "cat": "",
+   "desc": "Your champions gain permanent max health per interest you earn. Your maximum interest increases, and you gain gold now.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Ionic Spark Circlet",
+   "cat": "Emblem",
+   "desc": "Gain an Ionic Spark Emblem, a Needlessly Large Rod, and an Aurora.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Ionic Spark Crown",
+   "cat": "Emblem",
+   "desc": "Gain an Ionic Spark Emblem, an Ionic Spark, and an Annie.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Jazz Circlet",
+   "cat": "Emblem",
+   "desc": "Gain a Jazz Emblem, a Recurve Bow, and a Bard.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Jazz Crown",
+   "cat": "Emblem",
+   "desc": "Gain a Jazz Emblem, a Spear of Shojin, and a Lucian.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "K/DA Circlet",
+   "cat": "Emblem",
+   "desc": "Gain a K/DA Emblem, a Needlessly Large Rod, and a Leona.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "K/DA Crown",
+   "cat": "Emblem",
+   "desc": "Gain a K/DA Emblem, a Guinsoo's Rageblade, and a Kai'Sa.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Level Up!",
+   "cat": "",
+   "desc": "Whenever you buy XP, gain additional XP, and gain XP immediately.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Living Forge",
+   "cat": "",
+   "desc": "Gain an Artifact Anvil now, then again at recurring player-combat intervals.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Lucky Gloves",
+   "cat": "",
+   "desc": "Thief's Gloves always give your champions ideal items. Gain Sparring Gloves and gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Lucky Gloves+",
+   "cat": "",
+   "desc": "Thief's Gloves will always give your champions ideal items. Gain Sparring Gloves now, then gain another after a set number of player combats.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Luxury Subscription",
+   "cat": "",
+   "desc": "Gain a package containing a champion and a 2-star champion, plus gold. At the start of each of the following stages, gain the package again.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Mad Science",
+   "cat": "",
+   "desc": "Each ally randomly becomes either huge or tiny. Huge units gain max Health, Attack Damage, and Ability Power; tiny units gain Durability and Attack Speed.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Management Track",
+   "cat": "Emblem",
+   "desc": "Gain a Manager Emblem. When champions gain bonuses from Manager, you have a chance to gain gold. After collecting gold from the Manager trait, gain a 2-star Dr. Mundo and Warmog's Armor.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Manager Circlet",
+   "cat": "Emblem",
+   "desc": "Gain a Manager Emblem, a Chain Vest, and a Leona.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Min-Max",
+   "cat": "",
+   "desc": "Gain a Golden Item Remover, 4 random components, and gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Money Monsoon",
+   "cat": "",
+   "desc": "Gain gold now and every round for the rest of the game.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Nesting Anvils",
+   "cat": "",
+   "desc": "Gain an Artifact Anvil. Open it to gain a Component Anvil, then open that to gain gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Nesting Anvils+",
+   "cat": "",
+   "desc": "Gain an Artifact Anvil. After opening it, gain a Component Anvil. After opening that, gain gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "One Buff Two Buff",
+   "cat": "",
+   "desc": "Gain a Red Buff, a Blue Buff, and a Champion Duplicator.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Pain into Passion",
+   "cat": "Trait",
+   "desc": "On the A-Side, True Damage champions gain Attack Speed and Health for each Bling collected. On the B-Side, gain Gold after losing combat. Gain 3 True Damage champions.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Pandora's Box",
+   "cat": "",
+   "desc": "Champions on your board permanently transform into random champions 1 cost tier higher (max 5). Then reforge all of your items, gain a random gold augment, and gain a random completed item.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Pandora's Items III",
+   "cat": "",
+   "desc": "At the start of each round, items on your bench are randomized. Gain Radiant items.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Pentakill Circlet",
+   "cat": "Emblem",
+   "desc": "Gain a Pentakill Emblem, a Negatron Cloak, and a Yorick.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Pentakill Crown",
+   "cat": "Emblem",
+   "desc": "Gain a Pentakill Emblem, a Giant Slayer, and a Viego.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Prismatic Destiny",
+   "cat": "",
+   "desc": "Gain a random Prismatic Augment and gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Prismatic Destiny+",
+   "cat": "",
+   "desc": "Gain a random Prismatic Augment and gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Prismatic Ticket",
+   "cat": "",
+   "desc": "Each time your shop is rerolled, you may gain a free reroll.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Radiant Rascal",
+   "cat": "",
+   "desc": "Gain a Radiant Thief's Gloves item. This equips 2 random Radiant items every round.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Radiant Relics",
+   "cat": "",
+   "desc": "Choose 1 of 5 Radiant Items. Gain a Magnetic Remover.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Renegade Circlet",
+   "cat": "Emblem",
+   "desc": "Gain a Renegade Emblem, a Sparring Gloves, and an Aurora.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Renegade Crown",
+   "cat": "Emblem",
+   "desc": "Gain a Renegade Emblem, a Hand of Justice, and a Qiyana.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Rock Circlet",
+   "cat": "Emblem",
+   "desc": "Gain a Rock Emblem, a Needlessly Large Rod, and a Locke.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Rock Crown",
+   "cat": "Emblem",
+   "desc": "Gain a Rock Emblem, a Hand Of Justice, and a Camille.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Royalties",
+   "cat": "",
+   "desc": "Gain a Tactician’s Crown. Gain gold every round for the rest of the game.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Shimmerscale Essence",
+   "cat": "",
+   "desc": "Gain a Gambler's Blade, then gain a Mogul's Mail after a set number of player combats.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Shopping Spree",
+   "cat": "",
+   "desc": "When you level up, gain Shop refreshes based on your level. Gain gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Slayer Circlet",
+   "cat": "Emblem",
+   "desc": "Gain a Slayer Emblem, a Chain Vest, and a Yone.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Slayer Crown",
+   "cat": "Emblem",
+   "desc": "Gain a Slayer Emblem, a Titan's Resolve, and a Briar.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Soul Awakening",
+   "cat": "",
+   "desc": "At combat start, your team gains Attack Damage and Ability Power each second. At max stacks, it deals bonus true damage.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Star of the Show",
+   "cat": "Emblem",
+   "desc": "Gain a non-Tank champion and an Emblem for one of their traits. At a later stage, gain more copies of that champion.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Strange Duet III",
+   "cat": "",
+   "desc": "Allies that start combat isolated in pairs gain Durability and Damage Amp.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Sweet Treats",
+   "cat": "",
+   "desc": "Gain an Artifact anvil. Your team gains Health for each item equipped to a champion.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Swiftstriker Circlet",
+   "cat": "Emblem",
+   "desc": "Gain a Swiftstriker Emblem, a Recurve Bow, and a Bard.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Swiftstriker Crown",
+   "cat": "Emblem",
+   "desc": "Gain a Swiftstriker Emblem, a Hextech Gunblade, and a Bard.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Sword Overflow",
+   "cat": "",
+   "desc": "Gain BF Swords. Your BF Swords grant Attack Speed.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Tactician's Kitchen",
+   "cat": "Emblem",
+   "desc": "Gain a random Emblem. After a round-based delay, gain a Tactician's Cape.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "The Golden Egg",
+   "cat": "",
+   "desc": "Gain a golden egg that eventually hatches and grants a huge amount of loot. Winning player combat advances its hatch timer by one turn.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "The Immortal Journey",
+   "cat": "",
+   "desc": "Gain a Xayah, a Spear of Shojin, and gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "The Trait Tree",
+   "cat": "Emblem",
+   "desc": "Gain random Emblems and gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "The Trait Tree+",
+   "cat": "Emblem",
+   "desc": "Gain random Emblems, a Reforger, and gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Three Steps Ahead",
+   "cat": "",
+   "desc": "For each of your next player-combat losses, gain a 5-cost champion and components.",
+   "origin": "Space Gods Tactician's Crown, 2026"
+  },
+  {
+   "tier": "Prismatic",
+   "name": "TONS of Stats!",
+   "cat": "",
+   "desc": "Your team gains Health, Attack Damage, Ability Power, Armor, Magic Resist, Attack Speed, and Mana.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Trait Ladder",
+   "cat": "Emblem",
+   "desc": "Gain a random emblem. In a player combat, field non-unique traits to earn a reward; the trait requirement and reward size then increase.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "True Damage Circlet",
+   "cat": "Emblem",
+   "desc": "Gain a True Damage Emblem, a Giant's Belt, and an Ekko.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "True Damage Crown",
+   "cat": "Emblem",
+   "desc": "Gain a True Damage Emblem, an Infinity Edge, and a Senna.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Unearthed Treasure",
+   "cat": "Trait",
+   "desc": "After player combat, each unique Beach Pop champion empowered by a Beach Pop instrument has a chance to uncover some loot! Gain a Taric, a Zoe, and a Renekton.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Upward Mobility",
+   "cat": "",
+   "desc": "Buying XP costs less. Gain Health and Shop rerolls whenever you level up.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Urf's Grab Bag",
+   "cat": "",
+   "desc": "Gain Spatula, random components, and gold.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Verticality III",
+   "cat": "",
+   "desc": "Champions gain Attack Damage, Ability Power, Armor, and Magic Resist for each ally that shares a trait with them.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Wand Overflow",
+   "cat": "",
+   "desc": "Gain Needlessly Large Rods. Your Needlessly Large Rods grant Attack Speed.",
+   "origin": ""
+  },
+  {
+   "tier": "Prismatic",
+   "name": "We Stick Together",
+   "cat": "Emblem",
+   "desc": "Gain an Emblem for a random trait and a completed item anvil. Allies with that trait gain Attack Speed.",
+   "origin": "Into The Arcane Tactician's Crown, 2025"
+  },
+  {
+   "tier": "Prismatic",
+   "name": "Worth the Wait II",
+   "cat": "",
+   "desc": "Gain 2 copies of a random 2-cost champion. Gain another copy of them at the start of each round for the rest of the game.",
+   "origin": ""
+  }
+ ],
+ "fetched": "2026-11-21 14:25"
+}

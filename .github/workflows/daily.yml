@@ -1,0 +1,31 @@
+name: daily-pbe-update
+on:
+  schedule:
+    - cron: "0 2 * * *"   # 台北 10:00
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: daily-pbe-update
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      HAS_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN != '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Claude Code (翻譯用，走訂閱額度)
+        if: ${{ env.HAS_TOKEN == 'true' }}
+        run: npm i -g @anthropic-ai/claude-code
+      - name: Scrape, translate, build
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          if [ -n "$CLAUDE_CODE_OAUTH_TOKEN" ]; then python3 update.py; else python3 update.py --no-translate; fi
+      - name: Commit
+        run: |
+          git config user.name "pbe-bot"
+          git config user.email "pbe-bot@users.noreply.github.com"
+          git add -A data docs
+          git diff --cached --quiet || git commit -m "PBE update $(TZ=Asia/Taipei date +%F)"
+          git push
